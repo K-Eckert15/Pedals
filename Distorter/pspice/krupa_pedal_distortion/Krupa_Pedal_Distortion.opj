@@ -1,0 +1,185 @@
+(ExpressProject "Krupa_Pedal_Distortion"
+  (ProjectVersion "19981106")
+  (SoftwareVersion "25.1 S030 (4414069)  [3/25/2026]-[11/09/26]")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library")
+    ("Allegro Netlist Directory" "allegro")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420")
+    (NoModify)
+    (File ".\krupa_pedal_distortion.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Layout")
+  (Folder "Outputs"
+    (Sort User)
+    (File ".\KRUPA_PEDAL_DISTORTION_OUTPUT\BOM.SCH.CSV"
+      (Type "Report")
+      (DisplayName ".\KRUPA_PEDAL_DISTORTION_OUTPUT\BOM.SCH.CSV"))
+    (File ".\krupa_pedal_distortion-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "Referenced Projects")
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\krupa_pedal_distortion-pspicefiles\schematic1\pedal_sim1.sim"
+        (DisplayName "SCHEMATIC1-PEDAL_SIM1")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\krupa_pedal_distortion-pspicefiles\schematic1\sim2.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\krupa_pedal_distortion-pspicefiles\schematic1\sim2.sim"
+        (DisplayName "SCHEMATIC1-Sim2")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (Folder "Logs")
+  (MPSSessionName "nkrupa")
+  (PartMRUSelector
+    (PARAM
+      (FullPartName "PARAM.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_25.1\TOOLS\CAPTURE\LIBRARY\PSPICE\SPECIAL.OLB")
+      (DeviceIndex "0"))
+    (D1N4148
+      (FullPartName "D1N4148.Normal")
+      (LibraryName "C:\CADENCE\SPB_25.1\TOOLS\CAPTURE\LIBRARY\PSPICE\DIODE.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_25.1\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_25.1\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_25.1\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName
+         "C:\CADENCE\SPB_25.1\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (IRF9140
+      (FullPartName "IRF9140.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_25.1\TOOLS\CAPTURE\LIBRARY\PSPICE\PWRMOS.OLB")
+      (DeviceIndex "0"))
+    (VPULSE
+      (FullPartName "VPULSE.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_25.1\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (J201
+      (FullPartName "J201.Normal")
+      (LibraryName "C:\CADENCE\SPB_25.1\TOOLS\CAPTURE\LIBRARY\PSPICE\JFET.OLB")
+      (DeviceIndex "0"))
+    (POT
+      (FullPartName "POT.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_25.1\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (IRF150
+      (FullPartName "IRF150.Normal")
+      (LibraryName "C:\CADENCE\SPB_25.1\TOOLS\CAPTURE\LIBRARY\PSPICE\IRF.OLB")
+      (DeviceIndex "0"))
+    (LED
+      (FullPartName "LED.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_25.1\TOOLS\CAPTURE\TCLSCRIPTS\CAPPSPICEMODELAPP\LED\HYBRID\SUPPORTFILES\LED.OLB")
+      (DeviceIndex "0"))
+    (Dbreak
+      (FullPartName "Dbreak.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_25.1\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (TL072/301/TI
+      (FullPartName "TL072/301/TI.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_25.1\TOOLS\CAPTURE\LIBRARY\PSPICE\TEX_INST.OLB")
+      (DeviceIndex "1"))
+    (VSIN
+      (FullPartName "VSIN.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_25.1\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory
+     "C:\Cadence\SPB_25.1\tools\capture\library\pspice")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "c:\spb_data\cdssetup\workspace\projects\krupa_pedal_distortion\krupa_pedal_distortion.dsn")
+      (Path "Design Resources"
+         "c:\spb_data\cdssetup\workspace\projects\krupa_pedal_distortion\krupa_pedal_distortion.dsn"
+         "SCHEMATIC1")
+      (Path "Design Resources"
+         "c:\spb_data\cdssetup\workspace\projects\krupa_pedal_distortion\krupa_pedal_distortion.dsn"
+         "SCHEMATIC2")
+      (Path "Design Resources"
+         "c:\spb_data\cdssetup\workspace\projects\krupa_pedal_distortion\krupa_pedal_distortion.dsn"
+         "SCHEMATIC3")
+      (Path "Design Resources"
+         "c:\spb_data\cdssetup\workspace\projects\krupa_pedal_distortion\krupa_pedal_distortion.dsn"
+         "SCHEMATIC4")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "c:\spb_data\cdssetup\workspace\projects\krupa_pedal_distortion\krupa_pedal_distortion.dsn"
+         "SCHEMATIC4" "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 472"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 5 24 5 1393 24 490")
+        (Scroll "1345 929")
+        (Zoom "96")
+        (Occurrence "/"))
+      (Path
+         "C:\SPB_DATA\CDSSETUP\WORKSPACE\PROJECTS\KRUPA_PEDAL_DISTORTION\KRUPA_PEDAL_DISTORTION.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 0 0 5 1393 24 490")
+        (Scroll "-188 0")
+        (Zoom "101"))
+      (Path
+         "C:\SPB_DATA\CDSSETUP\WORKSPACE\PROJECTS\KRUPA_PEDAL_DISTORTION\KRUPA_PEDAL_DISTORTION.DSN")
+      (Schematic "SCHEMATIC2")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 5 24 5 1393 24 490")
+        (Scroll "-188 0")
+        (Zoom "101"))
+      (Path
+         "C:\SPB_DATA\CDSSETUP\WORKSPACE\PROJECTS\KRUPA_PEDAL_DISTORTION\KRUPA_PEDAL_DISTORTION.DSN")
+      (Schematic "SCHEMATIC3")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1393 24 490")
+        (Scroll "-193 0")
+        (Zoom "100"))
+      (Path
+         "C:\SPB_DATA\CDSSETUP\WORKSPACE\PROJECTS\KRUPA_PEDAL_DISTORTION\KRUPA_PEDAL_DISTORTION.DSN")
+      (Schematic "SCHEMATIC4")
+      (Page "PAGE1"))))

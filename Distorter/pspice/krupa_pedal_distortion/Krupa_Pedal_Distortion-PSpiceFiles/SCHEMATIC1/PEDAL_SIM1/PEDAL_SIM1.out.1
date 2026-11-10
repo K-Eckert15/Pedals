@@ -1,0 +1,201 @@
+
+**** 11/09/26 18:29:49 ***** PSpice 25.1.0 (25 March 2026) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-PEDAL_SIM1"  [ c:\spb_data\cdssetup\workspace\projects\krupa_pedal_distortion\Krupa_Pedal_Distortion-PSpiceF
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "PEDAL_SIM1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\25.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 2m 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source KRUPA_PEDAL_DISTORTION
+V_V1         INPUT 0  AC 1
++SIN 0 0.3 440 0 0 0
+R_R1         INPUT N00136  10k TC=0,0 
+C_C1         0 N00136  100p  TC=0,0 
+R_R2         0 N00136  1MEG TC=0,0 
+C_C2         N00374 N00136  22n  TC=0,0 
+R_R3         N00374 VREF  1MEG TC=0,0 
+X_U1A         N00374 N00519 0 9V N00796 TL072/301/TI
+X_U1B         VREF N01064 0 9V N01068 TL072/301/TI
+R_R4         N005431 N00519  4.7k TC=0,0 
+C_C3         N005431 0  47n  TC=0,0 
+R_R5         N006781 N00519  2.2k TC=0,0 
+C_C4         N00519 N00796  50p  TC=0,0 
+X_R6         N006781 N00796 N00900 POT PARAMS: SET=0.5 VALUE=100k
+C_C5         N00900 N008421  680n  TC=0,0 
+R_R7         N01064 N008421  10k TC=0,0 
+C_C6         N01064 N01068  100p  TC=0,0 
+R_R8         N01068 N01064  10k TC=0,0 
+C_C7         N01068 N014131  1u  TC=0,0 
+R_R9         N01784 N014131  1k TC=0,0 
+C_C8         0 N01784  22n  TC=0,0 
+X_R18         N021541 N02369 N01784 POT PARAMS: SET=0.5 VALUE=100k
+C_C9         0 N021541  22n  TC=0,0 
+X_R17         0 N023612 N02369 POT PARAMS: SET=0.5 VALUE=100k
+J_J1         9V N023612 N02985 J201 
+R_R16         N02985 0  10k TC=0,0 
+C_C10         N03019 N02985  1u  TC=0,0 
+R_R11         N03019 0  10k TC=0,0 
+R_R12         N03019 OUTPUT  10k TC=0,0 
+V_V2         9V 0 9.6
+C_C11         0 9V  47u  TC=0,0 
+R_R13         VREF 9V  10k TC=0,0 
+R_R14         0 VREF  10k TC=0,0 
+C_C12         0 VREF  47u  TC=0,0 
+D_D3         N01784 0 D1N4148 
+D_D4         0 N01784 D1N4148 
+R_R19         OUTPUT 0  1MEG TC=0,0 
+
+**** RESUMING PEDAL_SIM1.cir ****
+.END
+
+**** 11/09/26 18:29:49 ***** PSpice 25.1.0 (25 March 2026) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-PEDAL_SIM1"  [ c:\spb_data\cdssetup\workspace\projects\krupa_pedal_distortion\Krupa_Pedal_Distortion-PSpiceF
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4148         X_U1A.DX        X_U1B.DX        
+          IS    2.682000E-09  800.000000E-18  800.000000E-18 
+           N    1.836                                        
+         ISR    1.565000E-09                                 
+         IKF     .04417                                      
+          BV  100                                            
+         IBV  100.000000E-06                                 
+          RS     .5664                                       
+          TT   11.540000E-09                                 
+         CJO    4.000000E-12                                 
+          VJ     .5                                          
+           M     .3333                                       
+
+
+**** 11/09/26 18:29:49 ***** PSpice 25.1.0 (25 March 2026) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-PEDAL_SIM1"  [ c:\spb_data\cdssetup\workspace\projects\krupa_pedal_distortion\Krupa_Pedal_Distortion-PSpiceF
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               J201            X_U1A.JX        X_U1B.JX        
+               NJF             PJF             PJF             
+         VTO    -.6            -1              -1            
+        BETA    1.621000E-03  270.100000E-06  270.100000E-06 
+      LAMBDA    2.236000E-03                                 
+          IS  114.500000E-15   15.000000E-12   15.000000E-12 
+         ISR    1.091000E-12                                 
+       ALPHA  506.800000E-06                                 
+          VK  251.7                                          
+          RD    1                                            
+          RS    1                                            
+         CGD    4.667000E-12                                 
+         CGS    2.992000E-12                                 
+           M     .2271                                       
+          PB     .5                                          
+       VTOTC   -2.500000E-03                                 
+     BETATCE    -.5                                          
+          KF  604.200000E-18                                 
+
+
+ERROR(ORPSIM-16550): Floating point computation failed during matrix solution. Possible solutions: 1)Ensure that all device parameters are in valid range. 2)Try using .options LIMIT
+
+INTERNAL ERROR -- Overflow, Multiply(-1.04296e+96, 1.72351e+218)
+
+ABORTING SIMULATION
+**** 11/09/26 18:29:49 ***** PSpice 25.1.0 (25 March 2026) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-PEDAL_SIM1"  [ c:\spb_data\cdssetup\workspace\projects\krupa_pedal_distortion\Krupa_Pedal_Distortion-PSpiceF
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+Node counts:
+  Top level (NUNODS)                =          21
+  External (NCNODS)                 =          48
+  Total (NUMNOD)                    =          52
+
+Total device count (NUMEL)          =          93
+  Capacitors (C)                    =          16
+  Diodes (D)                        =          12
+  VCVS (E)                          =           2
+  CCCS (F)                          =           2
+  VCCS (G)                          =           4
+  CCVS (H)                          =           2
+  Current Sources (I)               =           2
+  JFETs (J)                         =           5
+  Resistors (R)                     =          34
+  Voltage Sources (V)               =          14
+
+Number of subcircuits (X)           =           5
+
+Matrix statistics:
+  Matrix size (NSTOP)               =          70
+  Initial no. elements (NTTAR)      =         251
+  No. elements w/ fillin (NTTBR)    =         393
+  No. fillins (IFILL)               =         142
+  No. overflows (NTTOV)             =         173
+  No. LU operations (IOPS)          =        5439
+  Percent sparsity (PERSPA)         =      91.980
+
+Analysis statistics:
+  No. total time points (NUMTTP)    =           0
+  No. rejected time points (NUMRTP) =           0
+  No. iterations (NUMNIT)           =           0
+
+Load Threads                        =           1
+
+Runtime statistics:                       Seconds      Iterations
+  Matrix load                       =        0.00
+  Matrix solution                   =        0.00               2
+  Readin                            =         .03
+  General setup                     =        0.00
+  CMI setup                     =        0.00
+  Setup                             =        0.00
+  DC sweep                          =        0.00               0
+  Bias point                        =        0.00               0
+  AC and noise                      =        0.00               0
+  Total transient analysis          =        0.00
+  Output                            =        0.00
+  Overhead                          =         .23
+  Total job time (using Solver 1)   =         .05
+

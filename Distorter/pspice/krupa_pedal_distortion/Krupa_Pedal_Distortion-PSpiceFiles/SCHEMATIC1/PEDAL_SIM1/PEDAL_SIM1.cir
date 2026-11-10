@@ -1,0 +1,19 @@
+** Profile: "SCHEMATIC1-PEDAL_SIM1"  [ c:\spb_data\cdssetup\workspace\projects\krupa_pedal_distortion\Krupa_Pedal_Distortion-PSpiceFiles\SCHEMATIC1\PEDAL_SIM1.sim ] 
+
+** Creating circuit file "PEDAL_SIM1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\25.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 3m 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

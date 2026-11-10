@@ -1,0 +1,641 @@
+
+**** 11/09/26 19:34:18 ***** PSpice 25.1.0 (25 March 2026) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Sim2"  [ c:\spb_data\cdssetup\workspace\projects\krupa_pedal_distortion\Krupa_Pedal_Distortion-PSpiceFiles\S
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Sim2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\25.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 3m 0 
+.STEP LIN PARAM GainSet 0 1 0.2 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source KRUPA_PEDAL_DISTORTION
+V_V1         INPUT 0  AC 1
++SIN 0 0.3 440 0 0 0
+R_R1         INPUT N00136  10k TC=0,0 
+C_C1         0 N00136  100p  TC=0,0 
+R_R2         0 N00136  1MEG TC=0,0 
+C_C2         N00374 N00136  22n  TC=0,0 
+R_R3         N00374 VREF  1MEG TC=0,0 
+X_U1A         N00374 N00519 9V 0 N00796 TL072/301/TI
+X_U1B         VREF N01064 9V 0 N01068 TL072/301/TI
+R_R4         N005431 N00519  4.7k TC=0,0 
+C_C3         N005431 0  47n  TC=0,0 
+R_R5         N006781 N00519  2.2k TC=0,0 
+C_C4         N00519 N00796  50p  TC=0,0 
+X_R6         N006781 N00796 N00900 POT PARAMS: SET={GainSet} VALUE=100k
+C_C5         N00900 N008421  680n  TC=0,0 
+R_R7         N01064 N008421  10k TC=0,0 
+C_C6         N01064 N01068  100p  TC=0,0 
+R_R8         N01068 N01064  10k TC=0,0 
+C_C7         N01068 N014131  1u  TC=0,0 
+R_R9         N01784 N014131  1k TC=0,0 
+C_C8         0 N01784  22n  TC=0,0 
+X_R18         N021541 N02369 N01784 POT PARAMS: SET=0.5 VALUE=100k
+C_C9         0 N021541  22n  TC=0,0 
+X_R17         0 N023612 N02369 POT PARAMS: SET=0.5 VALUE=100k
+J_J1         9V N023612 N02985 J201 
+R_R16         N02985 0  10k TC=0,0 
+C_C10         N03019 N02985  1u  TC=0,0 
+R_R11         N03019 0  10k TC=0,0 
+R_R12         N03019 OUTPUT  10k TC=0,0 
+V_V2         9V 0 9.6
+C_C11         0 9V  47u  TC=0,0 
+R_R13         VREF 9V  10k TC=0,0 
+R_R14         0 VREF  10k TC=0,0 
+C_C12         0 VREF  47u  TC=0,0 
+D_D3         N01784 0 D1N4148 
+D_D4         0 N01784 D1N4148 
+R_R19         OUTPUT 0  1MEG TC=0,0 
+.PARAM  gainset=0.5
+
+**** RESUMING Sim2.cir ****
+.END
+
+**** 11/09/26 19:34:18 ***** PSpice 25.1.0 (25 March 2026) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Sim2"  [ c:\spb_data\cdssetup\workspace\projects\krupa_pedal_distortion\Krupa_Pedal_Distortion-PSpiceFiles\S
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4148         X_U1A.DX        X_U1B.DX        
+          IS    2.682000E-09  800.000000E-18  800.000000E-18 
+           N    1.836                                        
+         ISR    1.565000E-09                                 
+         IKF     .04417                                      
+          BV  100                                            
+         IBV  100.000000E-06                                 
+          RS     .5664                                       
+          TT   11.540000E-09                                 
+         CJO    4.000000E-12                                 
+          VJ     .5                                          
+           M     .3333                                       
+
+
+**** 11/09/26 19:34:18 ***** PSpice 25.1.0 (25 March 2026) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Sim2"  [ c:\spb_data\cdssetup\workspace\projects\krupa_pedal_distortion\Krupa_Pedal_Distortion-PSpiceFiles\S
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               J201            X_U1A.JX        X_U1B.JX        
+               NJF             PJF             PJF             
+         VTO    -.6            -1              -1            
+        BETA    1.621000E-03  270.100000E-06  270.100000E-06 
+      LAMBDA    2.236000E-03                                 
+          IS  114.500000E-15   15.000000E-12   15.000000E-12 
+         ISR    1.091000E-12                                 
+       ALPHA  506.800000E-06                                 
+          VK  251.7                                          
+          RD    1                                            
+          RS    1                                            
+         CGD    4.667000E-12                                 
+         CGS    2.992000E-12                                 
+           M     .2271                                       
+          PB     .5                                          
+       VTOTC   -2.500000E-03                                 
+     BETATCE    -.5                                          
+          KF  604.200000E-18                                 
+
+
+**** 11/09/26 19:34:18 ***** PSpice 25.1.0 (25 March 2026) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Sim2"  [ c:\spb_data\cdssetup\workspace\projects\krupa_pedal_distortion\Krupa_Pedal_Distortion-PSpiceFiles\S
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM GAINSET =    0     
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   9V)    9.6000  ( VREF)    4.8000  (INPUT)    0.0000  (N00136)    0.0000     
+
+(N00374)    4.8000 (N00519)    4.8000 (N00796)    4.8000 (N00900)    4.8000     
+
+(N01064)    4.8000 (N01068)    4.8000 (N01784) 177.7E-09 (N02369) 179.2E-09     
+
+(N02985)     .4374 (N03019)    0.0000 (OUTPUT)    0.0000 (N005431)    4.8000    
+
+(N006781)    4.8000                   (N008421)    4.8000                       
+
+(N014131) 177.7E-09                   (N021541) 179.2E-09                       
+
+(N023612) 180.8E-09                   (X_U1A.6) 2.924E-09                       
+
+(X_U1A.7)    4.8000                   (X_U1A.8)    4.8000                       
+
+(X_U1A.9)    0.0000                   (X_U1B.6)-1.555E-09                       
+
+(X_U1B.7)    4.8000                   (X_U1B.8)    4.8000                       
+
+(X_U1B.9)    0.0000                   (X_U1A.10)    4.4014                      
+
+(X_U1A.11)     .3454                  (X_U1A.12)     .3455                      
+
+(X_U1A.53)    7.4000                  (X_U1A.54)    2.2000                      
+
+(X_U1A.90) 34.74E-09                  (X_U1A.91)   25.0000                      
+
+(X_U1A.92)  -25.0000                  (X_U1A.99)    4.8000                      
+
+(X_U1B.10)    4.4014                  (X_U1B.11)     .3454                      
+
+(X_U1B.12)     .3455                  (X_U1B.53)    7.4000                      
+
+(X_U1B.54)    2.2000                  (X_U1B.90) 34.85E-09                      
+
+(X_U1B.91)   25.0000                  (X_U1B.92)  -25.0000                      
+
+(X_U1B.99)    4.8000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+    V_V2        -9.873E-03
+    X_U1A.VB     2.924E-14
+    X_U1A.VC     2.601E-12
+    X_U1A.VE     2.601E-12
+    X_U1A.VLIM   3.474E-11
+    X_U1A.VLP   -2.500E-11
+    X_U1A.VLN   -2.500E-11
+    X_U1B.VB    -1.555E-14
+    X_U1B.VC     2.601E-12
+    X_U1B.VE     2.601E-12
+    X_U1B.VLIM   3.485E-11
+    X_U1B.VLP   -2.500E-11
+    X_U1B.VLN   -2.500E-11
+
+    TOTAL POWER DISSIPATION   9.48E-02  WATTS
+
+
+**** 11/09/26 19:34:18 ***** PSpice 25.1.0 (25 March 2026) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Sim2"  [ c:\spb_data\cdssetup\workspace\projects\krupa_pedal_distortion\Krupa_Pedal_Distortion-PSpiceFiles\S
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM GAINSET =     .2   
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   9V)    9.6000  ( VREF)    4.8000  (INPUT)    0.0000  (N00136)    0.0000     
+
+(N00374)    4.8000 (N00519)    4.8000 (N00796)    4.8000 (N00900)    4.8000     
+
+(N01064)    4.8000 (N01068)    4.8000 (N01784) 177.7E-09 (N02369) 179.2E-09     
+
+(N02985)     .4374 (N03019)    0.0000 (OUTPUT)    0.0000 (N005431)    4.8000    
+
+(N006781)    4.8000                   (N008421)    4.8000                       
+
+(N014131) 177.7E-09                   (N021541) 179.2E-09                       
+
+(N023612) 180.8E-09                   (X_U1A.6) 3.024E-09                       
+
+(X_U1A.7)    4.8000                   (X_U1A.8)    4.8000                       
+
+(X_U1A.9)    0.0000                   (X_U1B.6)-1.555E-09                       
+
+(X_U1B.7)    4.8000                   (X_U1B.8)    4.8000                       
+
+(X_U1B.9)    0.0000                   (X_U1A.10)    4.4014                      
+
+(X_U1A.11)     .3454                  (X_U1A.12)     .3455                      
+
+(X_U1A.53)    7.4000                  (X_U1A.54)    2.2000                      
+
+(X_U1A.90) 34.85E-09                  (X_U1A.91)   25.0000                      
+
+(X_U1A.92)  -25.0000                  (X_U1A.99)    4.8000                      
+
+(X_U1B.10)    4.4014                  (X_U1B.11)     .3454                      
+
+(X_U1B.12)     .3455                  (X_U1B.53)    7.4000                      
+
+(X_U1B.54)    2.2000                  (X_U1B.90) 34.85E-09                      
+
+(X_U1B.91)   25.0000                  (X_U1B.92)  -25.0000                      
+
+(X_U1B.99)    4.8000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+    V_V2        -9.873E-03
+    X_U1A.VB     3.024E-14
+    X_U1A.VC     2.601E-12
+    X_U1A.VE     2.601E-12
+    X_U1A.VLIM   3.485E-11
+    X_U1A.VLP   -2.500E-11
+    X_U1A.VLN   -2.500E-11
+    X_U1B.VB    -1.555E-14
+    X_U1B.VC     2.601E-12
+    X_U1B.VE     2.601E-12
+    X_U1B.VLIM   3.485E-11
+    X_U1B.VLP   -2.500E-11
+    X_U1B.VLN   -2.500E-11
+
+    TOTAL POWER DISSIPATION   9.48E-02  WATTS
+
+
+**** 11/09/26 19:34:18 ***** PSpice 25.1.0 (25 March 2026) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Sim2"  [ c:\spb_data\cdssetup\workspace\projects\krupa_pedal_distortion\Krupa_Pedal_Distortion-PSpiceFiles\S
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM GAINSET =     .4   
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   9V)    9.6000  ( VREF)    4.8000  (INPUT)    0.0000  (N00136)    0.0000     
+
+(N00374)    4.8000 (N00519)    4.8000 (N00796)    4.8000 (N00900)    4.8000     
+
+(N01064)    4.8000 (N01068)    4.8000 (N01784) 177.7E-09 (N02369) 179.2E-09     
+
+(N02985)     .4374 (N03019)    0.0000 (OUTPUT)    0.0000 (N005431)    4.8000    
+
+(N006781)    4.8000                   (N008421)    4.8000                       
+
+(N014131) 177.7E-09                   (N021541) 179.2E-09                       
+
+(N023612) 180.8E-09                   (X_U1A.6) 3.122E-09                       
+
+(X_U1A.7)    4.8000                   (X_U1A.8)    4.8000                       
+
+(X_U1A.9)    0.0000                   (X_U1B.6)-1.555E-09                       
+
+(X_U1B.7)    4.8000                   (X_U1B.8)    4.8000                       
+
+(X_U1B.9)    0.0000                   (X_U1A.10)    4.4014                      
+
+(X_U1A.11)     .3454                  (X_U1A.12)     .3455                      
+
+(X_U1A.53)    7.4000                  (X_U1A.54)    2.2000                      
+
+(X_U1A.90) 34.85E-09                  (X_U1A.91)   25.0000                      
+
+(X_U1A.92)  -25.0000                  (X_U1A.99)    4.8000                      
+
+(X_U1B.10)    4.4014                  (X_U1B.11)     .3454                      
+
+(X_U1B.12)     .3455                  (X_U1B.53)    7.4000                      
+
+(X_U1B.54)    2.2000                  (X_U1B.90) 34.85E-09                      
+
+(X_U1B.91)   25.0000                  (X_U1B.92)  -25.0000                      
+
+(X_U1B.99)    4.8000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+    V_V2        -9.873E-03
+    X_U1A.VB     3.122E-14
+    X_U1A.VC     2.601E-12
+    X_U1A.VE     2.601E-12
+    X_U1A.VLIM   3.485E-11
+    X_U1A.VLP   -2.500E-11
+    X_U1A.VLN   -2.500E-11
+    X_U1B.VB    -1.555E-14
+    X_U1B.VC     2.601E-12
+    X_U1B.VE     2.601E-12
+    X_U1B.VLIM   3.485E-11
+    X_U1B.VLP   -2.500E-11
+    X_U1B.VLN   -2.500E-11
+
+    TOTAL POWER DISSIPATION   9.48E-02  WATTS
+
+
+**** 11/09/26 19:34:18 ***** PSpice 25.1.0 (25 March 2026) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Sim2"  [ c:\spb_data\cdssetup\workspace\projects\krupa_pedal_distortion\Krupa_Pedal_Distortion-PSpiceFiles\S
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM GAINSET =     .6   
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   9V)    9.6000  ( VREF)    4.8000  (INPUT)    0.0000  (N00136)    0.0000     
+
+(N00374)    4.8000 (N00519)    4.8000 (N00796)    4.8000 (N00900)    4.8000     
+
+(N01064)    4.8000 (N01068)    4.8000 (N01784) 177.7E-09 (N02369) 179.2E-09     
+
+(N02985)     .4374 (N03019)    0.0000 (OUTPUT)    0.0000 (N005431)    4.8000    
+
+(N006781)    4.8000                   (N008421)    4.8000                       
+
+(N014131) 177.7E-09                   (N021541) 179.2E-09                       
+
+(N023612) 180.8E-09                   (X_U1A.6) 3.221E-09                       
+
+(X_U1A.7)    4.8000                   (X_U1A.8)    4.8000                       
+
+(X_U1A.9)    0.0000                   (X_U1B.6)-1.555E-09                       
+
+(X_U1B.7)    4.8000                   (X_U1B.8)    4.8000                       
+
+(X_U1B.9)    0.0000                   (X_U1A.10)    4.4014                      
+
+(X_U1A.11)     .3454                  (X_U1A.12)     .3455                      
+
+(X_U1A.53)    7.4000                  (X_U1A.54)    2.2000                      
+
+(X_U1A.90) 34.85E-09                  (X_U1A.91)   25.0000                      
+
+(X_U1A.92)  -25.0000                  (X_U1A.99)    4.8000                      
+
+(X_U1B.10)    4.4014                  (X_U1B.11)     .3454                      
+
+(X_U1B.12)     .3455                  (X_U1B.53)    7.4000                      
+
+(X_U1B.54)    2.2000                  (X_U1B.90) 34.85E-09                      
+
+(X_U1B.91)   25.0000                  (X_U1B.92)  -25.0000                      
+
+(X_U1B.99)    4.8000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+    V_V2        -9.873E-03
+    X_U1A.VB     3.220E-14
+    X_U1A.VC     2.601E-12
+    X_U1A.VE     2.601E-12
+    X_U1A.VLIM   3.485E-11
+    X_U1A.VLP   -2.500E-11
+    X_U1A.VLN   -2.500E-11
+    X_U1B.VB    -1.555E-14
+    X_U1B.VC     2.601E-12
+    X_U1B.VE     2.601E-12
+    X_U1B.VLIM   3.485E-11
+    X_U1B.VLP   -2.500E-11
+    X_U1B.VLN   -2.500E-11
+
+    TOTAL POWER DISSIPATION   9.48E-02  WATTS
+
+
+**** 11/09/26 19:34:18 ***** PSpice 25.1.0 (25 March 2026) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Sim2"  [ c:\spb_data\cdssetup\workspace\projects\krupa_pedal_distortion\Krupa_Pedal_Distortion-PSpiceFiles\S
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM GAINSET =     .8   
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   9V)    9.6000  ( VREF)    4.8000  (INPUT)    0.0000  (N00136)    0.0000     
+
+(N00374)    4.8000 (N00519)    4.8000 (N00796)    4.8000 (N00900)    4.8000     
+
+(N01064)    4.8000 (N01068)    4.8000 (N01784) 177.7E-09 (N02369) 179.2E-09     
+
+(N02985)     .4374 (N03019)    0.0000 (OUTPUT)    0.0000 (N005431)    4.8000    
+
+(N006781)    4.8000                   (N008421)    4.8000                       
+
+(N014131) 177.7E-09                   (N021541) 179.2E-09                       
+
+(N023612) 180.8E-09                   (X_U1A.6) 3.319E-09                       
+
+(X_U1A.7)    4.8000                   (X_U1A.8)    4.8000                       
+
+(X_U1A.9)    0.0000                   (X_U1B.6)-1.555E-09                       
+
+(X_U1B.7)    4.8000                   (X_U1B.8)    4.8000                       
+
+(X_U1B.9)    0.0000                   (X_U1A.10)    4.4014                      
+
+(X_U1A.11)     .3454                  (X_U1A.12)     .3455                      
+
+(X_U1A.53)    7.4000                  (X_U1A.54)    2.2000                      
+
+(X_U1A.90) 34.85E-09                  (X_U1A.91)   25.0000                      
+
+(X_U1A.92)  -25.0000                  (X_U1A.99)    4.8000                      
+
+(X_U1B.10)    4.4014                  (X_U1B.11)     .3454                      
+
+(X_U1B.12)     .3455                  (X_U1B.53)    7.4000                      
+
+(X_U1B.54)    2.2000                  (X_U1B.90) 34.85E-09                      
+
+(X_U1B.91)   25.0000                  (X_U1B.92)  -25.0000                      
+
+(X_U1B.99)    4.8000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+    V_V2        -9.873E-03
+    X_U1A.VB     3.319E-14
+    X_U1A.VC     2.601E-12
+    X_U1A.VE     2.601E-12
+    X_U1A.VLIM   3.485E-11
+    X_U1A.VLP   -2.500E-11
+    X_U1A.VLN   -2.500E-11
+    X_U1B.VB    -1.555E-14
+    X_U1B.VC     2.601E-12
+    X_U1B.VE     2.601E-12
+    X_U1B.VLIM   3.485E-11
+    X_U1B.VLP   -2.500E-11
+    X_U1B.VLN   -2.500E-11
+
+    TOTAL POWER DISSIPATION   9.48E-02  WATTS
+
+
+**** 11/09/26 19:34:18 ***** PSpice 25.1.0 (25 March 2026) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Sim2"  [ c:\spb_data\cdssetup\workspace\projects\krupa_pedal_distortion\Krupa_Pedal_Distortion-PSpiceFiles\S
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM GAINSET =    1     
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   9V)    9.6000  ( VREF)    4.8000  (INPUT)    0.0000  (N00136)    0.0000     
+
+(N00374)    4.8000 (N00519)    4.8000 (N00796)    4.8000 (N00900)    4.8000     
+
+(N01064)    4.8000 (N01068)    4.8000 (N01784) 177.7E-09 (N02369) 179.2E-09     
+
+(N02985)     .4374 (N03019)    0.0000 (OUTPUT)    0.0000 (N005431)    4.8000    
+
+(N006781)    4.8000                   (N008421)    4.8000                       
+
+(N014131) 177.7E-09                   (N021541) 179.2E-09                       
+
+(N023612) 180.8E-09                   (X_U1A.6) 3.427E-09                       
+
+(X_U1A.7)    4.8000                   (X_U1A.8)    4.8000                       
+
+(X_U1A.9)    0.0000                   (X_U1B.6)-1.555E-09                       
+
+(X_U1B.7)    4.8000                   (X_U1B.8)    4.8000                       
+
+(X_U1B.9)    0.0000                   (X_U1A.10)    4.4014                      
+
+(X_U1A.11)     .3454                  (X_U1A.12)     .3455                      
+
+(X_U1A.53)    7.4000                  (X_U1A.54)    2.2000                      
+
+(X_U1A.90) 35.06E-09                  (X_U1A.91)   25.0000                      
+
+(X_U1A.92)  -25.0000                  (X_U1A.99)    4.8000                      
+
+(X_U1B.10)    4.4014                  (X_U1B.11)     .3454                      
+
+(X_U1B.12)     .3455                  (X_U1B.53)    7.4000                      
+
+(X_U1B.54)    2.2000                  (X_U1B.90) 34.85E-09                      
+
+(X_U1B.91)   25.0000                  (X_U1B.92)  -25.0000                      
+
+(X_U1B.99)    4.8000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+    V_V2        -9.873E-03
+    X_U1A.VB     3.427E-14
+    X_U1A.VC     2.601E-12
+    X_U1A.VE     2.601E-12
+    X_U1A.VLIM   3.506E-11
+    X_U1A.VLP   -2.500E-11
+    X_U1A.VLN   -2.500E-11
+    X_U1B.VB    -1.555E-14
+    X_U1B.VC     2.601E-12
+    X_U1B.VE     2.601E-12
+    X_U1B.VLIM   3.485E-11
+    X_U1B.VLP   -2.500E-11
+    X_U1B.VLN   -2.500E-11
+
+    TOTAL POWER DISSIPATION   9.48E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 11/09/26 19:34:18 ***** PSpice 25.1.0 (25 March 2026) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Sim2"  [ c:\spb_data\cdssetup\workspace\projects\krupa_pedal_distortion\Krupa_Pedal_Distortion-PSpiceFiles\S
+
+
+ ****     JOB STATISTICS SUMMARY
+
+ ****     CURRENT STEP                     PARAM GAINSET =    1     
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .06
+

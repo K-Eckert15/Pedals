@@ -1,0 +1,78 @@
+
+**** 11/09/26 19:32:17 ***** PSpice 25.1.0 (25 March 2026) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Sim2"  [ c:\spb_data\cdssetup\workspace\projects\krupa_pedal_distortion\Krupa_Pedal_Distortion-PSpiceFiles\S
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Sim2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\25.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000ns 0 
+.STEP LIN RES POT(GainSet) 0 1 0.2 
+------------------$
+ERROR(ORPSIM-16062): Not a valid parameter for model type
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source KRUPA_PEDAL_DISTORTION
+V_V1         INPUT 0  AC 1
++SIN 0 0.3 440 0 0 0
+R_R1         INPUT N00136  10k TC=0,0 
+C_C1         0 N00136  100p  TC=0,0 
+R_R2         0 N00136  1MEG TC=0,0 
+C_C2         N00374 N00136  22n  TC=0,0 
+R_R3         N00374 VREF  1MEG TC=0,0 
+X_U1A         N00374 N00519 9V 0 N00796 TL072/301/TI
+X_U1B         VREF N01064 9V 0 N01068 TL072/301/TI
+R_R4         N005431 N00519  4.7k TC=0,0 
+C_C3         N005431 0  47n  TC=0,0 
+R_R5         N006781 N00519  2.2k TC=0,0 
+C_C4         N00519 N00796  50p  TC=0,0 
+X_R6         N006781 N00796 N00900 POT PARAMS: SET={GainSet} VALUE=100k
+C_C5         N00900 N008421  680n  TC=0,0 
+R_R7         N01064 N008421  10k TC=0,0 
+C_C6         N01064 N01068  100p  TC=0,0 
+R_R8         N01068 N01064  10k TC=0,0 
+C_C7         N01068 N014131  1u  TC=0,0 
+R_R9         N01784 N014131  1k TC=0,0 
+C_C8         0 N01784  22n  TC=0,0 
+X_R18         N021541 N02369 N01784 POT PARAMS: SET=0.5 VALUE=100k
+C_C9         0 N021541  22n  TC=0,0 
+X_R17         0 N023612 N02369 POT PARAMS: SET=0.5 VALUE=100k
+J_J1         9V N023612 N02985 J201 
+R_R16         N02985 0  10k TC=0,0 
+C_C10         N03019 N02985  1u  TC=0,0 
+R_R11         N03019 0  10k TC=0,0 
+R_R12         N03019 OUTPUT  10k TC=0,0 
+V_V2         9V 0 9.6
+C_C11         0 9V  47u  TC=0,0 
+R_R13         VREF 9V  10k TC=0,0 
+R_R14         0 VREF  10k TC=0,0 
+C_C12         0 VREF  47u  TC=0,0 
+D_D3         N01784 0 D1N4148 
+D_D4         0 N01784 D1N4148 
+R_R19         OUTPUT 0  1MEG TC=0,0 
+.PARAM  gainset=0.5
+
+**** RESUMING Sim2.cir ****
+.END
+
