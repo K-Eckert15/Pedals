@@ -1,11 +1,11 @@
 {
-  "custom_cursors": 2,
+  "custom_cursors": 3,
   "last_sch_text_sim_command": "",
   "tabs": [
     {
       "analysis": "TRAN",
       "commands": [
-        ".tran 3u 15m 3m",
+        ".tran 3u 50m 40m",
         ".kicad adjustpaths",
         ".save all",
         ".probe alli",
@@ -22,13 +22,8 @@
       "showGrid": true,
       "traces": [
         {
-          "color": "rgb(255, 127, 0)",
-          "signal": "V(/V180)",
-          "trace_type": 257
-        },
-        {
-          "color": "rgb(152, 78, 163)",
-          "signal": "V(/Vin)",
+          "color": "rgb(141, 160, 203)",
+          "signal": "V(/Vref)",
           "trace_type": 257
         }
       ]
@@ -36,7 +31,7 @@
     {
       "analysis": "AC",
       "commands": [
-        ".ac dec 1000 10 100k",
+        ".ac dec 10000 10 20k",
         ".kicad adjustpaths",
         ".save all",
         ".probe alli",
@@ -53,23 +48,104 @@
       "showGrid": true,
       "traces": [
         {
-          "color": "rgb(55, 126, 184)",
-          "cursor1": {
-            "position": 333.1397395575757,
-            "x_format": "3~Hz",
-            "y_format": "3~°"
-          },
-          "cursorD": {
-            "x_format": "3~Hz",
-            "y_format": "3~°"
-          },
-          "signal": "V(/V180) (phase)",
-          "trace_type": 517
+          "color": "rgb(247, 129, 191)",
+          "signal": "V(/Vout) (gain)",
+          "trace_type": 521
         },
         {
+          "color": "rgb(255, 127, 0)",
+          "signal": "V(/Vsum) (gain)",
+          "trace_type": 521
+        }
+      ]
+    },
+    {
+      "analysis": "TRAN",
+      "commands": [
+        ".tran 30u 3 1.8",
+        ".kicad adjustpaths",
+        ".save all",
+        ".probe alli",
+        ".probe allp"
+      ],
+      "dottedSecondary": true,
+      "margins": {
+        "bottom": 45,
+        "left": 70,
+        "right": 70,
+        "top": 30
+      },
+      "measurements": [
+        {
+          "expr": "MAX V(/LFO_OUT)",
+          "format": "3~V"
+        },
+        {
+          "expr": "MAX_AT V(/LFO_OUT)",
+          "format": "3~s"
+        }
+      ],
+      "showGrid": true,
+      "traces": [
+        {
           "color": "rgb(228, 26, 28)",
-          "signal": "V(/Vin) (phase)",
-          "trace_type": 517
+          "cursor1": {
+            "position": 2.2808823529411764,
+            "x_format": "3~s",
+            "y_format": "3~V"
+          },
+          "cursor2": {
+            "position": 2.9382352941176473,
+            "x_format": "3~s",
+            "y_format": "3~V"
+          },
+          "cursorD": {
+            "x_format": "3~s",
+            "y_format": "3~V"
+          },
+          "signal": "V(/LFO_OUT)",
+          "trace_type": 257
+        },
+        {
+          "color": "rgb(55, 126, 184)",
+          "signal": "V(/PULSE)",
+          "trace_type": 257
+        },
+        {
+          "color": "rgb(255, 127, 0)",
+          "signal": "V(/V+)",
+          "trace_type": 257
+        },
+        {
+          "color": "rgb(77, 175, 74)",
+          "signal": "V(/Vref)",
+          "trace_type": 257
+        }
+      ]
+    },
+    {
+      "analysis": "FFT",
+      "commands": [
+        "linearize V(/LFO_OUT)\nfft V(/LFO_OUT)",
+        ".kicad adjustpaths",
+        ".save all",
+        ".probe alli",
+        ".probe allp"
+      ],
+      "dottedSecondary": true,
+      "margins": {
+        "bottom": 45,
+        "left": 70,
+        "right": 70,
+        "top": 30
+      },
+      "measurements": [],
+      "showGrid": true,
+      "traces": [
+        {
+          "color": "rgb(228, 26, 28)",
+          "signal": "V(/LFO_OUT)",
+          "trace_type": 513
         }
       ]
     }
