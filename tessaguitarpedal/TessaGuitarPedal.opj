@@ -1,0 +1,102 @@
+(ExpressProject "TessaGuitarPedal"
+  (ProjectVersion "19981106")
+  (SoftwareVersion "25.1 S050 (4459063)  [7/18/2026]-[11/15/26]")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library")
+    ("Allegro Netlist Directory" "allegro")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420")
+    (NoModify)
+    (File ".\tessaguitarpedal.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x"))
+  (Folder "Layout")
+  (Folder "Outputs"
+    (Sort User)
+    (File ".\TESSAGUITARPEDAL_OUTPUT\BOM.SCH.CSV"
+      (Type "Report")
+      (DisplayName ".\TESSAGUITARPEDAL_OUTPUT\BOM.SCH.CSV")))
+  (Folder "Referenced Projects")
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles")
+    (Folder "Model Libraries"
+      (Sort User)
+      (File ".\tessaguitarpedal-pspicefiles\tessaguitarpedal.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\tessaguitarpedal-pspicefiles\tessaguitarpedal.lib")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (Folder "Logs")
+  (MPSSessionName "kyles")
+  (PartMRUSelector
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\CADENCE\ORCADX_25.1\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "C:\CADENCE\ORCADX_25.1\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VSIN
+      (FullPartName "VSIN.Normal")
+      (LibraryName
+         "C:\CADENCE\ORCADX_25.1\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\ORCADX_25.1\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (D1N750
+      (FullPartName "D1N750.Normal")
+      (LibraryName
+         "C:\CADENCE\ORCADX_25.1\TOOLS\CAPTURE\LIBRARY\PSPICE\DIODE.OLB")
+      (DeviceIndex "0"))
+    (Dbreak
+      (FullPartName "Dbreak.Normal")
+      (LibraryName
+         "C:\CADENCE\ORCADX_25.1\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (MAX1044
+      (FullPartName "MAX1044.Normal")
+      (LibraryName "C:\CADENCE\ORCADX_25.1\TOOLS\CAPTURE\LIBRARY\MISC2.OLB")
+      (DeviceIndex "0"))
+    (SW_T_SPDT
+      (FullPartName "SW_T_SPDT.Normal")
+      (LibraryName "C:\CADENCE\ORCADX_25.1\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (TL072
+      (FullPartName "TL072.Normal")
+      (LibraryName "C:\CADENCE\ORCADX_25.1\TOOLS\CAPTURE\LIBRARY\OPAMP.OLB")
+      (DeviceIndex "1"))
+    (POT
+      (FullPartName "POT.Normal")
+      (LibraryName
+         "C:\CADENCE\ORCADX_25.1\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Outputs")
+      (Select "Outputs" ".\TESSAGUITARPEDAL_OUTPUT\BOM.SCH.CSV"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 1025"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1815 24 1043")
+        (Scroll "556 0")
+        (Zoom "128")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\KYLES\APPDATA\ROAMING\SPB_DATA\CDSSETUP\WORKSPACE\PROJECTS\TESSAGUITARPEDAL\TESSAGUITARPEDAL.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1"))))
