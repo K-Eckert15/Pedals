@@ -4,42 +4,102 @@
   (ProjectType "PCB")
   (Folder "Design Resources"
     (Folder "Library")
-    ("Allegro Netlist Directory" "allegro")
+    (Allegro Netlist Directory "allegro")
     (DOCKED "TRUE")
     (DOCKING_POSITION "59420")
     (NoModify)
     (File ".\tessaguitarpedal.dsn"
       (Type "Schematic Design"))
     (BuildFileAddedOrDeleted "x")
-    (CompileFileAddedOrDeleted "x"))
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (PSPICE_DoNot_Show_WarningDlg "TRUE"))
   (Folder "Layout")
   (Folder "Outputs"
     (Sort User)
-    (File ".\TESSAGUITARPEDAL_OUTPUT\BOM.SCH.CSV"
+    (File ".\tessaguitarpedal_output\bom.sch.csv"
       (Type "Report")
-      (DisplayName ".\TESSAGUITARPEDAL_OUTPUT\BOM.SCH.CSV")))
+      (DisplayName ".\TESSAGUITARPEDAL_OUTPUT\BOM.SCH.CSV"))
+    (File ".\tessaguitarpedal-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
   (Folder "Referenced Projects")
   (Folder "PSpice Resources"
-    (Folder "Simulation Profiles")
-    (Folder "Model Libraries"
-      (Sort User)
-      (File ".\tessaguitarpedal-pspicefiles\tessaguitarpedal.lib"
-        (Type "PSpiceLibrary")
-        (DisplayName ".\tessaguitarpedal-pspicefiles\tessaguitarpedal.lib")))
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\tessaguitarpedal-pspicefiles\schematic1\td.sim"
+        (DisplayName "SCHEMATIC1-TD")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\tessaguitarpedal-pspicefiles\schematic1\td_sim.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\tessaguitarpedal-pspicefiles\schematic1\td_sim.sim"
+        (DisplayName "SCHEMATIC1-TD_SIM")
+        (Type "PSpice Profile")))
     (Folder "Stimulus Files"
       (Sort User))
     (Folder "Include Files"
+      (Sort User))
+    (Folder "Model Libraries"
+      (File ".\tessaguitarpedal-pspicefiles\tessaguitarpedal.lib"
+        (DisplayName ".\tessaguitarpedal-pspicefiles\tessaguitarpedal.lib")
+        (Type "PSpiceLibrary"))
       (Sort User)))
   (Folder "Logs")
   (MPSSessionName "kyles")
   (PartMRUSelector
+    (OPAMP
+      (FullPartName "OPAMP.Normal")
+      (LibraryName
+         "C:\CADENCE\ORCADX_25.1\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (LM741
+      (FullPartName "LM741.Normal")
+      (LibraryName "C:\CADENCE\ORCADX_25.1\TOOLS\CAPTURE\LIBRARY\OPAMP.OLB")
+      (DeviceIndex "0"))
+    (LM358
+      (FullPartName "LM358.Normal")
+      (LibraryName "C:\CADENCE\ORCADX_25.1\TOOLS\CAPTURE\LIBRARY\OPAMP.OLB")
+      (DeviceIndex "1"))
+    (LM747/TO
+      (FullPartName "LM747/TO.Normal")
+      (LibraryName "C:\CADENCE\ORCADX_25.1\TOOLS\CAPTURE\LIBRARY\OPAMP.OLB")
+      (DeviceIndex "1"))
+    (0
+      (LibraryName "C:\CADENCE\ORCADX_25.1\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\CADENCE\ORCADX_25.1\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (MAX1044
+      (FullPartName "MAX1044.Normal")
+      (LibraryName "C:\CADENCE\ORCADX_25.1\TOOLS\CAPTURE\LIBRARY\MISC2.OLB")
+      (DeviceIndex "0"))
+    (LTC1044
+      (FullPartName "LTC1044.Normal")
+      (LibraryName "C:\CADENCE\ORCADX_25.1\TOOLS\CAPTURE\LIBRARY\REGULATOR.OLB")
+      (DeviceIndex "0"))
+    (ICL7660
+      (FullPartName "ICL7660.Normal")
+      (LibraryName "C:\CADENCE\ORCADX_25.1\TOOLS\CAPTURE\LIBRARY\REGULATOR.OLB")
+      (DeviceIndex "0"))
+    (LTC1044/TO
+      (FullPartName "LTC1044/TO.Normal")
+      (LibraryName "C:\CADENCE\ORCADX_25.1\TOOLS\CAPTURE\LIBRARY\REGULATOR.OLB")
+      (DeviceIndex "0"))
+    (LTC1044/SO
+      (FullPartName "LTC1044/SO.Normal")
+      (LibraryName "C:\CADENCE\ORCADX_25.1\TOOLS\CAPTURE\LIBRARY\REGULATOR.OLB")
+      (DeviceIndex "0"))
+    (TL072/301/TI
+      (FullPartName "TL072/301/TI.Normal")
+      (LibraryName
+         "C:\CADENCE\ORCADX_25.1\TOOLS\CAPTURE\LIBRARY\PSPICE\TEX_INST.OLB")
+      (DeviceIndex "1"))
     (C
       (FullPartName "C.Normal")
       (LibraryName
          "C:\CADENCE\ORCADX_25.1\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
-      (DeviceIndex "0"))
-    (0
-      (LibraryName "C:\CADENCE\ORCADX_25.1\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
       (DeviceIndex "0"))
     (VSIN
       (FullPartName "VSIN.Normal")
@@ -61,10 +121,6 @@
       (LibraryName
          "C:\CADENCE\ORCADX_25.1\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
       (DeviceIndex "0"))
-    (MAX1044
-      (FullPartName "MAX1044.Normal")
-      (LibraryName "C:\CADENCE\ORCADX_25.1\TOOLS\CAPTURE\LIBRARY\MISC2.OLB")
-      (DeviceIndex "0"))
     (SW_T_SPDT
       (FullPartName "SW_T_SPDT.Normal")
       (LibraryName "C:\CADENCE\ORCADX_25.1\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
@@ -81,22 +137,27 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Path "Outputs")
-      (Select "Outputs" ".\TESSAGUITARPEDAL_OUTPUT\BOM.SCH.CSV"))
+      (Path "Design Resources"
+         "C:\USERS\KYLES\DOCUMENTS\GITHUB\PEDALS\TESSAGUITARPEDAL\tessaguitarpedal.dsn")
+      (Path "Design Resources"
+         "C:\USERS\KYLES\DOCUMENTS\GITHUB\PEDALS\TESSAGUITARPEDAL\tessaguitarpedal.dsn"
+         "SCHEMATIC1")
+      (Path "Outputs"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 1025"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 341 0 1002"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1815 24 1043")
-        (Scroll "556 0")
-        (Zoom "128")
-        (Occurrence "/"))
+        (Placement "44 0 1 -1 -1 5 24 5 1914 24 1043")
+        (Scroll "0 0")
+        (Zoom "128"))
       (Path
-         "C:\USERS\KYLES\APPDATA\ROAMING\SPB_DATA\CDSSETUP\WORKSPACE\PROJECTS\TESSAGUITARPEDAL\TESSAGUITARPEDAL.DSN")
+         "C:\USERS\KYLES\DOCUMENTS\GITHUB\PEDALS\TESSAGUITARPEDAL\TESSAGUITARPEDAL.DSN")
       (Schematic "SCHEMATIC1")
-      (Page "PAGE1"))))
+      (Page "PAGE1")))
+  (LastUsedLibraryBrowseDirectory
+     "C:\Cadence\OrCADX_25.1\tools\capture\library"))

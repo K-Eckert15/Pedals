@@ -1,0 +1,414 @@
+
+**** 11/16/26 03:35:26 ***** PSpice 25.1.0 (18 July 2026) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-TD_Phase_Shifts"  [ C:\Users\kyles\Documents\GitHub\Pedals\Phaser\Pspice\Phaser-PSpiceFiles\SCHEMATIC1\TD_Ph
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "TD_Phase_Shifts.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\kyles\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\25.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 8m 5m 3u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PHASER
+X_U2         N02503 VIN VCC 0 VIN TL061/301/TI
+V_V1         VSIN 0  AC 1
++SIN 0 1 1k 0 0 0
+R_R1         VSIN N02523  10k TC=0,0 
+C_C1         N02523 N02503  10n  TC=0,0 
+V_V2         VCC 0 9
+D_D1         VCC VDC D1N4148_1 
+C_C2         0 VDC  10n  TC=0,0 
+R_R2         VDC N02892  10k TC=0,0 
+R_R3         0 N02892  10k TC=0,0 
+X_U3         N02892 VREF VCC 0 VREF TL061/301/TI
+R_R4         N02503 VREF  470k TC=0,0 
+X_U4         N03572 N03776 VCC 0 V90 TL061/301/TI
+C_C3         VIN N03572  47n  TC=0,0 
+R_R5         N03572 VREF  10k TC=0,0 
+R_R6         N03776 VIN  10k TC=0,0 
+R_R7         V90 N03776  10k TC=0,0 
+R_R8         N04288 VREF  10k TC=0,0 
+R_R9         N04384 V90  10k TC=0,0 
+C_C4         V90 N04288  47n  TC=0,0 
+R_R10         V180 N04384  10k TC=0,0 
+X_U5         N04288 N04384 VCC 0 V180 TL061/301/TI
+X_U6         N04774 N04870 VCC 0 V270 TL061/301/TI
+R_R12         N04870 V180  10k TC=0,0 
+R_R11         N04774 VREF  10k TC=0,0 
+C_C5         V180 N04774  47n  TC=0,0 
+R_R13         V270 N04870  10k TC=0,0 
+X_U7         N05271 N05367 VCC 0 V360 TL061/301/TI
+R_R16         V360 N05367  10k TC=0,0 
+R_R14         N05271 VREF  10k TC=0,0 
+R_R15         N05367 V270  10k TC=0,0 
+C_C6         V270 N05271  47n  TC=0,0 
+C_C7         V360 N05982  47n  TC=0,0 
+R_R17         N05986 N05982  10k TC=0,0 
+X_U8         VREF N05986 VCC 0 VSUM TL061/301/TI
+R_R18         VSUM N05986  10k TC=0,0 
+R_R19         N05986 N06279  10k TC=0,0 
+C_C8         VIN N06279  47n  TC=0,0 
+X_U9         N11513 VBIAS VCC 0 VBIAS TL061/301/TI
+R_R20         VDC N11513  10k TC=0,0 
+X_R21         0 0 N11513 POT PARAMS: SET=.4 VALUE=20k
+R_R22         VREF N14349  10k TC=0,0 
+R_R23         N140061 PULSE  300k TC=0,0 
+X_U10         N14349 LFO_OUT VCC 0 PULSE TL061/301/TI
+X_R24         N140061 LFO_OUT LFO_OUT POT PARAMS: SET={LFO_POT} VALUE=1Meg
+C_C9         0 LFO_OUT  1u  TC=0,0 
+R_R25         N14349 PULSE  10k TC=0,0 
+X_U11         LFO_OUT LFO_BUFFER VCC 0 LFO_BUFFER TL061/301/TI
+X_U12         VBIAS N15563 VCC 0 LFO_BIAS TL061/301/TI
+R_R26         N15563 LFO_BUFFER  10k TC=0,0 
+X_R27         N15563 LFO_BIAS LFO_BIAS POT PARAMS: SET=.5 VALUE=10k
+.PARAM  lfo_pot=.5
+
+**** RESUMING TD_Phase_Shifts.cir ****
+.END
+
+**** 11/16/26 03:35:26 ***** PSpice 25.1.0 (18 July 2026) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-TD_Phase_Shifts"  [ C:\Users\kyles\Documents\GitHub\Pedals\Phaser\Pspice\Phaser-PSpiceFiles\SCHEMATIC1\TD_Ph
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4148_1       X_U2.DX         X_U3.DX         X_U4.DX         
+          IS    2.682000E-09  800.000000E-18  800.000000E-18  800.000000E-18 
+           N    1.836                                                        
+         ISR    1.565000E-09                                                 
+         IKF     .04417                                                      
+          BV  100                                                            
+         IBV  100.000000E-06                                                 
+          RS     .5664                                                       
+          TT   11.540000E-09                                                 
+         CJO    4.000000E-12                                                 
+          VJ     .5                                                          
+           M     .3333                                                       
+
+
+               X_U5.DX         X_U6.DX         X_U7.DX         X_U8.DX         
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+
+
+               X_U9.DX         X_U10.DX        X_U11.DX        X_U12.DX        
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+
+
+**** 11/16/26 03:35:26 ***** PSpice 25.1.0 (18 July 2026) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-TD_Phase_Shifts"  [ C:\Users\kyles\Documents\GitHub\Pedals\Phaser\Pspice\Phaser-PSpiceFiles\SCHEMATIC1\TD_Ph
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2.JX         X_U3.JX         X_U4.JX         X_U5.JX         
+               PJF             PJF             PJF             PJF             
+         VTO   -1              -1              -1              -1            
+        BETA  100.500000E-06  100.500000E-06  100.500000E-06  100.500000E-06 
+          IS   15.000000E-12   15.000000E-12   15.000000E-12   15.000000E-12 
+
+
+               X_U6.JX         X_U7.JX         X_U8.JX         X_U9.JX         
+               PJF             PJF             PJF             PJF             
+         VTO   -1              -1              -1              -1            
+        BETA  100.500000E-06  100.500000E-06  100.500000E-06  100.500000E-06 
+          IS   15.000000E-12   15.000000E-12   15.000000E-12   15.000000E-12 
+
+
+               X_U10.JX        X_U11.JX        X_U12.JX        
+               PJF             PJF             PJF             
+         VTO   -1              -1              -1            
+        BETA  100.500000E-06  100.500000E-06  100.500000E-06 
+          IS   15.000000E-12   15.000000E-12   15.000000E-12 
+
+
+**** 11/16/26 03:35:26 ***** PSpice 25.1.0 (18 July 2026) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-TD_Phase_Shifts"  [ C:\Users\kyles\Documents\GitHub\Pedals\Phaser\Pspice\Phaser-PSpiceFiles\SCHEMATIC1\TD_Ph
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  V90)    4.2007  (  VCC)    9.0000  (  VDC)    8.4011  (  VIN)    4.2007      
+
+( V180)    4.2007  ( V270)    4.2007  ( V360)    4.2007  ( VREF)    4.2006      
+
+( VSIN)    0.0000  ( VSUM)    4.2007  (PULSE)    4.2009  (VBIAS)    3.7340      
+
+(N02503)    4.2006 (N02523)    0.0000 (N02892)    4.2006 (N03572)    4.2006     
+
+(N03776)    4.2007 (N04288)    4.2006 (N04384)    4.2007 (N04774)    4.2006     
+
+(N04870)    4.2007 (N05271)    4.2006 (N05367)    4.2007 (N05982)    4.2007     
+
+(N05986)    4.2007 (N06279)    4.2007 (N11513)    3.7338 (N14349)    4.2007     
+
+(N15563)    3.7342 (X_U2.6) 470.3E-06 (X_U2.7)    4.2007 (X_U2.8)    4.2007     
+
+(X_U2.9)    0.0000 (X_U3.6) 470.3E-06 (X_U3.7)    4.2006 (X_U3.8)    4.2006     
+
+(X_U3.9)    0.0000 (X_U4.6) 470.2E-06 (X_U4.7)    4.2007 (X_U4.8)    4.2007     
+
+(X_U4.9)    0.0000 (X_U5.6) 470.3E-06 (X_U5.7)    4.2007 (X_U5.8)    4.2007     
+
+(X_U5.9)    0.0000 (X_U6.6) 470.2E-06 (X_U6.7)    4.2007 (X_U6.8)    4.2007     
+
+(X_U6.9)    0.0000 (X_U7.6) 470.3E-06 (X_U7.7)    4.2007 (X_U7.8)    4.2007     
+
+(X_U7.9)    0.0000 (X_U8.6) 470.2E-06 (X_U8.7)    4.2007 (X_U8.8)    4.2007     
+
+(X_U8.9)    0.0000 (X_U9.6)     .0012 (X_U9.7)    3.7340 (X_U9.8)    3.7340     
+
+(X_U9.9)    0.0000 (LFO_OUT)    4.2008                   (N140061)    4.2008    
+
+(X_U10.6) 470.0E-06                   (X_U10.7)    4.2009                       
+
+(X_U10.8)    4.2009                   (X_U10.9)    0.0000                       
+
+(X_U11.6) 440.6E-06                   (X_U11.7)    4.2102                       
+
+(X_U11.8)    4.2102                   (X_U11.9)    0.0000                       
+
+(X_U12.6)     .0016                   (X_U12.7)    3.4915                       
+
+(X_U12.8)    3.4915                   (X_U12.9)    0.0000                       
+
+(X_U2.10)    3.7127                   (X_U2.11)     .2796                       
+
+(X_U2.12)     .2796                   (X_U2.53)    6.8000                       
+
+(X_U2.54)    2.2000                   (X_U2.90)-1.579E-06                       
+
+(X_U2.91)   15.0000                   (X_U2.92)  -15.0000                       
+
+(X_U2.99)    4.5000                   (X_U3.10)    3.7127                       
+
+(X_U3.11)     .2796                   (X_U3.12)     .2796                       
+
+(X_U3.53)    6.8000                   (X_U3.54)    2.2000                       
+
+(X_U3.90)-11.13E-06                   (X_U3.91)   15.0000                       
+
+(X_U3.92)  -15.0000                   (X_U3.99)    4.5000                       
+
+(X_U4.10)    3.7127                   (X_U4.11)     .2796                       
+
+(X_U4.12)     .2796                   (X_U4.53)    6.8000                       
+
+(X_U4.54)    2.2000                   (X_U4.90) 3.296E-06                       
+
+(X_U4.91)   15.0000                   (X_U4.92)  -15.0000                       
+
+(X_U4.99)    4.5000                   (X_U5.10)    3.7127                       
+
+(X_U5.11)     .2796                   (X_U5.12)     .2796                       
+
+(X_U5.53)    6.8000                   (X_U5.54)    2.2000                       
+
+(X_U5.90)-3.226E-06                   (X_U5.91)   15.0000                       
+
+(X_U5.92)  -15.0000                   (X_U5.99)    4.5000                       
+
+(X_U6.10)    3.7127                   (X_U6.11)     .2796                       
+
+(X_U6.12)     .2796                   (X_U6.53)    6.8000                       
+
+(X_U6.54)    2.2000                   (X_U6.90) 3.294E-06                       
+
+(X_U6.91)   15.0000                   (X_U6.92)  -15.0000                       
+
+(X_U6.99)    4.5000                   (X_U7.10)    3.7127                       
+
+(X_U7.11)     .2796                   (X_U7.12)     .2796                       
+
+(X_U7.53)    6.8000                   (X_U7.54)    2.2000                       
+
+(X_U7.90)-1.613E-06                   (X_U7.91)   15.0000                       
+
+(X_U7.92)  -15.0000                   (X_U7.99)    4.5000                       
+
+(X_U8.10)    3.7127                   (X_U8.11)     .2796                       
+
+(X_U8.12)     .2796                   (X_U8.53)    6.8000                       
+
+(X_U8.54)    2.2000                   (X_U8.90) 34.40E-09                       
+
+(X_U8.91)   15.0000                   (X_U8.92)  -15.0000                       
+
+(X_U8.99)    4.5000                   (X_U9.10)    3.2466                       
+
+(X_U9.11)     .2802                   (X_U9.12)     .2803                       
+
+(X_U9.53)    6.8000                   (X_U9.54)    2.2000                       
+
+(X_U9.90) 67.34E-09                   (X_U9.91)   15.0000                       
+
+(X_U9.92)  -15.0000                   (X_U9.99)    4.5000                       
+
+(LFO_BIAS)    3.5008                  (X_U10.10)    3.7128                      
+
+(X_U10.11)     .2796                  (X_U10.12)     .2796                      
+
+(X_U10.53)    6.8000                  (X_U10.54)    2.2000                      
+
+(X_U10.90) 11.48E-06                  (X_U10.91)   15.0000                      
+
+(X_U10.92)  -15.0000                  (X_U10.99)    4.5000                      
+
+(X_U11.10)    3.7129                  (X_U11.11)     .2796                      
+
+(X_U11.12)     .2796                  (X_U11.53)    6.8000                      
+
+(X_U11.54)    2.2000                  (X_U11.90)     .0467                      
+
+(X_U11.91)   15.0000                  (X_U11.92)  -15.0000                      
+
+(X_U11.99)    4.5000                  (X_U12.10)    3.2467                      
+
+(X_U12.11)     .2802                  (X_U12.12)     .2804                      
+
+(X_U12.53)    6.8000                  (X_U12.54)    2.2000                      
+
+(X_U12.90)    -.0467                  (X_U12.91)   15.0000                      
+
+(X_U12.92)  -15.0000                  (X_U12.99)    4.5000                      
+
+(LFO_BUFFER)    4.2009                
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+    V_V2        -2.124E-03
+    X_U2.VB      4.703E-09
+    X_U2.VC      3.002E-12
+    X_U2.VE      2.311E-12
+    X_U2.VLIM   -1.579E-09
+    X_U2.VLP    -1.732E-11
+    X_U2.VLN    -1.732E-11
+    X_U3.VB      4.703E-09
+    X_U3.VC      3.003E-12
+    X_U3.VE      2.311E-12
+    X_U3.VLIM   -1.113E-08
+    X_U3.VLP    -1.732E-11
+    X_U3.VLN    -1.732E-11
+    X_U4.VB      4.702E-09
+    X_U4.VC      3.002E-12
+    X_U4.VE      2.311E-12
+    X_U4.VLIM    3.296E-09
+    X_U4.VLP    -1.732E-11
+    X_U4.VLN    -1.732E-11
+    X_U5.VB      4.703E-09
+    X_U5.VC      3.002E-12
+    X_U5.VE      2.311E-12
+    X_U5.VLIM   -3.226E-09
+    X_U5.VLP    -1.732E-11
+    X_U5.VLN    -1.732E-11
+    X_U6.VB      4.702E-09
+    X_U6.VC      3.002E-12
+    X_U6.VE      2.311E-12
+    X_U6.VLIM    3.294E-09
+    X_U6.VLP    -1.732E-11
+    X_U6.VLN    -1.732E-11
+    X_U7.VB      4.703E-09
+    X_U7.VC      3.002E-12
+    X_U7.VE      2.311E-12
+    X_U7.VLIM   -1.613E-09
+    X_U7.VLP    -1.732E-11
+    X_U7.VLN    -1.732E-11
+    X_U8.VB      4.702E-09
+    X_U8.VC      3.002E-12
+    X_U8.VE      2.311E-12
+    X_U8.VLIM    3.440E-11
+    X_U8.VLP    -1.732E-11
+    X_U8.VLN    -1.732E-11
+    X_U9.VB      1.203E-08
+    X_U9.VC      3.541E-12
+    X_U9.VE      1.772E-12
+    X_U9.VLIM    6.734E-11
+    X_U9.VLP    -1.732E-11
+    X_U9.VLN    -1.732E-11
+    X_U10.VB     4.700E-09
+    X_U10.VC     3.002E-12
+    X_U10.VE     2.311E-12
+    X_U10.VLIM   1.148E-08
+    X_U10.VLP   -1.732E-11
+    X_U10.VLN   -1.732E-11
+    X_U11.VB     4.406E-09
+    X_U11.VC     3.002E-12
+    X_U11.VE     2.311E-12
+    X_U11.VLIM   4.667E-05
+    X_U11.VLP   -1.727E-11
+    X_U11.VLN   -1.738E-11
+    X_U12.VB     1.599E-08
+    X_U12.VC     3.811E-12
+    X_U12.VE     1.503E-12
+    X_U12.VLIM  -4.667E-05
+    X_U12.VLP   -1.738E-11
+    X_U12.VLN   -1.727E-11
+
+    TOTAL POWER DISSIPATION   1.91E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 11/16/26 03:35:26 ***** PSpice 25.1.0 (18 July 2026) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-TD_Phase_Shifts"  [ C:\Users\kyles\Documents\GitHub\Pedals\Phaser\Pspice\Phaser-PSpiceFiles\SCHEMATIC1\TD_Ph
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .64
+

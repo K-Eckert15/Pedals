@@ -1,0 +1,88 @@
+
+**** 11/16/26 02:14:28 ***** PSpice 25.1.0 (18 July 2026) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-LFO_TD"  [ C:\Users\kyles\Documents\GitHub\Pedals\Phaser\Pspice\Phaser-PSpiceFiles\SCHEMATIC1\LFO_TD.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "LFO_TD.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\kyles\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\25.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PHASER
+X_U2         N02503 VIN VCC 0 VIN TL061/301/TI
+V_V1         VSIN 0  AC 1
++SIN 0 1 1k 0 0 0
+R_R1         VSIN N02523  10k TC=0,0 
+C_C1         N02523 N02503  10n  TC=0,0 
+V_V2         VCC 0 9
+D_D1         VCC VDC D1N4148_1 
+C_C2         0 VDC  10n  TC=0,0 
+R_R2         VDC N02892  10k TC=0,0 
+R_R3         0 N02892  10k TC=0,0 
+X_U3         N02892 VREF VCC 0 VREF TL061/301/TI
+R_R4         N02503 VREF  470k TC=0,0 
+X_U4         N03572 N03776 VCC 0 V90 TL061/301/TI
+C_C3         VIN N03572  47n  TC=0,0 
+R_R5         N03572 VREF  10k TC=0,0 
+R_R6         N03776 VIN  10k TC=0,0 
+R_R7         V90 N03776  10k TC=0,0 
+R_R8         N04288 VREF  10k TC=0,0 
+R_R9         N04384 V90  10k TC=0,0 
+C_C4         V90 N04288  47n  TC=0,0 
+R_R10         V180 N04384  10k TC=0,0 
+X_U5         N04288 N04384 VCC 0 V180 TL061/301/TI
+X_U6         N04774 N04870 VCC 0 V270 TL061/301/TI
+R_R12         N04870 V180  10k TC=0,0 
+R_R11         N04774 VREF  10k TC=0,0 
+C_C5         V180 N04774  47n  TC=0,0 
+R_R13         V270 N04870  10k TC=0,0 
+X_U7         N05271 N05367 VCC 0 V360 TL061/301/TI
+R_R16         V360 N05367  10k TC=0,0 
+R_R14         N05271 VREF  10k TC=0,0 
+R_R15         N05367 V270  10k TC=0,0 
+C_C6         V270 N05271  47n  TC=0,0 
+C_C7         V360 N05982  47n  TC=0,0 
+R_R17         N05986 N05982  10k TC=0,0 
+X_U8         VREF N05986 VCC 0 VSUM TL061/301/TI
+R_R18         VSUM N05986  10k TC=0,0 
+R_R19         N05986 N06279  10k TC=0,0 
+C_C8         VIN N06279  47n  TC=0,0 
+X_U9         N06946 LFO_OUT VCC 0 VPULSE TL061/301/TI
+R_R20         N06946 VBIAS  10k TC=0,0 
+R_R21         VPULSE N06946  10k TC=0,0 
+C_C9         0 LFO_OUT  1u  TC=0,0 
+R_R22         N07542 VPULSE  200k TC=0,0 
+X_R23         N07542 N07542 LFO_OUT POT PARAMS: SET={LFO_POT} VALUE=1Meg
+C_C10         N09967 LFO_OUT  47n  TC=0,0 
+R_R24         VCC N09967  500k TC=0,0 
+X_R25         0 N10038 N09967 POT PARAMS: SET={LFO_POT} VALUE=1Meg
+C_C11         N10038 0  47n  TC=0,0 
+.PARAM  lfo_pot=.5
+
+**** RESUMING LFO_TD.cir ****
+.END
+
+ERROR(ORPSIM-15141): Less than 2 connections at node VBIAS.
+

@@ -1,0 +1,175 @@
+
+**** 11/15/26 18:45:54 ***** PSpice 25.1.0 (18 July 2026) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC2-TD_Try3"  [ C:\USERS\KYLES\DOCUMENTS\GITHUB\PEDALS\TESSAGUITARPEDAL\TESSAGUITARPEDAL-PSpiceFiles\SCHEMATIC2\
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "TD_Try3.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../tessaguitarpedal-pspicefiles/tessaguitarpedal.lib" 
+* From [PSPICE NETLIST] section of C:\Users\kyles\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\25.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1m 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC2.net" 
+
+
+
+**** INCLUDING SCHEMATIC2.net ****
+* source TESSAGUITARPEDAL
+C_C10         N161380 N15804  2.2n  TC=0,0 
+R_R11         N15778 N15928  422k TC=0,0 
+R_R26         N16098 N160060  560 TC=0,0 
+R_R13         N16394 N161380  22k TC=0,0 
+C_C2         N16482 N15454  68n  TC=0,0 
+X_R27         0 VOUT N160060 POT PARAMS: SET=0.5 VALUE=10k
+C_C21         0 N15238  1n  TC=0,0 
+C_C12         VOUT N15268  820p  TC=0,0 
+R_R6         N15228 N15578  10k TC=0,0 
+X_R8         N15578 4V5 N157600 POT PARAMS: SET=0.5 VALUE=100K
+V_V1         VIN 0  AC 1
++SIN 0 1 1k 0 0 0
+R_R1         VIN N160260  10k TC=0,0 
+R_R17         N15228 N15238  1k TC=0,0 
+C_C4         N15454 N15228  1n  TC=0,0 
+R_R10         N15928 N16486  15k TC=0,0 
+D_D1         0 N15790 Dbreak 
+X_R7         N16710 N16394 N16638 POT PARAMS: SET=0.5 VALUE=1K
+R_R12         N15784 N15790  1k TC=0,0 
+C_C13         N153762 N15430  3.9n  TC=0,0 
+V_V4         9V 0 9V
+R_R3         N16482 N15454  5.1k TC=0,0 
+D_D2         N15790 0 Dbreak 
+C_C11         N161740 VOUT  27n  TC=0,0 
+C_C3         N166720 N16638  390n  TC=0,0 
+R_R5         N16710 N166720  1k TC=0,0 
+R_R16         N15804 VOUT  47k TC=0,0 
+R_R18         N15238 VOUT  1k TC=0,0 
+R_R15         N16394 N161740  12k TC=0,0 
+V_V5         0 -8.6V 8.6V
+X_R22         N153761 N153762 N15276 POT PARAMS: SET=0.5 VALUE=10k
+R_R25         N15286 N15430  100k TC=0,0 
+C_C5         N15228 N15578  68n  TC=0,0 
+V_V2         4V5 0 4V
+V_V3         16.2V 0 16.2
+R_R24         N15286 N15276  4.7k TC=0,0 
+R_R14         N16394 VOUT  27k TC=0,0 
+C_C14         N15286 N16098  4.7u  TC=0,0 
+C_C1         N160260 N16112  1n  TC=0,0 
+R_R4         N16710 N16482  1.5k TC=0,0 
+C_C8         N15778 N15784  1u  TC=0,0 
+C_C9         N15790 N15804  1u  TC=0,0 
+C_C7         N15928 N15778  390p  TC=0,0 
+R_R23         N15268 N153761  1.8k TC=0,0 
+R_R20         VOUT N15268  392k TC=0,0 
+R_R2         4V5 N16112  1Meg TC=0,0 
+C_C6         N16486 N15928  82n  TC=0,0 
+R_R9         N16486 N157600  2k TC=0,0 
+R_R21         N15268 N15430  100k TC=0,0 
+
+**** RESUMING TD_Try3.cir ****
+.END
+
+**** 11/15/26 18:45:54 ***** PSpice 25.1.0 (18 July 2026) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC2-TD_Try3"  [ C:\USERS\KYLES\DOCUMENTS\GITHUB\PEDALS\TESSAGUITARPEDAL\TESSAGUITARPEDAL-PSpiceFiles\SCHEMATIC2\
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Dbreak          
+          IS   10.000000E-15 
+          RS     .1          
+         CJO  100.000000E-15 
+
+
+**** 11/15/26 18:45:54 ***** PSpice 25.1.0 (18 July 2026) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC2-TD_Try3"  [ C:\USERS\KYLES\DOCUMENTS\GITHUB\PEDALS\TESSAGUITARPEDAL\TESSAGUITARPEDAL-PSpiceFiles\SCHEMATIC2\
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   9V)    9.0000  (  4V5)    4.0000  (  VIN)    0.0000  ( VOUT)     .2985      
+
+(-8.6V)   -8.6000  (16.2V)   16.2000  (N15228)     .4179 (N15238)     .3582     
+
+(N15268)     .2985 (N15276)     .2985 (N15286)     .2985 (N15430)     .2985     
+
+(N15454)     .2985 (N15578)    1.0149 (N15778)    4.0000 (N15784) 310.2E-21     
+
+(N15790) 310.2E-21 (N15804)     .2985 (N15928)    4.0000 (N16098)     .2985     
+
+(N16112)    4.0000 (N16394)     .2985 (N16482)     .2985 (N16486)    4.0000     
+
+(N16638)     .2985 (N16710)     .2985 (N153761)     .2985                       
+
+(N153762)     .2985                   (N157600)    4.0000                       
+
+(N160060)     .2985                   (N160260)    0.0000                       
+
+(N161380)     .2985                   (N161740)     .2985                       
+
+(N166720)     .2985                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+    V_V4         0.000E+00
+    V_V5         0.000E+00
+    V_V2        -5.970E-05
+    V_V3         0.000E+00
+
+    TOTAL POWER DISSIPATION   2.39E-04  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 11/15/26 18:45:54 ***** PSpice 25.1.0 (18 July 2026) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC2-TD_Try3"  [ C:\USERS\KYLES\DOCUMENTS\GITHUB\PEDALS\TESSAGUITARPEDAL\TESSAGUITARPEDAL-PSpiceFiles\SCHEMATIC2\
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .03
+
