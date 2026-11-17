@@ -1,10 +1,10 @@
 (ExpressProject "Phaser"
   (ProjectVersion "19981106")
-  (SoftwareVersion "25.1 S050 (4459063)  [7/18/2026]-[11/16/26]")
+  (SoftwareVersion "25.1 S050 (4459063)  [7/18/2026]-[11/17/26]")
   (ProjectType "PCB")
   (Folder "Design Resources"
     (Folder "Library")
-    ("Allegro Netlist Directory" "allegro")
+    (Allegro Netlist Directory "allegro")
     (DOCKED "TRUE")
     (DOCKING_POSITION "59420")
     (NoModify)
@@ -12,10 +12,13 @@
       (Type "Schematic Design"))
     (BuildFileAddedOrDeleted "x")
     (CompileFileAddedOrDeleted "x")
-    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (RootChangedForceReNetlist "x"))
   (Folder "Layout")
   (Folder "Outputs"
     (File ".\phaser-pspicefiles\schematic1\schematic1.net"
+      (Type "Report"))
+    (File ".\phaser-pspicefiles\jfet_tests\jfet_tests.net"
       (Type "Report")))
   (Folder "Referenced Projects")
   (Folder "PSpice Resources"
@@ -40,15 +43,33 @@
          ".\phaser-pspicefiles\schematic1\dc_bias.sim"
         (DisplayName "SCHEMATIC1-DC_BIAS")
         (Type "PSpice Profile"))
-      (ActiveProfile ".\phaser-pspicefiles\schematic1\ac_phase_shifts.sim"))
-    (Folder "Model Libraries"
-      (Sort User))
-    (Folder "Stimulus Files"
-      (Sort User))
-    (Folder "Include Files"
-      (Sort User)))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\phaser-pspicefiles\schematic1\jfet_td.sim"
+        (DisplayName "SCHEMATIC1-JFET_TD")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\phaser-pspicefiles\jfet_tests\j202_iv.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\phaser-pspicefiles\jfet_tests\j202_iv.sim"
+        (DisplayName "JFET_TESTS-J202_IV")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries")
+    (Folder "Stimulus Files")
+    (Folder "Include Files"))
   (Folder "Logs")
   (PartMRUSelector
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\CADENCE\ORCADX_25.1\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "C:\CADENCE\ORCADX_25.1\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (J202
+      (FullPartName "J202.Normal")
+      (LibraryName
+         "C:\CADENCE\ORCADX_25.1\TOOLS\CAPTURE\LIBRARY\PSPICE\JFET.OLB")
+      (DeviceIndex "0"))
     (PARAM
       (FullPartName "PARAM.Normal")
       (LibraryName
@@ -71,15 +92,6 @@
       (DeviceIndex "0"))
     (VCC
       (LibraryName "C:\CADENCE\ORCADX_25.1\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
-      (DeviceIndex "0"))
-    (0
-      (LibraryName
-         "C:\CADENCE\ORCADX_25.1\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
-      (DeviceIndex "0"))
-    (VDC
-      (FullPartName "VDC.Normal")
-      (LibraryName
-         "C:\CADENCE\ORCADX_25.1\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
       (DeviceIndex "0"))
     (C
       (FullPartName "C.Normal")
@@ -117,28 +129,42 @@
     (FileView
       (Path "Design Resources")
       (Path "Design Resources"
-         "C:\Users\kyles\Documents\GitHub\Pedals\Phaser\Pspice\phaser.dsn")
+         "c:\users\kyles\documents\github\pedals\phaser\pspice\phaser.dsn")
       (Path "Design Resources"
-         "C:\Users\kyles\Documents\GitHub\Pedals\Phaser\Pspice\phaser.dsn"
+         "c:\users\kyles\documents\github\pedals\phaser\pspice\phaser.dsn"
          "SCHEMATIC1")
+      (Path "Design Resources"
+         "c:\users\kyles\documents\github\pedals\phaser\pspice\phaser.dsn"
+         "JFET_TESTS")
       (Path "Outputs")
       (Path "PSpice Resources")
       (Path "PSpice Resources" "Simulation Profiles")
-      (Select "PSpice Resources" "Simulation Profiles"
-         ".\phaser-pspicefiles\schematic1\ac_phase_shifts.sim"))
+      (Select "Design Resources"
+         "c:\users\kyles\documents\github\pedals\phaser\pspice\phaser.dsn"
+         "SCHEMATIC1"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 341 0 1002"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 1025"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 5 24 5 1914 24 1043")
-        (Scroll "171 131")
-        (Zoom "103")
+        (Placement "44 0 1 -1 -1 -1 -1 5 2314 24 1043")
+        (Scroll "108 158")
+        (Zoom "268")
         (Occurrence "/"))
       (Path "C:\USERS\KYLES\DOCUMENTS\GITHUB\PEDALS\PHASER\PSPICE\PHASER.DSN")
+      (Schematic "JFET_TESTS")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 2314 24 1043")
+        (Scroll "0 0")
+        (Zoom "100"))
+      (Path "C:\USERS\KYLES\DOCUMENTS\GITHUB\PEDALS\PHASER\PSPICE\PHASER.DSN")
       (Schematic "SCHEMATIC1")
-      (Page "PAGE1"))))
+      (Page "PAGE1")))
+  (MPSSessionName "kyles"))

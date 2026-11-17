@@ -1,7 +1,7 @@
-
-**** 11/16/26 03:29:57 ***** PSpice 25.1.0 (18 July 2026) ***** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-LFO_TD"  [ C:\Users\kyles\Documents\GitHub\Pedals\Phaser\Pspice\Phaser-PSpiceFiles\SCHEMATIC1\LFO_TD.sim ] 
+**** 11/16/26 21:19:25 ***** PSpice 25.1.0 (18 July 2026) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-LFO_TD"  [ c:\users\kyles\documents\github\pedals\phaser\pspice\phaser-pspicefiles\schematic1\lfo_td.sim ] 
 
 
  ****     CIRCUIT DESCRIPTION
@@ -23,7 +23,6 @@
 
 *Analysis directives: 
 .TRAN  0 10 0 
-.STEP PARAM LFO_POT LIST .01 .5 .99 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\SCHEMATIC1.net" 
@@ -83,14 +82,18 @@ X_U11         LFO_OUT LFO_BUFFER VCC 0 LFO_BUFFER TL061/301/TI
 X_U12         VBIAS N15563 VCC 0 LFO_BIAS TL061/301/TI
 R_R26         N15563 LFO_BUFFER  10k TC=0,0 
 X_R27         N15563 LFO_BIAS LFO_BIAS POT PARAMS: SET=.5 VALUE=10k
+J_J1         N03572 LFO_BIAS VREF J202 
+J_J2         N04288 LFO_BIAS VREF J202 
+J_J3         N04774 LFO_BIAS VREF J202 
+J_J4         N05271 LFO_BIAS VREF J202 
 .PARAM  lfo_pot=.5
 
 **** RESUMING LFO_TD.cir ****
 .END
 
-**** 11/16/26 03:29:57 ***** PSpice 25.1.0 (18 July 2026) ***** ID# 0 ********
+**** 11/16/26 21:19:25 ***** PSpice 25.1.0 (18 July 2026) ***** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-LFO_TD"  [ C:\Users\kyles\Documents\GitHub\Pedals\Phaser\Pspice\Phaser-PSpiceFiles\SCHEMATIC1\LFO_TD.sim ] 
+ ** Profile: "SCHEMATIC1-LFO_TD"  [ c:\users\kyles\documents\github\pedals\phaser\pspice\phaser-pspicefiles\schematic1\lfo_td.sim ] 
 
 
  ****     Diode MODEL PARAMETERS
@@ -123,9 +126,9 @@ X_R27         N15563 LFO_BIAS LFO_BIAS POT PARAMS: SET=.5 VALUE=10k
           IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
 
 
-**** 11/16/26 03:29:57 ***** PSpice 25.1.0 (18 July 2026) ***** ID# 0 ********
+**** 11/16/26 21:19:25 ***** PSpice 25.1.0 (18 July 2026) ***** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-LFO_TD"  [ C:\Users\kyles\Documents\GitHub\Pedals\Phaser\Pspice\Phaser-PSpiceFiles\SCHEMATIC1\LFO_TD.sim ] 
+ ** Profile: "SCHEMATIC1-LFO_TD"  [ c:\users\kyles\documents\github\pedals\phaser\pspice\phaser-pspicefiles\schematic1\lfo_td.sim ] 
 
 
  ****     Junction FET MODEL PARAMETERS
@@ -136,276 +139,46 @@ X_R27         N15563 LFO_BIAS LFO_BIAS POT PARAMS: SET=.5 VALUE=10k
 
 
 
-               X_U2.JX         X_U3.JX         X_U4.JX         X_U5.JX         
+               J202            X_U2.JX         X_U3.JX         X_U4.JX         
+               NJF             PJF             PJF             PJF             
+         VTO   -1.612          -1              -1              -1            
+        BETA  985.500000E-06  100.500000E-06  100.500000E-06  100.500000E-06 
+      LAMBDA    7.000000E-03                                                 
+          IS  114.500000E-15   15.000000E-12   15.000000E-12   15.000000E-12 
+         ISR    1.091000E-12                                                 
+       ALPHA  506.800000E-06                                                 
+          VK  251.7                                                          
+          RD    1                                                            
+          RS    1                                                            
+         CGD    4.667000E-12                                                 
+         CGS    2.992000E-12                                                 
+           M     .2271                                                       
+          PB     .5                                                          
+       VTOTC   -2.500000E-03                                                 
+     BETATCE    -.5                                                          
+          KF  360.400000E-18                                                 
+
+
+               X_U5.JX         X_U6.JX         X_U7.JX         X_U8.JX         
                PJF             PJF             PJF             PJF             
          VTO   -1              -1              -1              -1            
         BETA  100.500000E-06  100.500000E-06  100.500000E-06  100.500000E-06 
           IS   15.000000E-12   15.000000E-12   15.000000E-12   15.000000E-12 
 
 
-               X_U6.JX         X_U7.JX         X_U8.JX         X_U9.JX         
+               X_U9.JX         X_U10.JX        X_U11.JX        X_U12.JX        
                PJF             PJF             PJF             PJF             
          VTO   -1              -1              -1              -1            
         BETA  100.500000E-06  100.500000E-06  100.500000E-06  100.500000E-06 
           IS   15.000000E-12   15.000000E-12   15.000000E-12   15.000000E-12 
 
-
-               X_U10.JX        X_U11.JX        X_U12.JX        
-               PJF             PJF             PJF             
-         VTO   -1              -1              -1            
-        BETA  100.500000E-06  100.500000E-06  100.500000E-06 
-          IS   15.000000E-12   15.000000E-12   15.000000E-12 
-
 
-**** 11/16/26 03:29:57 ***** PSpice 25.1.0 (18 July 2026) ***** ID# 0 ********
+**** 11/16/26 21:19:25 ***** PSpice 25.1.0 (18 July 2026) ***** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-LFO_TD"  [ C:\Users\kyles\Documents\GitHub\Pedals\Phaser\Pspice\Phaser-PSpiceFiles\SCHEMATIC1\LFO_TD.sim ] 
+ ** Profile: "SCHEMATIC1-LFO_TD"  [ c:\users\kyles\documents\github\pedals\phaser\pspice\phaser-pspicefiles\schematic1\lfo_td.sim ] 
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
-
- ****     CURRENT STEP                     PARAM LFO_POT =     .01  
-
-
-******************************************************************************
-
-
-
- NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
-
-
-(  V90)    4.2007  (  VCC)    9.0000  (  VDC)    8.4011  (  VIN)    4.2007      
-
-( V180)    4.2007  ( V270)    4.2007  ( V360)    4.2007  ( VREF)    4.2006      
-
-( VSIN)    0.0000  ( VSUM)    4.2007  (PULSE)    4.2009  (VBIAS)    3.7340      
-
-(N02503)    4.2006 (N02523)    0.0000 (N02892)    4.2006 (N03572)    4.2006     
-
-(N03776)    4.2007 (N04288)    4.2006 (N04384)    4.2007 (N04774)    4.2006     
-
-(N04870)    4.2007 (N05271)    4.2006 (N05367)    4.2007 (N05982)    4.2007     
-
-(N05986)    4.2007 (N06279)    4.2007 (N11513)    3.7338 (N14349)    4.2008     
-
-(N15563)    3.7342 (X_U2.6) 470.3E-06 (X_U2.7)    4.2007 (X_U2.8)    4.2007     
-
-(X_U2.9)    0.0000 (X_U3.6) 470.3E-06 (X_U3.7)    4.2006 (X_U3.8)    4.2006     
-
-(X_U3.9)    0.0000 (X_U4.6) 470.2E-06 (X_U4.7)    4.2007 (X_U4.8)    4.2007     
-
-(X_U4.9)    0.0000 (X_U5.6) 470.3E-06 (X_U5.7)    4.2007 (X_U5.8)    4.2007     
-
-(X_U5.9)    0.0000 (X_U6.6) 470.2E-06 (X_U6.7)    4.2007 (X_U6.8)    4.2007     
-
-(X_U6.9)    0.0000 (X_U7.6) 470.3E-06 (X_U7.7)    4.2007 (X_U7.8)    4.2007     
-
-(X_U7.9)    0.0000 (X_U8.6) 470.2E-06 (X_U8.7)    4.2007 (X_U8.8)    4.2007     
-
-(X_U8.9)    0.0000 (X_U9.6)     .0012 (X_U9.7)    3.7340 (X_U9.8)    3.7340     
-
-(X_U9.9)    0.0000 (LFO_OUT)    4.2008                   (N140061)    4.2009    
-
-(X_U10.6) 469.9E-06                   (X_U10.7)    4.2009                       
-
-(X_U10.8)    4.2009                   (X_U10.9)    0.0000                       
-
-(X_U11.6) 440.6E-06                   (X_U11.7)    4.2102                       
-
-(X_U11.8)    4.2102                   (X_U11.9)    0.0000                       
-
-(X_U12.6)     .0016                   (X_U12.7)    3.4914                       
-
-(X_U12.8)    3.4914                   (X_U12.9)    0.0000                       
-
-(X_U2.10)    3.7127                   (X_U2.11)     .2796                       
-
-(X_U2.12)     .2796                   (X_U2.53)    6.8000                       
-
-(X_U2.54)    2.2000                   (X_U2.90)-1.548E-06                       
-
-(X_U2.91)   15.0000                   (X_U2.92)  -15.0000                       
-
-(X_U2.99)    4.5000                   (X_U3.10)    3.7127                       
-
-(X_U3.11)     .2796                   (X_U3.12)     .2796                       
-
-(X_U3.53)    6.8000                   (X_U3.54)    2.2000                       
-
-(X_U3.90)-14.40E-06                   (X_U3.91)   15.0000                       
-
-(X_U3.92)  -15.0000                   (X_U3.99)    4.5000                       
-
-(X_U4.10)    3.7127                   (X_U4.11)     .2796                       
-
-(X_U4.12)     .2796                   (X_U4.53)    6.8000                       
-
-(X_U4.54)    2.2000                   (X_U4.90) 3.232E-06                       
-
-(X_U4.91)   15.0000                   (X_U4.92)  -15.0000                       
-
-(X_U4.99)    4.5000                   (X_U5.10)    3.7127                       
-
-(X_U5.11)     .2796                   (X_U5.12)     .2796                       
-
-(X_U5.53)    6.8000                   (X_U5.54)    2.2000                       
-
-(X_U5.90)-3.164E-06                   (X_U5.91)   15.0000                       
-
-(X_U5.92)  -15.0000                   (X_U5.99)    4.5000                       
-
-(X_U6.10)    3.7127                   (X_U6.11)     .2796                       
-
-(X_U6.12)     .2796                   (X_U6.53)    6.8000                       
-
-(X_U6.54)    2.2000                   (X_U6.90) 3.230E-06                       
-
-(X_U6.91)   15.0000                   (X_U6.92)  -15.0000                       
-
-(X_U6.99)    4.5000                   (X_U7.10)    3.7127                       
-
-(X_U7.11)     .2796                   (X_U7.12)     .2796                       
-
-(X_U7.53)    6.8000                   (X_U7.54)    2.2000                       
-
-(X_U7.90)-1.581E-06                   (X_U7.91)   15.0000                       
-
-(X_U7.92)  -15.0000                   (X_U7.99)    4.5000                       
-
-(X_U8.10)    3.7127                   (X_U8.11)     .2796                       
-
-(X_U8.12)     .2796                   (X_U8.53)    6.8000                       
-
-(X_U8.54)    2.2000                   (X_U8.90) 33.81E-09                       
-
-(X_U8.91)   15.0000                   (X_U8.92)  -15.0000                       
-
-(X_U8.99)    4.5000                   (X_U9.10)    3.2466                       
-
-(X_U9.11)     .2802                   (X_U9.12)     .2803                       
-
-(X_U9.53)    6.8000                   (X_U9.54)    2.2000                       
-
-(X_U9.90) 66.34E-09                   (X_U9.91)   15.0000                       
-
-(X_U9.92)  -15.0000                   (X_U9.99)    4.5000                       
-
-(LFO_BIAS)    3.5008                  (X_U10.10)    3.7129                      
-
-(X_U10.11)     .2796                  (X_U10.12)     .2796                      
-
-(X_U10.53)    6.8000                  (X_U10.54)    2.2000                      
-
-(X_U10.90) 14.74E-06                  (X_U10.91)   15.0000                      
-
-(X_U10.92)  -15.0000                  (X_U10.99)    4.5000                      
-
-(X_U11.10)    3.7129                  (X_U11.11)     .2796                      
-
-(X_U11.12)     .2796                  (X_U11.53)    6.8000                      
-
-(X_U11.54)    2.2000                  (X_U11.90)     .0467                      
-
-(X_U11.91)   15.0000                  (X_U11.92)  -15.0000                      
-
-(X_U11.99)    4.5000                  (X_U12.10)    3.2467                      
-
-(X_U12.11)     .2802                  (X_U12.12)     .2804                      
-
-(X_U12.53)    6.8000                  (X_U12.54)    2.2000                      
-
-(X_U12.90)    -.0467                  (X_U12.91)   15.0000                      
-
-(X_U12.92)  -15.0000                  (X_U12.99)    4.5000                      
-
-(LFO_BUFFER)    4.2009                
-
-
-
-
-    VOLTAGE SOURCE CURRENTS
-    NAME         CURRENT
-
-    V_V1         0.000E+00
-    V_V2        -2.124E-03
-    X_U2.VB      4.703E-09
-    X_U2.VC      2.600E-12
-    X_U2.VE      2.001E-12
-    X_U2.VLIM   -1.548E-09
-    X_U2.VLP    -1.500E-11
-    X_U2.VLN    -1.500E-11
-    X_U3.VB      4.703E-09
-    X_U3.VC      2.600E-12
-    X_U3.VE      2.001E-12
-    X_U3.VLIM   -1.440E-08
-    X_U3.VLP    -1.500E-11
-    X_U3.VLN    -1.500E-11
-    X_U4.VB      4.702E-09
-    X_U4.VC      2.600E-12
-    X_U4.VE      2.002E-12
-    X_U4.VLIM    3.232E-09
-    X_U4.VLP    -1.500E-11
-    X_U4.VLN    -1.500E-11
-    X_U5.VB      4.703E-09
-    X_U5.VC      2.600E-12
-    X_U5.VE      2.001E-12
-    X_U5.VLIM   -3.164E-09
-    X_U5.VLP    -1.500E-11
-    X_U5.VLN    -1.500E-11
-    X_U6.VB      4.702E-09
-    X_U6.VC      2.600E-12
-    X_U6.VE      2.002E-12
-    X_U6.VLIM    3.230E-09
-    X_U6.VLP    -1.500E-11
-    X_U6.VLN    -1.500E-11
-    X_U7.VB      4.703E-09
-    X_U7.VC      2.600E-12
-    X_U7.VE      2.001E-12
-    X_U7.VLIM   -1.581E-09
-    X_U7.VLP    -1.500E-11
-    X_U7.VLN    -1.500E-11
-    X_U8.VB      4.702E-09
-    X_U8.VC      2.600E-12
-    X_U8.VE      2.001E-12
-    X_U8.VLIM    3.381E-11
-    X_U8.VLP    -1.500E-11
-    X_U8.VLN    -1.500E-11
-    X_U9.VB      1.203E-08
-    X_U9.VC      3.067E-12
-    X_U9.VE      1.535E-12
-    X_U9.VLIM    6.634E-11
-    X_U9.VLP    -1.500E-11
-    X_U9.VLN    -1.500E-11
-    X_U10.VB     4.699E-09
-    X_U10.VC     2.600E-12
-    X_U10.VE     2.002E-12
-    X_U10.VLIM   1.474E-08
-    X_U10.VLP   -1.500E-11
-    X_U10.VLN   -1.500E-11
-    X_U11.VB     4.406E-09
-    X_U11.VC     2.600E-12
-    X_U11.VE     2.002E-12
-    X_U11.VLIM   4.667E-05
-    X_U11.VLP   -1.495E-11
-    X_U11.VLN   -1.505E-11
-    X_U12.VB     1.599E-08
-    X_U12.VC     3.300E-12
-    X_U12.VE     1.302E-12
-    X_U12.VLIM  -4.667E-05
-    X_U12.VLP   -1.505E-11
-    X_U12.VLN   -1.495E-11
-
-    TOTAL POWER DISSIPATION   1.91E-02  WATTS
-
-
-**** 11/16/26 03:29:57 ***** PSpice 25.1.0 (18 July 2026) ***** ID# 0 ********
-
- ** Profile: "SCHEMATIC1-LFO_TD"  [ C:\Users\kyles\Documents\GitHub\Pedals\Phaser\Pspice\Phaser-PSpiceFiles\SCHEMATIC1\LFO_TD.sim ] 
-
-
- ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
-
- ****     CURRENT STEP                     PARAM LFO_POT =     .5   
 
 
 ******************************************************************************
@@ -463,7 +236,7 @@ X_R27         N15563 LFO_BIAS LFO_BIAS POT PARAMS: SET=.5 VALUE=10k
 
 (X_U2.12)     .2796                   (X_U2.53)    6.8000                       
 
-(X_U2.54)    2.2000                   (X_U2.90)-1.579E-06                       
+(X_U2.54)    2.2000                   (X_U2.90)-1.612E-06                       
 
 (X_U2.91)   15.0000                   (X_U2.92)  -15.0000                       
 
@@ -473,7 +246,7 @@ X_R27         N15563 LFO_BIAS LFO_BIAS POT PARAMS: SET=.5 VALUE=10k
 
 (X_U3.53)    6.8000                   (X_U3.54)    2.2000                       
 
-(X_U3.90)-11.13E-06                   (X_U3.91)   15.0000                       
+(X_U3.90)-11.12E-06                   (X_U3.91)   15.0000                       
 
 (X_U3.92)  -15.0000                   (X_U3.99)    4.5000                       
 
@@ -481,7 +254,7 @@ X_R27         N15563 LFO_BIAS LFO_BIAS POT PARAMS: SET=.5 VALUE=10k
 
 (X_U4.12)     .2796                   (X_U4.53)    6.8000                       
 
-(X_U4.54)    2.2000                   (X_U4.90) 3.296E-06                       
+(X_U4.54)    2.2000                   (X_U4.90) 3.363E-06                       
 
 (X_U4.91)   15.0000                   (X_U4.92)  -15.0000                       
 
@@ -491,7 +264,7 @@ X_R27         N15563 LFO_BIAS LFO_BIAS POT PARAMS: SET=.5 VALUE=10k
 
 (X_U5.53)    6.8000                   (X_U5.54)    2.2000                       
 
-(X_U5.90)-3.226E-06                   (X_U5.91)   15.0000                       
+(X_U5.90)-3.293E-06                   (X_U5.91)   15.0000                       
 
 (X_U5.92)  -15.0000                   (X_U5.99)    4.5000                       
 
@@ -499,7 +272,7 @@ X_R27         N15563 LFO_BIAS LFO_BIAS POT PARAMS: SET=.5 VALUE=10k
 
 (X_U6.12)     .2796                   (X_U6.53)    6.8000                       
 
-(X_U6.54)    2.2000                   (X_U6.90) 3.294E-06                       
+(X_U6.54)    2.2000                   (X_U6.90) 3.360E-06                       
 
 (X_U6.91)   15.0000                   (X_U6.92)  -15.0000                       
 
@@ -509,7 +282,7 @@ X_R27         N15563 LFO_BIAS LFO_BIAS POT PARAMS: SET=.5 VALUE=10k
 
 (X_U7.53)    6.8000                   (X_U7.54)    2.2000                       
 
-(X_U7.90)-1.613E-06                   (X_U7.91)   15.0000                       
+(X_U7.90)-1.646E-06                   (X_U7.91)   15.0000                       
 
 (X_U7.92)  -15.0000                   (X_U7.99)    4.5000                       
 
@@ -527,7 +300,7 @@ X_R27         N15563 LFO_BIAS LFO_BIAS POT PARAMS: SET=.5 VALUE=10k
 
 (X_U9.53)    6.8000                   (X_U9.54)    2.2000                       
 
-(X_U9.90) 67.34E-09                   (X_U9.91)   15.0000                       
+(X_U9.90) 67.35E-09                   (X_U9.91)   15.0000                       
 
 (X_U9.92)  -15.0000                   (X_U9.99)    4.5000                       
 
@@ -572,37 +345,37 @@ X_R27         N15563 LFO_BIAS LFO_BIAS POT PARAMS: SET=.5 VALUE=10k
     X_U2.VB      4.703E-09
     X_U2.VC      3.002E-12
     X_U2.VE      2.311E-12
-    X_U2.VLIM   -1.579E-09
+    X_U2.VLIM   -1.612E-09
     X_U2.VLP    -1.732E-11
     X_U2.VLN    -1.732E-11
     X_U3.VB      4.703E-09
     X_U3.VC      3.003E-12
     X_U3.VE      2.311E-12
-    X_U3.VLIM   -1.113E-08
+    X_U3.VLIM   -1.112E-08
     X_U3.VLP    -1.732E-11
     X_U3.VLN    -1.732E-11
     X_U4.VB      4.702E-09
     X_U4.VC      3.002E-12
     X_U4.VE      2.311E-12
-    X_U4.VLIM    3.296E-09
+    X_U4.VLIM    3.363E-09
     X_U4.VLP    -1.732E-11
     X_U4.VLN    -1.732E-11
     X_U5.VB      4.703E-09
     X_U5.VC      3.002E-12
     X_U5.VE      2.311E-12
-    X_U5.VLIM   -3.226E-09
+    X_U5.VLIM   -3.293E-09
     X_U5.VLP    -1.732E-11
     X_U5.VLN    -1.732E-11
     X_U6.VB      4.702E-09
     X_U6.VC      3.002E-12
     X_U6.VE      2.311E-12
-    X_U6.VLIM    3.294E-09
+    X_U6.VLIM    3.360E-09
     X_U6.VLP    -1.732E-11
     X_U6.VLN    -1.732E-11
     X_U7.VB      4.703E-09
     X_U7.VC      3.002E-12
     X_U7.VE      2.311E-12
-    X_U7.VLIM   -1.613E-09
+    X_U7.VLIM   -1.646E-09
     X_U7.VLP    -1.732E-11
     X_U7.VLN    -1.732E-11
     X_U8.VB      4.702E-09
@@ -614,7 +387,7 @@ X_R27         N15563 LFO_BIAS LFO_BIAS POT PARAMS: SET=.5 VALUE=10k
     X_U9.VB      1.203E-08
     X_U9.VC      3.541E-12
     X_U9.VE      1.772E-12
-    X_U9.VLIM    6.734E-11
+    X_U9.VLIM    6.735E-11
     X_U9.VLP    -1.732E-11
     X_U9.VLN    -1.732E-11
     X_U10.VB     4.700E-09
@@ -638,264 +411,21 @@ X_R27         N15563 LFO_BIAS LFO_BIAS POT PARAMS: SET=.5 VALUE=10k
 
     TOTAL POWER DISSIPATION   1.91E-02  WATTS
 
-
-**** 11/16/26 03:29:57 ***** PSpice 25.1.0 (18 July 2026) ***** ID# 0 ********
-
- ** Profile: "SCHEMATIC1-LFO_TD"  [ C:\Users\kyles\Documents\GitHub\Pedals\Phaser\Pspice\Phaser-PSpiceFiles\SCHEMATIC1\LFO_TD.sim ] 
-
-
- ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
-
- ****     CURRENT STEP                     PARAM LFO_POT =     .99  
-
-
-******************************************************************************
-
-
-
- NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
-
-
-(  V90)    4.2007  (  VCC)    9.0000  (  VDC)    8.4011  (  VIN)    4.2007      
-
-( V180)    4.2007  ( V270)    4.2007  ( V360)    4.2007  ( VREF)    4.2006      
-
-( VSIN)    0.0000  ( VSUM)    4.2007  (PULSE)    4.2008  (VBIAS)    3.7340      
-
-(N02503)    4.2006 (N02523)    0.0000 (N02892)    4.2006 (N03572)    4.2006     
-
-(N03776)    4.2007 (N04288)    4.2006 (N04384)    4.2007 (N04774)    4.2006     
-
-(N04870)    4.2007 (N05271)    4.2006 (N05367)    4.2007 (N05982)    4.2007     
-
-(N05986)    4.2007 (N06279)    4.2007 (N11513)    3.7338 (N14349)    4.2007     
-
-(N15563)    3.7342 (X_U2.6) 470.3E-06 (X_U2.7)    4.2007 (X_U2.8)    4.2007     
-
-(X_U2.9)    0.0000 (X_U3.6) 470.3E-06 (X_U3.7)    4.2006 (X_U3.8)    4.2006     
-
-(X_U3.9)    0.0000 (X_U4.6) 470.2E-06 (X_U4.7)    4.2007 (X_U4.8)    4.2007     
-
-(X_U4.9)    0.0000 (X_U5.6) 470.3E-06 (X_U5.7)    4.2007 (X_U5.8)    4.2007     
-
-(X_U5.9)    0.0000 (X_U6.6) 470.2E-06 (X_U6.7)    4.2007 (X_U6.8)    4.2007     
-
-(X_U6.9)    0.0000 (X_U7.6) 470.3E-06 (X_U7.7)    4.2007 (X_U7.8)    4.2007     
-
-(X_U7.9)    0.0000 (X_U8.6) 470.2E-06 (X_U8.7)    4.2007 (X_U8.8)    4.2007     
-
-(X_U8.9)    0.0000 (X_U9.6)     .0012 (X_U9.7)    3.7340 (X_U9.8)    3.7340     
-
-(X_U9.9)    0.0000 (LFO_OUT)    4.2008                   (N140061)    4.2008    
-
-(X_U10.6) 470.1E-06                   (X_U10.7)    4.2008                       
-
-(X_U10.8)    4.2008                   (X_U10.9)    0.0000                       
-
-(X_U11.6) 440.7E-06                   (X_U11.7)    4.2102                       
-
-(X_U11.8)    4.2102                   (X_U11.9)    0.0000                       
-
-(X_U12.6)     .0016                   (X_U12.7)    3.4915                       
-
-(X_U12.8)    3.4915                   (X_U12.9)    0.0000                       
-
-(X_U2.10)    3.7127                   (X_U2.11)     .2796                       
-
-(X_U2.12)     .2796                   (X_U2.53)    6.8000                       
-
-(X_U2.54)    2.2000                   (X_U2.90)-1.548E-06                       
-
-(X_U2.91)   15.0000                   (X_U2.92)  -15.0000                       
-
-(X_U2.99)    4.5000                   (X_U3.10)    3.7127                       
-
-(X_U3.11)     .2796                   (X_U3.12)     .2796                       
-
-(X_U3.53)    6.8000                   (X_U3.54)    2.2000                       
-
-(X_U3.90)-7.654E-06                   (X_U3.91)   15.0000                       
-
-(X_U3.92)  -15.0000                   (X_U3.99)    4.5000                       
-
-(X_U4.10)    3.7127                   (X_U4.11)     .2796                       
-
-(X_U4.12)     .2796                   (X_U4.53)    6.8000                       
-
-(X_U4.54)    2.2000                   (X_U4.90) 3.232E-06                       
-
-(X_U4.91)   15.0000                   (X_U4.92)  -15.0000                       
-
-(X_U4.99)    4.5000                   (X_U5.10)    3.7127                       
-
-(X_U5.11)     .2796                   (X_U5.12)     .2796                       
-
-(X_U5.53)    6.8000                   (X_U5.54)    2.2000                       
-
-(X_U5.90)-3.164E-06                   (X_U5.91)   15.0000                       
-
-(X_U5.92)  -15.0000                   (X_U5.99)    4.5000                       
-
-(X_U6.10)    3.7127                   (X_U6.11)     .2796                       
-
-(X_U6.12)     .2796                   (X_U6.53)    6.8000                       
-
-(X_U6.54)    2.2000                   (X_U6.90) 3.230E-06                       
-
-(X_U6.91)   15.0000                   (X_U6.92)  -15.0000                       
-
-(X_U6.99)    4.5000                   (X_U7.10)    3.7127                       
-
-(X_U7.11)     .2796                   (X_U7.12)     .2796                       
-
-(X_U7.53)    6.8000                   (X_U7.54)    2.2000                       
-
-(X_U7.90)-1.581E-06                   (X_U7.91)   15.0000                       
-
-(X_U7.92)  -15.0000                   (X_U7.99)    4.5000                       
-
-(X_U8.10)    3.7127                   (X_U8.11)     .2796                       
-
-(X_U8.12)     .2796                   (X_U8.53)    6.8000                       
-
-(X_U8.54)    2.2000                   (X_U8.90) 33.81E-09                       
-
-(X_U8.91)   15.0000                   (X_U8.92)  -15.0000                       
-
-(X_U8.99)    4.5000                   (X_U9.10)    3.2466                       
-
-(X_U9.11)     .2802                   (X_U9.12)     .2803                       
-
-(X_U9.53)    6.8000                   (X_U9.54)    2.2000                       
-
-(X_U9.90) 66.34E-09                   (X_U9.91)   15.0000                       
-
-(X_U9.92)  -15.0000                   (X_U9.99)    4.5000                       
-
-(LFO_BIAS)    3.5008                  (X_U10.10)    3.7128                      
-
-(X_U10.11)     .2796                  (X_U10.12)     .2796                      
-
-(X_U10.53)    6.8000                  (X_U10.54)    2.2000                      
-
-(X_U10.90) 7.997E-06                  (X_U10.91)   15.0000                      
-
-(X_U10.92)  -15.0000                  (X_U10.99)    4.5000                      
-
-(X_U11.10)    3.7129                  (X_U11.11)     .2796                      
-
-(X_U11.12)     .2796                  (X_U11.53)    6.8000                      
-
-(X_U11.54)    2.2000                  (X_U11.90)     .0467                      
-
-(X_U11.91)   15.0000                  (X_U11.92)  -15.0000                      
-
-(X_U11.99)    4.5000                  (X_U12.10)    3.2467                      
-
-(X_U12.11)     .2802                  (X_U12.12)     .2804                      
-
-(X_U12.53)    6.8000                  (X_U12.54)    2.2000                      
-
-(X_U12.90)    -.0467                  (X_U12.91)   15.0000                      
-
-(X_U12.92)  -15.0000                  (X_U12.99)    4.5000                      
-
-(LFO_BUFFER)    4.2008                
-
-
-
-
-    VOLTAGE SOURCE CURRENTS
-    NAME         CURRENT
-
-    V_V1         0.000E+00
-    V_V2        -2.124E-03
-    X_U2.VB      4.703E-09
-    X_U2.VC      2.600E-12
-    X_U2.VE      2.001E-12
-    X_U2.VLIM   -1.548E-09
-    X_U2.VLP    -1.500E-11
-    X_U2.VLN    -1.500E-11
-    X_U3.VB      4.703E-09
-    X_U3.VC      2.600E-12
-    X_U3.VE      2.001E-12
-    X_U3.VLIM   -7.654E-09
-    X_U3.VLP    -1.500E-11
-    X_U3.VLN    -1.500E-11
-    X_U4.VB      4.702E-09
-    X_U4.VC      2.600E-12
-    X_U4.VE      2.002E-12
-    X_U4.VLIM    3.232E-09
-    X_U4.VLP    -1.500E-11
-    X_U4.VLN    -1.500E-11
-    X_U5.VB      4.703E-09
-    X_U5.VC      2.600E-12
-    X_U5.VE      2.001E-12
-    X_U5.VLIM   -3.164E-09
-    X_U5.VLP    -1.500E-11
-    X_U5.VLN    -1.500E-11
-    X_U6.VB      4.702E-09
-    X_U6.VC      2.600E-12
-    X_U6.VE      2.002E-12
-    X_U6.VLIM    3.230E-09
-    X_U6.VLP    -1.500E-11
-    X_U6.VLN    -1.500E-11
-    X_U7.VB      4.703E-09
-    X_U7.VC      2.600E-12
-    X_U7.VE      2.001E-12
-    X_U7.VLIM   -1.581E-09
-    X_U7.VLP    -1.500E-11
-    X_U7.VLN    -1.500E-11
-    X_U8.VB      4.702E-09
-    X_U8.VC      2.600E-12
-    X_U8.VE      2.001E-12
-    X_U8.VLIM    3.381E-11
-    X_U8.VLP    -1.500E-11
-    X_U8.VLN    -1.500E-11
-    X_U9.VB      1.203E-08
-    X_U9.VC      3.067E-12
-    X_U9.VE      1.535E-12
-    X_U9.VLIM    6.634E-11
-    X_U9.VLP    -1.500E-11
-    X_U9.VLN    -1.500E-11
-    X_U10.VB     4.701E-09
-    X_U10.VC     2.600E-12
-    X_U10.VE     2.002E-12
-    X_U10.VLIM   7.997E-09
-    X_U10.VLP   -1.500E-11
-    X_U10.VLN   -1.500E-11
-    X_U11.VB     4.407E-09
-    X_U11.VC     2.600E-12
-    X_U11.VE     2.002E-12
-    X_U11.VLIM   4.667E-05
-    X_U11.VLP   -1.495E-11
-    X_U11.VLN   -1.505E-11
-    X_U12.VB     1.599E-08
-    X_U12.VC     3.300E-12
-    X_U12.VE     1.302E-12
-    X_U12.VLIM  -4.667E-05
-    X_U12.VLP   -1.505E-11
-    X_U12.VLN   -1.495E-11
-
-    TOTAL POWER DISSIPATION   1.91E-02  WATTS
-
 
 
           JOB CONCLUDED
 
-**** 11/16/26 03:29:57 ***** PSpice 25.1.0 (18 July 2026) ***** ID# 0 ********
+**** 11/16/26 21:19:25 ***** PSpice 25.1.0 (18 July 2026) ***** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-LFO_TD"  [ C:\Users\kyles\Documents\GitHub\Pedals\Phaser\Pspice\Phaser-PSpiceFiles\SCHEMATIC1\LFO_TD.sim ] 
+ ** Profile: "SCHEMATIC1-LFO_TD"  [ c:\users\kyles\documents\github\pedals\phaser\pspice\phaser-pspicefiles\schematic1\lfo_td.sim ] 
 
 
  ****     JOB STATISTICS SUMMARY
-
- ****     CURRENT STEP                     PARAM LFO_POT =     .99  
 
 
 ******************************************************************************
 
 
 
-  Total job time (using Solver 1)   =       60.31
+  Total job time (using Solver 1)   =       34.41
 

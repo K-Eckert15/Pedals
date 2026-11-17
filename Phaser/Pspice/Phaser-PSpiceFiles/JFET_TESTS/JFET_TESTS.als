@@ -1,0 +1,5 @@
+.ALIASES
+J_J1            J1(d=N00086 g=N00133 s=0 ) CN @PHASER.JFET_TESTS(sch_1):INS28@JFET.J202.Normal(chips)
+V_V1            V1(+=N00086 -=0 ) CN @PHASER.JFET_TESTS(sch_1):INS70@SOURCE.VDC.Normal(chips)
+V_V2            V2(+=N00133 -=0 ) CN @PHASER.JFET_TESTS(sch_1):INS109@SOURCE.VDC.Normal(chips)
+.ENDALIASES

@@ -1,0 +1,91 @@
+
+**** 11/16/26 21:39:54 ***** PSpice 25.1.0 (18 July 2026) ***** ID# 0 ********
+
+ ** Profile: "JFET_TESTS-J202_IV"  [ c:\users\kyles\documents\github\pedals\phaser\pspice\phaser-PSpiceFiles\JFET_TESTS\J202_IV.sim ]
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "J202_IV.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\kyles\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\25.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_V1 0 3 .01 
++ LIN V_V2 -3 .5 .5 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\JFET_TESTS.net" 
+
+
+
+**** INCLUDING JFET_TESTS.net ****
+* source PHASER
+J_J1         N00086 N00133 0 J202 
+V_V1         N00086 0 0Vdc
+V_V2         N00133 0 0Vdc
+
+**** RESUMING J202_IV.cir ****
+.END
+
+**** 11/16/26 21:39:54 ***** PSpice 25.1.0 (18 July 2026) ***** ID# 0 ********
+
+ ** Profile: "JFET_TESTS-J202_IV"  [ c:\users\kyles\documents\github\pedals\phaser\pspice\phaser-PSpiceFiles\JFET_TESTS\J202_IV.sim ]
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               J202            
+               NJF             
+         VTO   -1.612        
+        BETA  985.500000E-06 
+      LAMBDA    7.000000E-03 
+          IS  114.500000E-15 
+         ISR    1.091000E-12 
+       ALPHA  506.800000E-06 
+          VK  251.7          
+          RD    1            
+          RS    1            
+         CGD    4.667000E-12 
+         CGS    2.992000E-12 
+           M     .2271       
+          PB     .5          
+       VTOTC   -2.500000E-03 
+     BETATCE    -.5          
+          KF  360.400000E-18 
+
+
+
+          JOB CONCLUDED
+
+**** 11/16/26 21:39:54 ***** PSpice 25.1.0 (18 July 2026) ***** ID# 0 ********
+
+ ** Profile: "JFET_TESTS-J202_IV"  [ c:\users\kyles\documents\github\pedals\phaser\pspice\phaser-PSpiceFiles\JFET_TESTS\J202_IV.sim ]
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .03
+

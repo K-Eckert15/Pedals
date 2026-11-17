@@ -1,4 +1,4 @@
-** Profile: "SCHEMATIC1-LFO_TD"  [ C:\Users\kyles\Documents\GitHub\Pedals\Phaser\Pspice\Phaser-PSpiceFiles\SCHEMATIC1\LFO_TD.sim ] 
+** Profile: "SCHEMATIC1-LFO_TD"  [ c:\users\kyles\documents\github\pedals\phaser\pspice\phaser-pspicefiles\schematic1\lfo_td.sim ] 
 
 ** Creating circuit file "LFO_TD.cir" 
 ** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
@@ -11,7 +11,6 @@
 
 *Analysis directives: 
 .TRAN  0 10 0 
-.STEP PARAM LFO_POT LIST .01 .5 .99 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\SCHEMATIC1.net" 

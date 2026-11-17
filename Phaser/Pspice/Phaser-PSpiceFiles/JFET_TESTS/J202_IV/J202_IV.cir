@@ -1,0 +1,20 @@
+** Profile: "JFET_TESTS-J202_IV"  [ c:\users\kyles\documents\github\pedals\phaser\pspice\phaser-PSpiceFiles\JFET_TESTS\J202_IV.sim ] 
+
+** Creating circuit file "J202_IV.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\kyles\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\25.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_V1 0 3 .01 
++ LIN V_V2 -3 .5 .5 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\JFET_TESTS.net" 
+
+
+.END

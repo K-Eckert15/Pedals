@@ -3,7 +3,7 @@
 @Settings: 0 1
 @General:
 ProfileName= "TD_Phase_Shifts" 
-ProfileFile= "TD_Phase_Shifts.sim" 
+ProfileFile= "td_phase_shifts.sim" 
 Connectivity= "SCHEMATIC1.net" 
 NetlistFile= "TD_Phase_Shifts.cir" 
 DataFile= "TD_Phase_Shifts.dat" 
@@ -14,7 +14,7 @@ Notes=
 @End General
 @Analysis: 0 1
 +0 0 0 0 
-+0 "8m" 
++0 "10m" 
 +1 "" 
 +2 "5m" 
 +3 "3u" 

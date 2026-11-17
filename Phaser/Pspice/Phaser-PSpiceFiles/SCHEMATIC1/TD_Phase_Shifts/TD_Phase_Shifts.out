@@ -1,7 +1,7 @@
 
-**** 11/16/26 03:35:26 ***** PSpice 25.1.0 (18 July 2026) ***** ID# 0 ********
+**** 11/16/26 21:18:53 ***** PSpice 25.1.0 (18 July 2026) ***** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-TD_Phase_Shifts"  [ C:\Users\kyles\Documents\GitHub\Pedals\Phaser\Pspice\Phaser-PSpiceFiles\SCHEMATIC1\TD_Ph
+ ** Profile: "SCHEMATIC1-TD_Phase_Shifts"  [ c:\users\kyles\documents\github\pedals\phaser\pspice\phaser-pspicefiles\schematic1\td_ph
 
 
  ****     CIRCUIT DESCRIPTION
@@ -22,7 +22,7 @@
 .lib "nom.lib" 
 
 *Analysis directives: 
-.TRAN  0 8m 5m 3u 
+.TRAN  0 10m 5m 3u 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\SCHEMATIC1.net" 
@@ -82,14 +82,18 @@ X_U11         LFO_OUT LFO_BUFFER VCC 0 LFO_BUFFER TL061/301/TI
 X_U12         VBIAS N15563 VCC 0 LFO_BIAS TL061/301/TI
 R_R26         N15563 LFO_BUFFER  10k TC=0,0 
 X_R27         N15563 LFO_BIAS LFO_BIAS POT PARAMS: SET=.5 VALUE=10k
+J_J1         N03572 LFO_BIAS VREF J202 
+J_J2         N04288 LFO_BIAS VREF J202 
+J_J3         N04774 LFO_BIAS VREF J202 
+J_J4         N05271 LFO_BIAS VREF J202 
 .PARAM  lfo_pot=.5
 
 **** RESUMING TD_Phase_Shifts.cir ****
 .END
 
-**** 11/16/26 03:35:26 ***** PSpice 25.1.0 (18 July 2026) ***** ID# 0 ********
+**** 11/16/26 21:18:53 ***** PSpice 25.1.0 (18 July 2026) ***** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-TD_Phase_Shifts"  [ C:\Users\kyles\Documents\GitHub\Pedals\Phaser\Pspice\Phaser-PSpiceFiles\SCHEMATIC1\TD_Ph
+ ** Profile: "SCHEMATIC1-TD_Phase_Shifts"  [ c:\users\kyles\documents\github\pedals\phaser\pspice\phaser-pspicefiles\schematic1\td_ph
 
 
  ****     Diode MODEL PARAMETERS
@@ -122,9 +126,9 @@ X_R27         N15563 LFO_BIAS LFO_BIAS POT PARAMS: SET=.5 VALUE=10k
           IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
 
 
-**** 11/16/26 03:35:26 ***** PSpice 25.1.0 (18 July 2026) ***** ID# 0 ********
+**** 11/16/26 21:18:53 ***** PSpice 25.1.0 (18 July 2026) ***** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-TD_Phase_Shifts"  [ C:\Users\kyles\Documents\GitHub\Pedals\Phaser\Pspice\Phaser-PSpiceFiles\SCHEMATIC1\TD_Ph
+ ** Profile: "SCHEMATIC1-TD_Phase_Shifts"  [ c:\users\kyles\documents\github\pedals\phaser\pspice\phaser-pspicefiles\schematic1\td_ph
 
 
  ****     Junction FET MODEL PARAMETERS
@@ -135,30 +139,43 @@ X_R27         N15563 LFO_BIAS LFO_BIAS POT PARAMS: SET=.5 VALUE=10k
 
 
 
-               X_U2.JX         X_U3.JX         X_U4.JX         X_U5.JX         
+               J202            X_U2.JX         X_U3.JX         X_U4.JX         
+               NJF             PJF             PJF             PJF             
+         VTO   -1.612          -1              -1              -1            
+        BETA  985.500000E-06  100.500000E-06  100.500000E-06  100.500000E-06 
+      LAMBDA    7.000000E-03                                                 
+          IS  114.500000E-15   15.000000E-12   15.000000E-12   15.000000E-12 
+         ISR    1.091000E-12                                                 
+       ALPHA  506.800000E-06                                                 
+          VK  251.7                                                          
+          RD    1                                                            
+          RS    1                                                            
+         CGD    4.667000E-12                                                 
+         CGS    2.992000E-12                                                 
+           M     .2271                                                       
+          PB     .5                                                          
+       VTOTC   -2.500000E-03                                                 
+     BETATCE    -.5                                                          
+          KF  360.400000E-18                                                 
+
+
+               X_U5.JX         X_U6.JX         X_U7.JX         X_U8.JX         
                PJF             PJF             PJF             PJF             
          VTO   -1              -1              -1              -1            
         BETA  100.500000E-06  100.500000E-06  100.500000E-06  100.500000E-06 
           IS   15.000000E-12   15.000000E-12   15.000000E-12   15.000000E-12 
 
 
-               X_U6.JX         X_U7.JX         X_U8.JX         X_U9.JX         
+               X_U9.JX         X_U10.JX        X_U11.JX        X_U12.JX        
                PJF             PJF             PJF             PJF             
          VTO   -1              -1              -1              -1            
         BETA  100.500000E-06  100.500000E-06  100.500000E-06  100.500000E-06 
           IS   15.000000E-12   15.000000E-12   15.000000E-12   15.000000E-12 
-
-
-               X_U10.JX        X_U11.JX        X_U12.JX        
-               PJF             PJF             PJF             
-         VTO   -1              -1              -1            
-        BETA  100.500000E-06  100.500000E-06  100.500000E-06 
-          IS   15.000000E-12   15.000000E-12   15.000000E-12 
 
 
-**** 11/16/26 03:35:26 ***** PSpice 25.1.0 (18 July 2026) ***** ID# 0 ********
+**** 11/16/26 21:18:53 ***** PSpice 25.1.0 (18 July 2026) ***** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-TD_Phase_Shifts"  [ C:\Users\kyles\Documents\GitHub\Pedals\Phaser\Pspice\Phaser-PSpiceFiles\SCHEMATIC1\TD_Ph
+ ** Profile: "SCHEMATIC1-TD_Phase_Shifts"  [ c:\users\kyles\documents\github\pedals\phaser\pspice\phaser-pspicefiles\schematic1\td_ph
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -219,7 +236,7 @@ X_R27         N15563 LFO_BIAS LFO_BIAS POT PARAMS: SET=.5 VALUE=10k
 
 (X_U2.12)     .2796                   (X_U2.53)    6.8000                       
 
-(X_U2.54)    2.2000                   (X_U2.90)-1.579E-06                       
+(X_U2.54)    2.2000                   (X_U2.90)-1.612E-06                       
 
 (X_U2.91)   15.0000                   (X_U2.92)  -15.0000                       
 
@@ -229,7 +246,7 @@ X_R27         N15563 LFO_BIAS LFO_BIAS POT PARAMS: SET=.5 VALUE=10k
 
 (X_U3.53)    6.8000                   (X_U3.54)    2.2000                       
 
-(X_U3.90)-11.13E-06                   (X_U3.91)   15.0000                       
+(X_U3.90)-11.12E-06                   (X_U3.91)   15.0000                       
 
 (X_U3.92)  -15.0000                   (X_U3.99)    4.5000                       
 
@@ -237,7 +254,7 @@ X_R27         N15563 LFO_BIAS LFO_BIAS POT PARAMS: SET=.5 VALUE=10k
 
 (X_U4.12)     .2796                   (X_U4.53)    6.8000                       
 
-(X_U4.54)    2.2000                   (X_U4.90) 3.296E-06                       
+(X_U4.54)    2.2000                   (X_U4.90) 3.363E-06                       
 
 (X_U4.91)   15.0000                   (X_U4.92)  -15.0000                       
 
@@ -247,7 +264,7 @@ X_R27         N15563 LFO_BIAS LFO_BIAS POT PARAMS: SET=.5 VALUE=10k
 
 (X_U5.53)    6.8000                   (X_U5.54)    2.2000                       
 
-(X_U5.90)-3.226E-06                   (X_U5.91)   15.0000                       
+(X_U5.90)-3.293E-06                   (X_U5.91)   15.0000                       
 
 (X_U5.92)  -15.0000                   (X_U5.99)    4.5000                       
 
@@ -255,7 +272,7 @@ X_R27         N15563 LFO_BIAS LFO_BIAS POT PARAMS: SET=.5 VALUE=10k
 
 (X_U6.12)     .2796                   (X_U6.53)    6.8000                       
 
-(X_U6.54)    2.2000                   (X_U6.90) 3.294E-06                       
+(X_U6.54)    2.2000                   (X_U6.90) 3.360E-06                       
 
 (X_U6.91)   15.0000                   (X_U6.92)  -15.0000                       
 
@@ -265,7 +282,7 @@ X_R27         N15563 LFO_BIAS LFO_BIAS POT PARAMS: SET=.5 VALUE=10k
 
 (X_U7.53)    6.8000                   (X_U7.54)    2.2000                       
 
-(X_U7.90)-1.613E-06                   (X_U7.91)   15.0000                       
+(X_U7.90)-1.646E-06                   (X_U7.91)   15.0000                       
 
 (X_U7.92)  -15.0000                   (X_U7.99)    4.5000                       
 
@@ -283,7 +300,7 @@ X_R27         N15563 LFO_BIAS LFO_BIAS POT PARAMS: SET=.5 VALUE=10k
 
 (X_U9.53)    6.8000                   (X_U9.54)    2.2000                       
 
-(X_U9.90) 67.34E-09                   (X_U9.91)   15.0000                       
+(X_U9.90) 67.35E-09                   (X_U9.91)   15.0000                       
 
 (X_U9.92)  -15.0000                   (X_U9.99)    4.5000                       
 
@@ -328,37 +345,37 @@ X_R27         N15563 LFO_BIAS LFO_BIAS POT PARAMS: SET=.5 VALUE=10k
     X_U2.VB      4.703E-09
     X_U2.VC      3.002E-12
     X_U2.VE      2.311E-12
-    X_U2.VLIM   -1.579E-09
+    X_U2.VLIM   -1.612E-09
     X_U2.VLP    -1.732E-11
     X_U2.VLN    -1.732E-11
     X_U3.VB      4.703E-09
     X_U3.VC      3.003E-12
     X_U3.VE      2.311E-12
-    X_U3.VLIM   -1.113E-08
+    X_U3.VLIM   -1.112E-08
     X_U3.VLP    -1.732E-11
     X_U3.VLN    -1.732E-11
     X_U4.VB      4.702E-09
     X_U4.VC      3.002E-12
     X_U4.VE      2.311E-12
-    X_U4.VLIM    3.296E-09
+    X_U4.VLIM    3.363E-09
     X_U4.VLP    -1.732E-11
     X_U4.VLN    -1.732E-11
     X_U5.VB      4.703E-09
     X_U5.VC      3.002E-12
     X_U5.VE      2.311E-12
-    X_U5.VLIM   -3.226E-09
+    X_U5.VLIM   -3.293E-09
     X_U5.VLP    -1.732E-11
     X_U5.VLN    -1.732E-11
     X_U6.VB      4.702E-09
     X_U6.VC      3.002E-12
     X_U6.VE      2.311E-12
-    X_U6.VLIM    3.294E-09
+    X_U6.VLIM    3.360E-09
     X_U6.VLP    -1.732E-11
     X_U6.VLN    -1.732E-11
     X_U7.VB      4.703E-09
     X_U7.VC      3.002E-12
     X_U7.VE      2.311E-12
-    X_U7.VLIM   -1.613E-09
+    X_U7.VLIM   -1.646E-09
     X_U7.VLP    -1.732E-11
     X_U7.VLN    -1.732E-11
     X_U8.VB      4.702E-09
@@ -370,7 +387,7 @@ X_R27         N15563 LFO_BIAS LFO_BIAS POT PARAMS: SET=.5 VALUE=10k
     X_U9.VB      1.203E-08
     X_U9.VC      3.541E-12
     X_U9.VE      1.772E-12
-    X_U9.VLIM    6.734E-11
+    X_U9.VLIM    6.735E-11
     X_U9.VLP    -1.732E-11
     X_U9.VLN    -1.732E-11
     X_U10.VB     4.700E-09
@@ -398,9 +415,9 @@ X_R27         N15563 LFO_BIAS LFO_BIAS POT PARAMS: SET=.5 VALUE=10k
 
           JOB CONCLUDED
 
-**** 11/16/26 03:35:26 ***** PSpice 25.1.0 (18 July 2026) ***** ID# 0 ********
+**** 11/16/26 21:18:53 ***** PSpice 25.1.0 (18 July 2026) ***** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-TD_Phase_Shifts"  [ C:\Users\kyles\Documents\GitHub\Pedals\Phaser\Pspice\Phaser-PSpiceFiles\SCHEMATIC1\TD_Ph
+ ** Profile: "SCHEMATIC1-TD_Phase_Shifts"  [ c:\users\kyles\documents\github\pedals\phaser\pspice\phaser-pspicefiles\schematic1\td_ph
 
 
  ****     JOB STATISTICS SUMMARY
@@ -410,5 +427,5 @@ X_R27         N15563 LFO_BIAS LFO_BIAS POT PARAMS: SET=.5 VALUE=10k
 
 
 
-  Total job time (using Solver 1)   =         .64
+  Total job time (using Solver 1)   =         .88
 
