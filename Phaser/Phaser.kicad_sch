@@ -5778,7 +5778,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_EH_S2B-EH_1x02_P2.50mm_Horizontal"
+		(property "Footprint" "Connector_BarrelJack:BarrelJack_GCT_DCJ200-10-A_Horizontal"
 			(at 30.48 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -8453,31 +8453,31 @@
 			)
 		)
 		(pin "6"
-			(uuid "26569ca3-de87-4950-ac95-6770e02a8c79")
+			(uuid "26569ca3-de87-4950-ac95-6770e02a8c7a")
 		)
 		(pin "5"
-			(uuid "9e309f1d-e46b-448a-80c6-b79904cba9ae")
+			(uuid "9e309f1d-e46b-448a-80c6-b79904cba9af")
 		)
 		(pin "2"
-			(uuid "2470b4e2-cd46-4dc3-abab-28cac62bd9a8")
+			(uuid "2470b4e2-cd46-4dc3-abab-28cac62bd9a9")
 		)
 		(pin "7"
-			(uuid "85ccc4db-a927-4f01-99c9-7e34f27f26fd")
+			(uuid "85ccc4db-a927-4f01-99c9-7e34f27f26fe")
 		)
 		(pin "1"
-			(uuid "ef857bd6-85b4-4d96-8ea4-54c6c211bc61")
+			(uuid "ef857bd6-85b4-4d96-8ea4-54c6c211bc62")
 		)
 		(pin "3"
-			(uuid "9afef4f5-f0e6-4c99-8bd7-c963ce2c0e69")
+			(uuid "9afef4f5-f0e6-4c99-8bd7-c963ce2c0e6a")
 		)
 		(pin "4"
-			(uuid "b11bdeb0-0b62-4dae-9b25-ba5ac76265dc")
+			(uuid "b11bdeb0-0b62-4dae-9b25-ba5ac76265dd")
 		)
 		(pin "9"
-			(uuid "a90e81bc-e644-4170-b070-019add9c2c6e")
+			(uuid "a90e81bc-e644-4170-b070-019add9c2c6f")
 		)
 		(pin "8"
-			(uuid "39b19acc-91b9-44a9-baaf-d9a46cfef266")
+			(uuid "39b19acc-91b9-44a9-baaf-d9a46cfef267")
 		)
 		(instances
 			(project "Phaser"
@@ -9280,31 +9280,31 @@
 			)
 		)
 		(pin "6"
-			(uuid "26569ca3-de87-4950-ac95-6770e02a8c79")
+			(uuid "26569ca3-de87-4950-ac95-6770e02a8c7b")
 		)
 		(pin "5"
-			(uuid "9e309f1d-e46b-448a-80c6-b79904cba9ae")
+			(uuid "9e309f1d-e46b-448a-80c6-b79904cba9b0")
 		)
 		(pin "2"
-			(uuid "2470b4e2-cd46-4dc3-abab-28cac62bd9a8")
+			(uuid "2470b4e2-cd46-4dc3-abab-28cac62bd9aa")
 		)
 		(pin "7"
-			(uuid "85ccc4db-a927-4f01-99c9-7e34f27f26fd")
+			(uuid "85ccc4db-a927-4f01-99c9-7e34f27f26ff")
 		)
 		(pin "1"
-			(uuid "ef857bd6-85b4-4d96-8ea4-54c6c211bc61")
+			(uuid "ef857bd6-85b4-4d96-8ea4-54c6c211bc63")
 		)
 		(pin "3"
-			(uuid "9afef4f5-f0e6-4c99-8bd7-c963ce2c0e69")
+			(uuid "9afef4f5-f0e6-4c99-8bd7-c963ce2c0e6b")
 		)
 		(pin "4"
-			(uuid "b11bdeb0-0b62-4dae-9b25-ba5ac76265dc")
+			(uuid "b11bdeb0-0b62-4dae-9b25-ba5ac76265de")
 		)
 		(pin "9"
-			(uuid "a90e81bc-e644-4170-b070-019add9c2c6e")
+			(uuid "a90e81bc-e644-4170-b070-019add9c2c70")
 		)
 		(pin "8"
-			(uuid "39b19acc-91b9-44a9-baaf-d9a46cfef266")
+			(uuid "39b19acc-91b9-44a9-baaf-d9a46cfef268")
 		)
 		(instances
 			(project "Phaser"
