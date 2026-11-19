@@ -1,0 +1,5 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "3pdt") (type "KiCad") (uri "${KIPRJMOD}/Parts/3PDT") (options "") (descr ""))
+	(lib (name "trs") (type "KiCad") (uri "${KIPRJMOD}/Parts/TRS/footprints.pretty") (options "") (descr ""))
+)
