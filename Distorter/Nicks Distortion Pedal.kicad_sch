@@ -2048,7 +2048,7 @@
 		(uuid "0f1e1704-8f55-43c0-bd21-4d7f0c580785")
 	)
 	(no_connect
-		(at 34.29 43.18)
+		(at 34.29 27.94)
 		(uuid "45a790bf-c254-4726-8565-c16f54d0b002")
 	)
 	(no_connect
@@ -10898,6 +10898,7 @@
 	(symbol
 		(lib_id "Connector:Barrel_Jack_MountingPin")
 		(at 34.29 35.56 0)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10905,10 +10906,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e950ff2b-0ae3-49aa-910d-4d753c871516")
 		(property "Reference" "J5"
-			(at 34.29 26.67 0)
+			(at 34.29 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10918,7 +10918,7 @@
 			)
 		)
 		(property "Value" "Barrel_Jack_MountingPin"
-			(at 34.29 29.21 0)
+			(at 33.528 40.386 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10928,7 +10928,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 35.56 36.576 0)
+			(at 35.56 34.544 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10939,7 +10939,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 36.576 0)
+			(at 35.56 34.544 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
