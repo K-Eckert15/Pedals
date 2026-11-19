@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/home/weirdngineer/Pedals/Distorter/Nicks Distortion Pedal.kicad_sch")
-		(date "2026-11-18T22:54:42")
+		(date "2026-11-19T11:54:04")
 		(tool "Eeschema 10.0.5")
 		(sheet
 			(number "1")
@@ -57,11 +57,11 @@
 		(comp
 			(ref "C1")
 			(value "100p")
+			(footprint "Capacitor_SMD:C_0805_2012Metric")
 			(description "Unpolarized capacitor")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -111,11 +111,11 @@
 		(comp
 			(ref "C2")
 			(value "22n")
+			(footprint "Capacitor_SMD:C_0805_2012Metric")
 			(description "Unpolarized capacitor")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -165,11 +165,11 @@
 		(comp
 			(ref "C3")
 			(value "47n")
+			(footprint "Capacitor_SMD:C_0805_2012Metric")
 			(description "Unpolarized capacitor")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -219,11 +219,11 @@
 		(comp
 			(ref "C4")
 			(value "50p")
+			(footprint "Capacitor_SMD:C_0805_2012Metric")
 			(description "Unpolarized capacitor")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -273,11 +273,11 @@
 		(comp
 			(ref "C5")
 			(value "680n")
+			(footprint "Capacitor_SMD:C_0805_2012Metric")
 			(description "Unpolarized capacitor")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -327,11 +327,11 @@
 		(comp
 			(ref "C6")
 			(value "100n")
+			(footprint "Capacitor_SMD:C_0805_2012Metric")
 			(description "Unpolarized capacitor")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -381,11 +381,11 @@
 		(comp
 			(ref "C7")
 			(value "1u")
+			(footprint "Capacitor_SMD:C_0805_2012Metric")
 			(description "Unpolarized capacitor")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -435,11 +435,11 @@
 		(comp
 			(ref "C8")
 			(value "22n")
+			(footprint "Capacitor_SMD:C_0805_2012Metric")
 			(description "Unpolarized capacitor")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -489,11 +489,11 @@
 		(comp
 			(ref "C9")
 			(value "22n")
+			(footprint "Capacitor_SMD:C_0805_2012Metric")
 			(description "Unpolarized capacitor")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -543,11 +543,11 @@
 		(comp
 			(ref "C10")
 			(value "1u")
+			(footprint "Capacitor_SMD:C_0805_2012Metric")
 			(description "Unpolarized capacitor")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -597,11 +597,11 @@
 		(comp
 			(ref "C11")
 			(value "47u")
+			(footprint "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm")
 			(description "capacitor, US symbol")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm")
 				(field
 					(name "Datasheet")
 				)
@@ -651,11 +651,11 @@
 		(comp
 			(ref "C12")
 			(value "47u")
+			(footprint "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm")
 			(description "capacitor, US symbol")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm")
 				(field
 					(name "Datasheet")
 				)
@@ -688,6 +688,66 @@
 				(tstamps "/")
 			)
 			(tstamps "3b0c4cfe-27e5-4b03-b93e-774358342af5")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D1")
+			(value "LED")
+			(description "Light emitting diode")
+			(fields
+				(field
+					(name "Sim.Pins") "1=K 2=A")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Light emitting diode")
+			)
+			(libsource
+				(lib "Device")
+				(part "LED")
+				(description "Light emitting diode")
+			)
+			(property
+				(name "Sim.Pins")
+				(value "1=K 2=A")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Nicks Distortion Pedal.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "LED diode")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "LED* LED_SMD:* LED_THT:*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "1ddb64f1-61a9-4f9e-931f-1f851f4b1cef")
 			(units
 				(unit
 					(name "A")
@@ -812,12 +872,12 @@
 		)
 		(comp
 			(ref "J3")
-			(value "AudioJack3")
+			(value "Input")
+			(footprint "Connector_Audio:Jack_6.35mm_Neutrik_NRJ6HF-1_Horizontal")
 			(description "Audio Jack, 3 Poles (Stereo / TRS)")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Connector_Audio:Jack_6.35mm_Neutrik_NRJ6HF-1_Horizontal")
 				(field
 					(name "Datasheet")
 				)
@@ -869,12 +929,12 @@
 		)
 		(comp
 			(ref "J4")
-			(value "AudioJack3")
+			(value "Output")
+			(footprint "Connector_Audio:Jack_6.35mm_Neutrik_NRJ6HF-1_Horizontal")
 			(description "Audio Jack, 3 Poles (Stereo / TRS)")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Connector_Audio:Jack_6.35mm_Neutrik_NRJ6HF-1_Horizontal")
 				(field
 					(name "Datasheet")
 				)
@@ -927,11 +987,11 @@
 		(comp
 			(ref "J5")
 			(value "Barrel_Jack_MountingPin")
+			(footprint "Connector_BarrelJack:BarrelJack_Wuerth_694106106102_2.0x5.5mm")
 			(description "DC Barrel Jack with a mounting pin")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Connector_BarrelJack:BarrelJack_Wuerth_694106106102_2.0x5.5mm")
 				(field
 					(name "Datasheet")
 				)
@@ -984,11 +1044,11 @@
 		(comp
 			(ref "Q1")
 			(value "MMBFJ201")
-			(footprint "Distorter:SOT-23_318BM_ONS")
+			(footprint "Package_TO_SOT_SMD:SOT-23")
 			(datasheet "MMBFJ201")
 			(fields
 				(field
-					(name "Footprint") "Distorter:SOT-23_318BM_ONS")
+					(name "Footprint") "Package_TO_SOT_SMD:SOT-23")
 				(field
 					(name "Datasheet") "MMBFJ201")
 				(field
@@ -1041,11 +1101,11 @@
 		(comp
 			(ref "R1")
 			(value "1M")
+			(footprint "Resistor_SMD:R_0805_2012Metric")
 			(description "Resistor")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -1095,11 +1155,11 @@
 		(comp
 			(ref "R2")
 			(value "10K")
+			(footprint "Resistor_SMD:R_0805_2012Metric")
 			(description "Resistor")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -1149,11 +1209,11 @@
 		(comp
 			(ref "R3")
 			(value "1M")
+			(footprint "Resistor_SMD:R_0805_2012Metric")
 			(description "Resistor")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -1203,11 +1263,11 @@
 		(comp
 			(ref "R4")
 			(value "4.7k")
+			(footprint "Resistor_SMD:R_0805_2012Metric")
 			(description "Resistor")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -1257,11 +1317,11 @@
 		(comp
 			(ref "R5")
 			(value "2.2k")
+			(footprint "Resistor_SMD:R_0805_2012Metric")
 			(description "Resistor")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -1311,11 +1371,11 @@
 		(comp
 			(ref "R6")
 			(value "10k")
+			(footprint "Resistor_SMD:R_0805_2012Metric")
 			(description "Resistor")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -1365,11 +1425,11 @@
 		(comp
 			(ref "R7")
 			(value "680k")
+			(footprint "Resistor_SMD:R_0805_2012Metric")
 			(description "Resistor")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -1419,11 +1479,11 @@
 		(comp
 			(ref "R8")
 			(value "1k")
+			(footprint "Resistor_SMD:R_0805_2012Metric")
 			(description "Resistor")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -1473,11 +1533,11 @@
 		(comp
 			(ref "R9")
 			(value "10k")
+			(footprint "Resistor_SMD:R_0805_2012Metric")
 			(description "Resistor")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -1527,11 +1587,11 @@
 		(comp
 			(ref "R10")
 			(value "10k")
+			(footprint "Resistor_SMD:R_0805_2012Metric")
 			(description "Resistor")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -1581,11 +1641,11 @@
 		(comp
 			(ref "R11")
 			(value "220")
+			(footprint "Resistor_SMD:R_0805_2012Metric")
 			(description "Resistor")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -1635,11 +1695,11 @@
 		(comp
 			(ref "R12")
 			(value "10k")
+			(footprint "Resistor_SMD:R_0805_2012Metric")
 			(description "Resistor")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -1689,11 +1749,11 @@
 		(comp
 			(ref "R13")
 			(value "10k")
+			(footprint "Resistor_SMD:R_0805_2012Metric")
 			(description "Resistor")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -1741,8 +1801,63 @@
 			)
 		)
 		(comp
+			(ref "R14")
+			(value "4.7k")
+			(footprint "Resistor_SMD:R_0805_2012Metric")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Nicks Distortion Pedal.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "48cecb9a-caf4-439a-8f40-543b50b2e525")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
 			(ref "RV1")
 			(value "R_Potentiometer")
+			(footprint "Distorter:Potentiometer_Bourns_PTV111-3_VerticalShaft")
 			(description "Potentiometer")
 			(fields
 				(field
@@ -1752,8 +1867,7 @@
 				(field
 					(name "Sim.Pins") "1=r0 2=wiper 3=r1")
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Distorter:Potentiometer_Bourns_PTV111-3_VerticalShaft")
 				(field
 					(name "Datasheet")
 				)
@@ -1818,6 +1932,7 @@
 		(comp
 			(ref "RV2")
 			(value "R_Potentiometer")
+			(footprint "Distorter:Potentiometer_Bourns_PTV111-3_VerticalShaft")
 			(description "Potentiometer")
 			(fields
 				(field
@@ -1827,8 +1942,7 @@
 				(field
 					(name "Sim.Pins") "1=r0 2=wiper 3=r1")
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Distorter:Potentiometer_Bourns_PTV111-3_VerticalShaft")
 				(field
 					(name "Datasheet")
 				)
@@ -1893,6 +2007,7 @@
 		(comp
 			(ref "RV3")
 			(value "R_Potentiometer")
+			(footprint "Distorter:Potentiometer_Bourns_PTV111-3_VerticalShaft")
 			(description "Potentiometer")
 			(fields
 				(field
@@ -1902,8 +2017,7 @@
 				(field
 					(name "Sim.Pins") "1=r0 2=wiper 3=r1")
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Distorter:Potentiometer_Bourns_PTV111-3_VerticalShaft")
 				(field
 					(name "Datasheet")
 				)
@@ -1966,14 +2080,81 @@
 			)
 		)
 		(comp
+			(ref "SW1")
+			(value "COM-15133")
+			(footprint "Distorter:SW_3PDT_SparkFun_COM-15133")
+			(datasheet "https://cdn.sparkfun.com/assets/3/a/9/c/4/DS-15133-Stomp_Switch.pdf")
+			(description "3PDT latching stomp footswitch, SparkFun COM-15133, 9 PCB pins and M12x0.75 threaded bushing")
+			(fields
+				(field
+					(name "Footprint") "Distorter:SW_3PDT_SparkFun_COM-15133")
+				(field
+					(name "Datasheet") "https://cdn.sparkfun.com/assets/3/a/9/c/4/DS-15133-Stomp_Switch.pdf")
+				(field
+					(name "Description") "3PDT latching stomp footswitch, SparkFun COM-15133, 9 PCB pins and M12x0.75 threaded bushing")
+			)
+			(libsource
+				(lib "Distorter")
+				(part "SW_3PDT_Stomp_COM-15133")
+				(description "3PDT latching stomp footswitch, SparkFun COM-15133, 9 PCB pins and M12x0.75 threaded bushing")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Nicks Distortion Pedal.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "8edd8f86-c13e-4608-94ea-bca5abe7f462")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "9")
+						)
+					)
+				)
+			)
+		)
+		(comp
 			(ref "U1")
 			(value "TL072")
+			(footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
 			(datasheet "http://www.ti.com/lit/ds/symlink/tl071.pdf")
 			(description "Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
 				(field
 					(name "Datasheet") "http://www.ti.com/lit/ds/symlink/tl071.pdf")
 				(field
@@ -1982,7 +2163,7 @@
 			(libsource
 				(lib "Amplifier_Operational")
 				(part "TL072")
-				(description "Dual Operational Amplifiers, DIP-8/SOIC-8/TSSOP-8/VSSOP-8")
+				(description "Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8")
 			)
 			(property
 				(name "Sheetname")
@@ -2004,7 +2185,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "cb76130a-91e3-402d-9a28-0985c0808057" "9ccf570b-7261-4365-ae28-80ec33092f81"
+			(tstamps "9ccf570b-7261-4365-ae28-80ec33092f81" "cb76130a-91e3-402d-9a28-0985c0808057"
 				"8f5880a8-f401-4944-8ebe-75cf1a0d1e2e"
 			)
 			(units
@@ -2309,6 +2490,44 @@
 		)
 		(libpart
 			(lib "Device")
+			(part "LED")
+			(description "Light emitting diode")
+			(footprints
+				(fp "LED*")
+				(fp "LED_SMD:*")
+				(fp "LED_THT:*")
+			)
+			(fields
+				(field
+					(name "Reference") "D")
+				(field
+					(name "Value") "LED")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Light emitting diode")
+				(field
+					(name "Sim.Pins") "1=K 2=A")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "K")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "A")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
 			(part "R")
 			(description "Resistor")
 			(footprints
@@ -2426,6 +2645,71 @@
 				)
 			)
 		)
+		(libpart
+			(lib "Distorter")
+			(part "SW_3PDT_Stomp_COM-15133")
+			(description "3PDT latching stomp footswitch, SparkFun COM-15133, 9 PCB pins and M12x0.75 threaded bushing")
+			(docs "https://cdn.sparkfun.com/assets/3/a/9/c/4/DS-15133-Stomp_Switch.pdf")
+			(fields
+				(field
+					(name "Reference") "SW")
+				(field
+					(name "Value") "COM-15133")
+				(field
+					(name "Footprint") "Distorter:SW_3PDT_SparkFun_COM-15133")
+				(field
+					(name "Datasheet") "https://cdn.sparkfun.com/assets/3/a/9/c/4/DS-15133-Stomp_Switch.pdf")
+				(field
+					(name "Description") "3PDT latching stomp footswitch, SparkFun COM-15133, 9 PCB pins and M12x0.75 threaded bushing")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "A_THROW_1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "COM_A")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "A_THROW_2")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "B_THROW_1")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "COM_B")
+					(type "passive")
+				)
+				(pin
+					(num "6")
+					(name "B_THROW_2")
+					(type "passive")
+				)
+				(pin
+					(num "7")
+					(name "C_THROW_1")
+					(type "passive")
+				)
+				(pin
+					(num "8")
+					(name "COM_C")
+					(type "passive")
+				)
+				(pin
+					(num "9")
+					(name "C_THROW_2")
+					(type "passive")
+				)
+			)
+		)
 	)
 	(libraries
 		(library
@@ -2461,7 +2745,7 @@
 			)
 			(node
 				(ref "J5")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -2476,6 +2760,11 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "R14")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
 				(ref "U1")
 				(pin "8")
 				(pinfunction "V+_8")
@@ -2484,6 +2773,50 @@
 		)
 		(net
 			(code "2")
+			(name "/Bypass")
+			(class "Default")
+			(node
+				(ref "SW1")
+				(pin "3")
+				(pinfunction "A_THROW_2_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW1")
+				(pin "6")
+				(pinfunction "B_THROW_2_6")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "3")
+			(name "/Output")
+			(class "Default")
+			(node
+				(ref "J4")
+				(pin "T")
+				(pintype "passive")
+			)
+			(node
+				(ref "R11")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW1")
+				(pin "4")
+				(pinfunction "B_THROW_1_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW1")
+				(pin "5")
+				(pinfunction "COM_B_5")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "4")
 			(name "/VREF")
 			(class "Default")
 			(node
@@ -2514,7 +2847,7 @@
 			)
 		)
 		(net
-			(code "3")
+			(code "5")
 			(name "GND")
 			(class "Default")
 			(node
@@ -2571,7 +2904,7 @@
 			)
 			(node
 				(ref "J5")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -2601,6 +2934,12 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "SW1")
+				(pin "7")
+				(pinfunction "C_THROW_1_7")
+				(pintype "passive")
+			)
+			(node
 				(ref "U1")
 				(pin "4")
 				(pinfunction "V-_4")
@@ -2608,7 +2947,7 @@
 			)
 		)
 		(net
-			(code "4")
+			(code "6")
 			(name "Net-(C1-Pad1)")
 			(class "Default")
 			(node
@@ -2633,7 +2972,7 @@
 			)
 		)
 		(net
-			(code "5")
+			(code "7")
 			(name "Net-(C3-Pad2)")
 			(class "Default")
 			(node
@@ -2648,7 +2987,7 @@
 			)
 		)
 		(net
-			(code "6")
+			(code "8")
 			(name "Net-(C4-Pad2)")
 			(class "Default")
 			(node
@@ -2669,7 +3008,7 @@
 			)
 		)
 		(net
-			(code "7")
+			(code "9")
 			(name "Net-(C5-Pad1)")
 			(class "Default")
 			(node
@@ -2685,7 +3024,7 @@
 			)
 		)
 		(net
-			(code "8")
+			(code "10")
 			(name "Net-(C5-Pad2)")
 			(class "Default")
 			(node
@@ -2700,7 +3039,7 @@
 			)
 		)
 		(net
-			(code "9")
+			(code "11")
 			(name "Net-(C6-Pad2)")
 			(class "Default")
 			(node
@@ -2725,7 +3064,7 @@
 			)
 		)
 		(net
-			(code "10")
+			(code "12")
 			(name "Net-(C7-Pad2)")
 			(class "Default")
 			(node
@@ -2740,7 +3079,7 @@
 			)
 		)
 		(net
-			(code "11")
+			(code "13")
 			(name "Net-(C9-Pad2)")
 			(class "Default")
 			(node
@@ -2756,7 +3095,7 @@
 			)
 		)
 		(net
-			(code "12")
+			(code "14")
 			(name "Net-(C10-Pad2)")
 			(class "Default")
 			(node
@@ -2776,7 +3115,40 @@
 			)
 		)
 		(net
-			(code "13")
+			(code "15")
+			(name "Net-(D1-A)")
+			(class "Default")
+			(node
+				(ref "D1")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R14")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "16")
+			(name "Net-(D1-K)")
+			(class "Default")
+			(node
+				(ref "D1")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW1")
+				(pin "8")
+				(pinfunction "COM_C_8")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "17")
 			(name "Net-(J1-Pin_2)")
 			(class "Default")
 			(node
@@ -2809,37 +3181,7 @@
 			)
 		)
 		(net
-			(code "14")
-			(name "Net-(J3-PadT)")
-			(class "Default")
-			(node
-				(ref "J3")
-				(pin "T")
-				(pintype "passive")
-			)
-			(node
-				(ref "R2")
-				(pin "1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "15")
-			(name "Net-(J4-PadT)")
-			(class "Default")
-			(node
-				(ref "J4")
-				(pin "T")
-				(pintype "passive")
-			)
-			(node
-				(ref "R11")
-				(pin "2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "16")
+			(code "18")
 			(name "Net-(Q1-G)")
 			(class "Default")
 			(node
@@ -2856,7 +3198,7 @@
 			)
 		)
 		(net
-			(code "17")
+			(code "19")
 			(name "Net-(Q1-S)")
 			(class "Default")
 			(node
@@ -2877,7 +3219,7 @@
 			)
 		)
 		(net
-			(code "18")
+			(code "20")
 			(name "Net-(R5-Pad2)")
 			(class "Default")
 			(node
@@ -2893,7 +3235,7 @@
 			)
 		)
 		(net
-			(code "19")
+			(code "21")
 			(name "Net-(RV2-Pad2)")
 			(class "Default")
 			(node
@@ -2910,7 +3252,39 @@
 			)
 		)
 		(net
-			(code "20")
+			(code "22")
+			(name "Net-(SW1-A_THROW_1)")
+			(class "Default")
+			(node
+				(ref "R2")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW1")
+				(pin "1")
+				(pinfunction "A_THROW_1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "23")
+			(name "Net-(SW1-COM_A)")
+			(class "Default")
+			(node
+				(ref "J3")
+				(pin "T")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW1")
+				(pin "2")
+				(pinfunction "COM_A_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "24")
 			(name "Net-(U1A-+)")
 			(class "Default")
 			(node
@@ -2931,7 +3305,7 @@
 			)
 		)
 		(net
-			(code "21")
+			(code "25")
 			(name "Net-(U1A--)")
 			(class "Default")
 			(node
@@ -2957,7 +3331,7 @@
 			)
 		)
 		(net
-			(code "22")
+			(code "26")
 			(name "Net-(U1B--)")
 			(class "Default")
 			(node
@@ -2983,7 +3357,7 @@
 			)
 		)
 		(net
-			(code "23")
+			(code "27")
 			(name "unconnected-(J3-PadR)")
 			(class "Default")
 			(node
@@ -2993,7 +3367,7 @@
 			)
 		)
 		(net
-			(code "24")
+			(code "28")
 			(name "unconnected-(J4-PadR)")
 			(class "Default")
 			(node
@@ -3003,13 +3377,24 @@
 			)
 		)
 		(net
-			(code "25")
+			(code "29")
 			(name "unconnected-(J5-MountPin-PadMP)")
 			(class "Default")
 			(node
 				(ref "J5")
 				(pin "MP")
 				(pinfunction "MountPin_MP")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "30")
+			(name "unconnected-(SW1-C_THROW_2-Pad9)")
+			(class "Default")
+			(node
+				(ref "SW1")
+				(pin "9")
+				(pinfunction "C_THROW_2_9")
 				(pintype "passive+no_connect")
 			)
 		)
