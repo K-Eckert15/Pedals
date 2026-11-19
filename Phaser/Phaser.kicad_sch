@@ -254,6 +254,244 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:Barrel_Jack_Switch"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 5.334 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Barrel_Jack_Switch"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 1.27 -1.016 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 1.27 -1.016 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "DC Barrel Jack with an internal switch"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "DC power barrel jack connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "BarrelJack*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Barrel_Jack_Switch_0_1"
+				(rectangle
+					(start -5.08 3.81)
+					(end 5.08 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 -2.54) (xy -2.54 -2.54) (xy -1.27 -1.27) (xy 0 -2.54) (xy 2.54 -2.54) (xy 5.08 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -3.302 1.905)
+					(mid -3.9343 2.54)
+					(end -3.302 3.175)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -3.302 1.905)
+					(mid -3.9343 2.54)
+					(end -3.302 3.175)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.286) (xy 1.905 -1.651)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.683 3.175)
+					(end -3.302 1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 2.54) (xy 3.81 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 1.27 0) (xy 1.27 -2.286) (xy 0.635 -1.651)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Barrel_Jack_Switch_1_1"
+				(pin passive line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -1708,229 +1946,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Simulation_SPICE:VDC"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.0254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "V"
-				(at 2.54 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "1"
-				(at 2.54 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Voltage source, DC"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Sim.Pins" "1=+ 2=-"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Sim.Type" "DC"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Sim.Device" "V"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "ki_keywords" "simulation"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "VDC_0_0"
-				(polyline
-					(pts
-						(xy -1.27 0.254) (xy 1.27 0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.762 -0.254) (xy -1.27 -0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 -0.254) (xy -0.254 -0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -0.254) (xy 0.762 -0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "+"
-					(at 0 1.905 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(symbol "VDC_0_1"
-				(circle
-					(center 0 0)
-					(radius 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "VDC_1_1"
-				(pin passive line
-					(at 0 5.08 270)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "TRS:ACJS-MHOM"
 			(body_styles demorgan)
 			(pin_names
@@ -3092,16 +3107,16 @@
 		(uuid "2bd2db9c-6ce8-4e26-94ae-145cc095c17e")
 	)
 	(junction
+		(at 30.48 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2ddba28c-9e5b-4388-aa6c-410bd714a363")
+	)
+	(junction
 		(at 290.83 154.94)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "30e9c1eb-bf23-4daf-8da8-ea8ca84b295d")
-	)
-	(junction
-		(at 124.46 147.32)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3231a3f4-da7e-4c5b-b157-863369ae824f")
 	)
 	(junction
 		(at 78.74 36.83)
@@ -3138,12 +3153,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3e4b592c-69d0-4d87-9b99-0e8f3171189c")
-	)
-	(junction
-		(at 30.48 72.39)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "40c5dadf-d4c7-450d-ba9e-905c7cb61cc4")
 	)
 	(junction
 		(at 52.07 72.39)
@@ -3276,6 +3285,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a4751eff-0d42-4afa-91f3-635206de8ce2")
+	)
+	(junction
+		(at 124.46 147.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "af5f1474-8b7c-4a5a-9325-b0ca02cfa37d")
 	)
 	(junction
 		(at 113.03 39.37)
@@ -3547,6 +3562,16 @@
 	)
 	(wire
 		(pts
+			(xy 30.48 74.93) (xy 29.21 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c005e83-7e18-48b7-9e6b-8f2a474363d1")
+	)
+	(wire
+		(pts
 			(xy 223.52 115.57) (xy 223.52 116.84)
 		)
 		(stroke
@@ -3677,6 +3702,16 @@
 	)
 	(wire
 		(pts
+			(xy 30.48 77.47) (xy 30.48 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e14d300-ad23-47d7-b06f-02b669ea661c")
+	)
+	(wire
+		(pts
 			(xy 236.22 139.7) (xy 236.22 152.4)
 		)
 		(stroke
@@ -3707,7 +3742,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 147.32) (xy 138.43 147.32)
+			(xy 124.46 147.32) (xy 135.89 147.32)
 		)
 		(stroke
 			(width 0)
@@ -4177,7 +4212,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 147.32) (xy 144.78 147.32)
+			(xy 143.51 147.32) (xy 144.78 147.32)
 		)
 		(stroke
 			(width 0)
@@ -4387,6 +4422,16 @@
 	)
 	(wire
 		(pts
+			(xy 29.21 77.47) (xy 30.48 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7386066b-8162-42d8-b95f-5e3114244ae4")
+	)
+	(wire
+		(pts
 			(xy 281.94 76.2) (xy 280.67 76.2)
 		)
 		(stroke
@@ -4574,6 +4619,16 @@
 			(type default)
 		)
 		(uuid "8e3eb629-d225-4dd9-a5d4-32020179d0d5")
+	)
+	(wire
+		(pts
+			(xy 30.48 72.39) (xy 30.48 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "917864c1-7558-4f69-9086-b772d354a670")
 	)
 	(wire
 		(pts
@@ -5104,6 +5159,16 @@
 			(type default)
 		)
 		(uuid "ea5874ca-a45d-46b9-b78e-0e59fa0b7d5f")
+	)
+	(wire
+		(pts
+			(xy 30.48 72.39) (xy 29.21 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb48c81c-fef6-4f8b-9c7e-de7b1a0f5657")
 	)
 	(wire
 		(pts
@@ -5739,133 +5804,6 @@
 			(project "Phaser"
 				(path "/03822e18-c11b-407a-9491-8359a48ffcaa"
 					(reference "C3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Simulation_SPICE:VDC")
-		(at 30.48 77.47 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "07ed2afd-21fa-411d-bede-02c8535be730")
-		(property "Reference" "V1"
-			(at 34.29 76.0701 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1"
-			(at 34.29 78.6101 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_BarrelJack:BarrelJack_GCT_DCJ200-10-A_Horizontal"
-			(at 30.48 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
-			(at 30.48 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Voltage source, DC"
-			(at 30.48 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=+ 2=-"
-			(at 30.48 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" "DC"
-			(at 30.48 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "V"
-			(at 30.48 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "MFG #" "S2B-EH"
-			(at 30.48 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2ac6ede7-6ae5-4a0d-8a10-13463b2db004")
-		)
-		(pin "2"
-			(uuid "e97490e7-e760-42eb-bc2a-96ed74683000")
-		)
-		(instances
-			(project "Phaser"
-				(path "/03822e18-c11b-407a-9491-8359a48ffcaa"
-					(reference "V1")
 					(unit 1)
 				)
 			)
@@ -7546,7 +7484,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 142.24 147.32 90)
+		(at 139.7 147.32 90)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -7558,7 +7496,7 @@
 		(fields_autoplaced yes)
 		(uuid "4266c6a9-8cdb-4e3c-abe8-deac21a7813e")
 		(property "Reference" "R14"
-			(at 142.24 153.67 90)
+			(at 139.7 153.67 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7568,7 +7506,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 142.24 151.13 90)
+			(at 139.7 151.13 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7578,7 +7516,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 142.24 145.542 90)
+			(at 139.7 145.542 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7589,7 +7527,7 @@
 			)
 		)
 		(property "Datasheet" "RMCF0805FT10K0"
-			(at 142.24 147.32 0)
+			(at 139.7 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7600,7 +7538,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 142.24 147.32 0)
+			(at 139.7 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7611,7 +7549,7 @@
 			)
 		)
 		(property "MFG #" "RMCF0805FT10K0"
-			(at 142.24 147.32 90)
+			(at 139.7 147.32 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11907,6 +11845,103 @@
 			(project "Phaser"
 				(path "/03822e18-c11b-407a-9491-8359a48ffcaa"
 					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Barrel_Jack_Switch")
+		(at 21.59 74.93 0)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a697aefc-d58b-4412-8a61-6a05e8626b05")
+		(property "Reference" "J2"
+			(at 15.24 73.6599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Barrel_Jack_Switch"
+			(at 15.24 76.1999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_BarrelJack:BarrelJack_GCT_DCJ200-10-A_Horizontal"
+			(at 22.86 73.914 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 22.86 73.914 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "DC Barrel Jack with an internal switch"
+			(at 21.59 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFG #" "PJ-002A"
+			(at 21.59 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "06b713ea-6e78-43d5-a051-9c12d797636e")
+		)
+		(pin "1"
+			(uuid "3ff96e24-873b-47df-8f2f-09be5de7ae58")
+		)
+		(pin "2"
+			(uuid "6ff2b80d-b434-42a7-a826-0290fb22946e")
+		)
+		(instances
+			(project "Phaser"
+				(path "/03822e18-c11b-407a-9491-8359a48ffcaa"
+					(reference "J2")
 					(unit 1)
 				)
 			)
