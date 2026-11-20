@@ -660,6 +660,12 @@
           "label": "MFG #",
           "name": "MFG #",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Real MFG #",
+          "name": "Real MFG #",
+          "show": false
         }
       ],
       "filter_string": "",

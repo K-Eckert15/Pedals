@@ -5553,6 +5553,17 @@
 				)
 			)
 		)
+		(property "Real MFG #" ""
+			(at 54.61 127 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "7540d569-b527-4ad2-a499-ed0ea9b205ea")
 		)
@@ -5635,6 +5646,17 @@
 			)
 		)
 		(property "MFG #" "RMCF0805FT10K0"
+			(at 330.2 168.91 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Real MFG #" ""
 			(at 330.2 168.91 90)
 			(hide yes)
 			(show_name no)
@@ -5892,6 +5914,17 @@
 				)
 			)
 		)
+		(property "Real MFG #" ""
+			(at 132.08 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "7"
 			(uuid "a66ac572-c4c0-48af-9ff5-b5ef94d1de15")
 		)
@@ -6079,6 +6112,17 @@
 				)
 			)
 		)
+		(property "Real MFG #" ""
+			(at 368.3 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "3d33aca0-cf6f-4d09-a9da-823b14b04b4a")
 		)
@@ -6238,6 +6282,17 @@
 			)
 		)
 		(property "MFG #" "TL061CDR"
+			(at 243.84 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Real MFG #" ""
 			(at 243.84 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -6425,6 +6480,17 @@
 			)
 		)
 		(property "MFG #" "C0805C473K5RACTU"
+			(at 156.21 132.08 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Real MFG #" ""
 			(at 156.21 132.08 90)
 			(hide yes)
 			(show_name no)
@@ -6682,6 +6748,17 @@
 				)
 			)
 		)
+		(property "Real MFG #" ""
+			(at 346.71 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "7"
 			(uuid "e659b7ad-e56f-413d-8e29-0b56923db658")
 		)
@@ -6781,6 +6858,17 @@
 			)
 		)
 		(property "MFG #" "TL061CDR"
+			(at 298.45 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Real MFG #" ""
 			(at 298.45 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -6891,6 +6979,17 @@
 			)
 		)
 		(property "MFG #" "RMCF0805FT10K0"
+			(at 308.61 154.94 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Real MFG #" ""
 			(at 308.61 154.94 90)
 			(hide yes)
 			(show_name no)
@@ -7148,6 +7247,17 @@
 				)
 			)
 		)
+		(property "Real MFG #" ""
+			(at 320.04 139.7 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "c0bd56c4-59e8-4598-887a-8ca64536316d")
 		)
@@ -7308,6 +7418,17 @@
 			)
 		)
 		(property "MFG #" "RMCF0805FT10K0"
+			(at 139.7 147.32 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Real MFG #" ""
 			(at 139.7 147.32 90)
 			(hide yes)
 			(show_name no)
@@ -7567,6 +7688,17 @@
 				)
 			)
 		)
+		(property "Real MFG #" ""
+			(at 78.74 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "53dd24e9-10df-4cfd-8f2d-f7233bb548f3")
 		)
@@ -7737,6 +7869,17 @@
 				)
 			)
 		)
+		(property "Real MFG #" ""
+			(at 349.25 168.91 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "671bdcaf-42d6-4be2-83c1-5aed5071fc44")
 		)
@@ -7818,6 +7961,17 @@
 			)
 		)
 		(property "MFG #" "C0805C473K5RACTU"
+			(at 267.97 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Real MFG #" ""
 			(at 267.97 137.16 90)
 			(hide yes)
 			(show_name no)
@@ -7910,6 +8064,17 @@
 			)
 		)
 		(property "MFG #" "RMCF0805FT10K0"
+			(at 213.36 152.4 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Real MFG #" ""
 			(at 213.36 152.4 90)
 			(hide yes)
 			(show_name no)
@@ -8044,7 +8209,18 @@
 				)
 			)
 		)
-		(property "MFG #" "PDB181-E420K-105B"
+		(property "MFG #" "B3B-EH-A"
+			(at 276.86 76.2 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Real MFG #" "PDB181-E420K-105B"
 			(at 276.86 76.2 90)
 			(hide yes)
 			(show_name no)
@@ -8182,7 +8358,18 @@
 				)
 			)
 		)
-		(property "MFG #" "PDB181-E420K-105B"
+		(property "MFG #" "B3B-EH-A"
+			(at 201.93 62.23 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Real MFG #" "PDB181-E420K-105B"
 			(at 201.93 62.23 90)
 			(hide yes)
 			(show_name no)
@@ -8444,6 +8631,17 @@
 				)
 			)
 		)
+		(property "Real MFG #" ""
+			(at 101.6 147.32 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4e40b687-0e25-4ed3-823b-e9232c0556ee")
 		)
@@ -8569,6 +8767,17 @@
 				)
 			)
 		)
+		(property "Real MFG #" ""
+			(at 114.3 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "4c13889a-fc78-4fa9-949f-1816fd43901e")
 		)
@@ -8653,6 +8862,17 @@
 			)
 		)
 		(property "MFG #" "TL061CDR"
+			(at 186.69 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Real MFG #" ""
 			(at 186.69 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -8773,6 +8993,17 @@
 				)
 			)
 		)
+		(property "Real MFG #" ""
+			(at 328.93 139.7 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "019c2a12-faa3-4547-8e8f-cee872381e1a")
 		)
@@ -8857,6 +9088,17 @@
 			)
 		)
 		(property "MFG #" "ACJS-MHOM"
+			(at 27.94 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Real MFG #" ""
 			(at 27.94 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -8960,6 +9202,17 @@
 			)
 		)
 		(property "MFG #" "RMCF0805FT10K0"
+			(at 157.48 44.45 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Real MFG #" ""
 			(at 157.48 44.45 90)
 			(hide yes)
 			(show_name no)
@@ -9095,6 +9348,17 @@
 				)
 			)
 		)
+		(property "Real MFG #" ""
+			(at 226.06 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "647e5b1f-f837-4e60-affc-9542dad74cae")
 		)
@@ -9211,6 +9475,17 @@
 				)
 			)
 		)
+		(property "Real MFG #" ""
+			(at 40.64 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "950b9ea4-0611-4b68-82b5-499d163ce751")
 		)
@@ -9293,6 +9568,17 @@
 			)
 		)
 		(property "MFG #" "RC0805FR-07590RL"
+			(at 77.47 207.01 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Real MFG #" ""
 			(at 77.47 207.01 90)
 			(hide yes)
 			(show_name no)
@@ -9395,6 +9681,17 @@
 				)
 			)
 		)
+		(property "Real MFG #" ""
+			(at 267.97 154.94 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c35d4b24-2906-4d6b-8a68-b2815059b661")
 		)
@@ -9476,6 +9773,17 @@
 			)
 		)
 		(property "MFG #" "RMCF0805FT10K0"
+			(at 170.18 44.45 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Real MFG #" ""
 			(at 170.18 44.45 90)
 			(hide yes)
 			(show_name no)
@@ -9568,6 +9876,17 @@
 			)
 		)
 		(property "MFG #" "RMCF0805FT10K0"
+			(at 196.85 149.86 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Real MFG #" ""
 			(at 196.85 149.86 90)
 			(hide yes)
 			(show_name no)
@@ -10061,6 +10380,17 @@
 				)
 			)
 		)
+		(property "Real MFG #" ""
+			(at 78.74 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "8f47e637-3940-44ed-b035-96a08dd2f27d")
 		)
@@ -10386,6 +10716,17 @@
 				)
 			)
 		)
+		(property "Real MFG #" ""
+			(at 99.06 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "7"
 			(uuid "17ef7253-dfd2-4642-b00b-b9e79487823c")
 		)
@@ -10573,6 +10914,17 @@
 				)
 			)
 		)
+		(property "Real MFG #" ""
+			(at 190.5 62.23 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "07fce098-a281-4c74-ab1b-114683bd0703")
 		)
@@ -10656,6 +11008,17 @@
 			)
 		)
 		(property "MFG #" "C0805C103K5RACTU"
+			(at 52.07 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Real MFG #" ""
 			(at 52.07 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -10814,6 +11177,28 @@
 			)
 		)
 		(property "Description" "Switch, single pole double throw"
+			(at 386.08 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFG #" "B3B-EH-A"
+			(at 386.08 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Real MFG #" "FS57003PLT2B2M2QE"
 			(at 386.08 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -11007,6 +11392,17 @@
 				)
 			)
 		)
+		(property "Real MFG #" ""
+			(at 87.63 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "6404193f-ae0c-4801-9fec-c7b1e43ee698")
 		)
@@ -11089,6 +11485,17 @@
 			)
 		)
 		(property "MFG #" "RMCF0805FT10K0"
+			(at 254 152.4 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Real MFG #" ""
 			(at 254 152.4 90)
 			(hide yes)
 			(show_name no)
@@ -11184,6 +11591,17 @@
 			)
 		)
 		(property "MFG #" "ACJS-MHOM"
+			(at 400.05 144.78 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Real MFG #" ""
 			(at 400.05 144.78 90)
 			(hide yes)
 			(show_name no)
@@ -11453,6 +11871,17 @@
 				)
 			)
 		)
+		(property "Real MFG #" ""
+			(at 68.58 72.39 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4b4c56ac-fa9d-420c-a055-1c0c05312485")
 		)
@@ -11537,6 +11966,17 @@
 			)
 		)
 		(property "MFG #" "PJ-002A"
+			(at 21.59 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Real MFG #" ""
 			(at 21.59 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -11719,6 +12159,17 @@
 				)
 			)
 		)
+		(property "Real MFG #" ""
+			(at 270.51 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "7"
 			(uuid "25f44754-c0cd-4780-849a-f8c13a12d62f")
 		)
@@ -11817,6 +12268,28 @@
 				)
 			)
 		)
+		(property "MFG #" "B3B-EH-A"
+			(at 33.02 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Real MFG #" "FS57003PLT2B2M2QE"
+			(at 33.02 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "fa414880-1cb0-4fc8-bc0a-35edb9628f56")
 		)
@@ -11901,6 +12374,17 @@
 			)
 		)
 		(property "MFG #" "TL061CDR"
+			(at 81.28 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Real MFG #" ""
 			(at 81.28 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -12088,6 +12572,17 @@
 			)
 		)
 		(property "MFG #" "C0805C473K5RACTU"
+			(at 101.6 129.54 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Real MFG #" ""
 			(at 101.6 129.54 90)
 			(hide yes)
 			(show_name no)
@@ -12347,6 +12842,17 @@
 				)
 			)
 		)
+		(property "Real MFG #" ""
+			(at 62.23 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3fca87cb-cc91-49be-8fd5-364bc13bf601")
 		)
@@ -12431,6 +12937,17 @@
 			)
 		)
 		(property "MFG #" "CRCW0805150KFKEA"
+			(at 374.65 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Real MFG #" ""
 			(at 374.65 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -12691,6 +13208,17 @@
 				)
 			)
 		)
+		(property "Real MFG #" ""
+			(at 161.29 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "1deb25aa-aa11-4481-add6-48c742a2b79a")
 		)
@@ -12894,6 +13422,17 @@
 				)
 			)
 		)
+		(property "Real MFG #" ""
+			(at 168.91 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "a558fdad-2a06-4a9e-a809-3c0f21defac8")
 		)
@@ -13059,6 +13598,17 @@
 			)
 		)
 		(property "MFG #" "RMCF0805FT10K0"
+			(at 218.44 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Real MFG #" ""
 			(at 218.44 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -13350,6 +13900,17 @@
 				)
 			)
 		)
+		(property "Real MFG #" ""
+			(at 280.67 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "e07c7539-aff1-47ca-bddf-b81331c9612a")
 		)
@@ -13434,6 +13995,17 @@
 			)
 		)
 		(property "MFG #" "RMCF0805FT10K0"
+			(at 68.58 36.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Real MFG #" ""
 			(at 68.58 36.83 90)
 			(hide yes)
 			(show_name no)
@@ -13614,6 +14186,17 @@
 				)
 			)
 		)
+		(property "Real MFG #" ""
+			(at 156.21 149.86 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "cebecb92-e0e2-4dac-a72f-17a66c4ba5c1")
 		)
@@ -13783,6 +14366,17 @@
 				)
 			)
 		)
+		(property "Real MFG #" ""
+			(at 44.45 127 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c826d13a-405d-412f-b008-6a5748ffdb7b")
 		)
@@ -13867,6 +14461,17 @@
 			)
 		)
 		(property "MFG #" "RMCF0805FT10K0"
+			(at 106.68 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Real MFG #" ""
 			(at 106.68 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -13968,6 +14573,17 @@
 				)
 			)
 		)
+		(property "Real MFG #" ""
+			(at 255.27 64.77 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "899cb5b9-a503-4f4d-aec7-5be2f9281cb9")
 		)
@@ -14049,6 +14665,17 @@
 			)
 		)
 		(property "MFG #" "TL061CDR"
+			(at 172.72 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Real MFG #" ""
 			(at 172.72 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -14168,6 +14795,17 @@
 				)
 			)
 		)
+		(property "Real MFG #" ""
+			(at 236.22 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "7"
 			(uuid "8e222f03-a67c-4c82-b9c0-65d4e7f9d4c9")
 		)
@@ -14277,6 +14915,17 @@
 				)
 			)
 		)
+		(property "Real MFG #" ""
+			(at 321.31 168.91 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "701fca60-662c-422d-be41-a8dd5c098563")
 		)
@@ -14370,6 +15019,17 @@
 				)
 			)
 		)
+		(property "Real MFG #" ""
+			(at 209.55 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "7508cb64-1fd2-43b1-8883-eba684a1e232")
 		)
@@ -14451,6 +15111,17 @@
 			)
 		)
 		(property "MFG #" "TL061CDR"
+			(at 99.06 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Real MFG #" ""
 			(at 99.06 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -14560,6 +15231,17 @@
 			)
 		)
 		(property "MFG #" "C0805C473K5RACTU"
+			(at 213.36 134.62 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Real MFG #" ""
 			(at 213.36 134.62 90)
 			(hide yes)
 			(show_name no)
@@ -14728,6 +15410,28 @@
 				)
 			)
 		)
+		(property "MFG #" "B3B-EH-A"
+			(at 62.23 209.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Real MFG #" "FS57003PLT2B2M2QE"
+			(at 62.23 209.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "20917d1a-b927-409e-82fa-58378e38891e")
 		)
@@ -14815,6 +15519,17 @@
 			)
 		)
 		(property "MFG #" "RMCF0805FT10K0"
+			(at 273.05 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Real MFG #" ""
 			(at 273.05 124.46 0)
 			(hide yes)
 			(show_name no)
