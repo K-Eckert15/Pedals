@@ -2473,7 +2473,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "List of things still need to do.\n- Should add a panal mount on off switch\n- Go with barrel jack or internal 9v?\n- On and off LED"
+	(text "List of things still need to do.\n- Should add a panal mount on off switch\n- Go with barrel jack or internal 9v?\n- On and off LED - maybe make through hole res"
 		(exclude_from_sim yes)
 		(at 232.41 148.082 0)
 		(effects
@@ -2492,6 +2492,16 @@
 			)
 		)
 		(uuid "c2844d8d-3798-4d04-b078-fc6ada1e57e2")
+	)
+	(text "Add diode and JST\n"
+		(exclude_from_sim no)
+		(at 50.292 21.336 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d2a07f69-9e1e-46f0-9487-04725cc8e56e")
 	)
 	(junction
 		(at 194.31 85.09)
@@ -2524,6 +2534,12 @@
 		(uuid "348d29ff-87fe-4e76-9c15-466c204ab518")
 	)
 	(junction
+		(at 252.73 116.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3523921c-b715-4a3c-aa7c-b378851ea126")
+	)
+	(junction
 		(at 209.55 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2554,12 +2570,6 @@
 		(uuid "669e0ac8-78c7-47d9-98e6-f6f5b14d31be")
 	)
 	(junction
-		(at 260.35 104.14)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "72132715-4cf2-4d07-a279-cf3ff5ca50cf")
-	)
-	(junction
 		(at 92.71 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2588,12 +2598,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8e34c310-294c-4e0b-a710-553aecc6a118")
-	)
-	(junction
-		(at 252.73 116.84)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a35d85a6-0d42-4f43-8ea3-fbcec1c5c64a")
 	)
 	(junction
 		(at 196.85 105.41)
@@ -2675,7 +2679,7 @@
 	)
 	(wire
 		(pts
-			(xy 267.97 99.06) (xy 264.16 99.06)
+			(xy 284.48 91.44) (xy 267.97 91.44)
 		)
 		(stroke
 			(width 0)
@@ -2885,6 +2889,16 @@
 	)
 	(wire
 		(pts
+			(xy 252.73 121.92) (xy 252.73 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a9314d4-ca9a-4079-a5d8-803f1df576dd")
+	)
+	(wire
+		(pts
 			(xy 143.51 82.55) (xy 147.32 82.55)
 		)
 		(stroke
@@ -2892,26 +2906,6 @@
 			(type default)
 		)
 		(uuid "2bb067d6-6ae0-4b21-9c88-a03a2072e3cc")
-	)
-	(wire
-		(pts
-			(xy 259.08 104.14) (xy 260.35 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2c224ca6-b9ac-4bbf-9477-8c44bac30d87")
-	)
-	(wire
-		(pts
-			(xy 260.35 104.14) (xy 267.97 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2e24a3fe-11da-40b7-9a54-fddbf4c9d3c4")
 	)
 	(wire
 		(pts
@@ -2985,6 +2979,16 @@
 	)
 	(wire
 		(pts
+			(xy 267.97 91.44) (xy 267.97 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3debb9ff-1daa-42e5-b104-3f5e00cd283a")
+	)
+	(wire
+		(pts
 			(xy 110.49 82.55) (xy 107.95 82.55)
 		)
 		(stroke
@@ -3042,6 +3046,16 @@
 			(type default)
 		)
 		(uuid "4f7a58a3-2c68-4096-bfb5-72f5771c119f")
+	)
+	(wire
+		(pts
+			(xy 267.97 114.3) (xy 269.24 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ffc7e19-74b7-4716-8501-5a81ab83e7b0")
 	)
 	(wire
 		(pts
@@ -3185,6 +3199,16 @@
 	)
 	(wire
 		(pts
+			(xy 262.89 104.14) (xy 260.35 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c2a3f9f-2ddd-4385-9f79-8d2099e57386")
+	)
+	(wire
+		(pts
 			(xy 104.14 68.58) (xy 110.49 68.58)
 		)
 		(stroke
@@ -3192,6 +3216,16 @@
 			(type default)
 		)
 		(uuid "7c32a721-a073-4582-b7ff-62953cbb8a6b")
+	)
+	(wire
+		(pts
+			(xy 262.89 104.14) (xy 262.89 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fe5b32d-8933-420d-b2cc-bf75ab739f4b")
 	)
 	(wire
 		(pts
@@ -3365,6 +3399,16 @@
 	)
 	(wire
 		(pts
+			(xy 262.89 119.38) (xy 269.24 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa10c8f1-787a-4749-b0c3-145403d69717")
+	)
+	(wire
+		(pts
 			(xy 87.63 46.99) (xy 87.63 49.53)
 		)
 		(stroke
@@ -3412,6 +3456,16 @@
 			(type default)
 		)
 		(uuid "b68efd49-bfae-4e45-bb67-bf18cc295c8f")
+	)
+	(wire
+		(pts
+			(xy 267.97 104.14) (xy 267.97 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba97ad6c-b4ff-4f73-8cae-6cd4c0c95d95")
 	)
 	(wire
 		(pts
@@ -3475,7 +3529,7 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 116.84) (xy 252.73 116.84)
+			(xy 284.48 121.92) (xy 252.73 121.92)
 		)
 		(stroke
 			(width 0)
@@ -3635,7 +3689,7 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 99.06) (xy 264.16 116.84)
+			(xy 284.48 91.44) (xy 284.48 121.92)
 		)
 		(stroke
 			(width 0)
@@ -8117,7 +8171,7 @@
 		(uuid "0e133de7-e7f0-4754-b237-25c7d5e82777")
 	)
 	(label "Output"
-		(at 260.35 104.14 0)
+		(at 269.24 114.3 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8146,15 +8200,15 @@
 		)
 		(uuid "36cd6d00-7977-4a60-9b4b-d33676b592cf")
 	)
-	(label "Output"
-		(at 80.01 133.35 0)
+	(label "Circuit_Output"
+		(at 269.24 119.38 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "736712bf-934f-435b-9641-ff20fc7ee640")
+		(uuid "4c00594d-400b-4f40-adf7-4ad09e9446c3")
 	)
 	(label "VREF"
 		(at 73.66 36.83 0)
@@ -8205,6 +8259,16 @@
 			(justify left bottom)
 		)
 		(uuid "c8ca95b0-16e6-454e-bc68-cbf0c4a52d77")
+	)
+	(label "Circuit_Output"
+		(at 80.01 133.35 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ccc78144-6401-44df-b84d-9ba6529fdd03")
 	)
 	(label "9V"
 		(at 16.51 72.39 0)
@@ -8453,7 +8517,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 189.23 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -9703,7 +9767,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 204.47 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -10427,7 +10491,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Distorter:SW_3PDT_SparkFun_COM-15133"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical"
 			(at 53.34 154.94 0)
 			(hide yes)
 			(show_name no)
