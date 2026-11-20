@@ -611,13 +611,13 @@
           "group_by": true,
           "label": "Footprint",
           "name": "Footprint",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -665,7 +665,7 @@
           "group_by": false,
           "label": "Real MFG #",
           "name": "Real MFG #",
-          "show": false
+          "show": true
         }
       ],
       "filter_string": "",
@@ -724,7 +724,7 @@
         "uuid": "03822e18-c11b-407a-9491-8359a48ffcaa"
       }
     ],
-    "used_designators": "J2,Q2,SW1-3",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
