@@ -15572,6 +15572,30 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "There comes a time \nin every man's life \nwhen he must stop \nthinking and start doing."
+		(at 142.875 89.535 0)
+		(layer "B.SilkS")
+		(uuid "c66ae869-43a5-4eb3-9759-a1d2701e45a5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "Kyle J. Eckert"
+		(at 151.765 24.765 0)
+		(layer "B.SilkS")
+		(uuid "d8c8f032-4818-47c7-94c9-c8dbd4a62808")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom mirror)
+		)
+	)
 	(gr_text "2.5inx4.5in outside box measurements"
 		(at 147.32 2.54 0)
 		(layer "User.2")
