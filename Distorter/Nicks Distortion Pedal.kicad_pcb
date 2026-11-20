@@ -148,7 +148,7 @@
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
-			(drillshape 1)
+			(drillshape 0)
 			(scaleselection 1)
 			(outputdirectory "")
 		)
@@ -11483,6 +11483,32 @@
 		(fill no)
 		(layer "Edge.Cuts")
 		(uuid "c9c2c736-8dda-4da9-baed-a850fd804587")
+	)
+	(gr_text "Nicks\nDistortion pedal"
+		(at 139.85 104.1 0)
+		(layer "F.SilkS")
+		(uuid "511017da-7973-4293-8653-3e8eaaf2feb5")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "Nicks\nDistortion pedal"
+		(at 157.75 76.3 -0)
+		(layer "B.SilkS")
+		(uuid "dcfef93a-98e8-4fa6-9715-94eccc877e1d")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom mirror)
+		)
 	)
 	(segment
 		(start 145.95 79.045)
