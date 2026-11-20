@@ -2493,6 +2493,16 @@
 		)
 		(uuid "c2844d8d-3798-4d04-b078-fc6ada1e57e2")
 	)
+	(text "Add diode and JST\n"
+		(exclude_from_sim no)
+		(at 50.292 21.336 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d2a07f69-9e1e-46f0-9487-04725cc8e56e")
+	)
 	(junction
 		(at 194.31 85.09)
 		(diameter 0)
@@ -2522,6 +2532,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "348d29ff-87fe-4e76-9c15-466c204ab518")
+	)
+	(junction
+		(at 252.73 116.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3523921c-b715-4a3c-aa7c-b378851ea126")
 	)
 	(junction
 		(at 209.55 106.68)
@@ -2582,12 +2598,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8e34c310-294c-4e0b-a710-553aecc6a118")
-	)
-	(junction
-		(at 252.73 116.84)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a35d85a6-0d42-4f43-8ea3-fbcec1c5c64a")
 	)
 	(junction
 		(at 196.85 105.41)
@@ -2669,7 +2679,7 @@
 	)
 	(wire
 		(pts
-			(xy 267.97 99.06) (xy 264.16 99.06)
+			(xy 284.48 91.44) (xy 267.97 91.44)
 		)
 		(stroke
 			(width 0)
@@ -2879,6 +2889,16 @@
 	)
 	(wire
 		(pts
+			(xy 252.73 121.92) (xy 252.73 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a9314d4-ca9a-4079-a5d8-803f1df576dd")
+	)
+	(wire
+		(pts
 			(xy 143.51 82.55) (xy 147.32 82.55)
 		)
 		(stroke
@@ -2956,6 +2976,16 @@
 			(type default)
 		)
 		(uuid "3b8e8693-6d7e-410f-b907-b276d2adde61")
+	)
+	(wire
+		(pts
+			(xy 267.97 91.44) (xy 267.97 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3debb9ff-1daa-42e5-b104-3f5e00cd283a")
 	)
 	(wire
 		(pts
@@ -3189,6 +3219,16 @@
 	)
 	(wire
 		(pts
+			(xy 262.89 104.14) (xy 262.89 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fe5b32d-8933-420d-b2cc-bf75ab739f4b")
+	)
+	(wire
+		(pts
 			(xy 199.39 105.41) (xy 199.39 102.87)
 		)
 		(stroke
@@ -3296,16 +3336,6 @@
 			(type default)
 		)
 		(uuid "94b4b4d8-c5ec-4a18-b8c5-4318bd79a842")
-	)
-	(wire
-		(pts
-			(xy 262.89 104.14) (xy 262.89 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "96c564d9-6a0b-49f3-9406-553844306cbb")
 	)
 	(wire
 		(pts
@@ -3499,7 +3529,7 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 116.84) (xy 252.73 116.84)
+			(xy 284.48 121.92) (xy 252.73 121.92)
 		)
 		(stroke
 			(width 0)
@@ -3659,7 +3689,7 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 99.06) (xy 264.16 116.84)
+			(xy 284.48 91.44) (xy 284.48 121.92)
 		)
 		(stroke
 			(width 0)
@@ -8487,7 +8517,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 189.23 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -9737,7 +9767,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 204.47 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -10461,7 +10491,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Distorter:SW_3PDT_SparkFun_COM-15133"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical"
 			(at 53.34 154.94 0)
 			(hide yes)
 			(show_name no)
