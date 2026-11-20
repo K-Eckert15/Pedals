@@ -1175,325 +1175,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "FS57003PLT2B2M2QE:3PDT"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "SW"
-				(at 0 6.604 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "3PDT_0_1"
-				(circle
-					(center -2.032 0)
-					(radius 0.4572)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.651 0.254) (xy 1.651 2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 2.54)
-					(radius 0.4572)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 -2.54)
-					(radius 0.4572)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "3PDT_1_1"
-				(rectangle
-					(start -3.175 3.81)
-					(end 3.175 -3.81)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 2.54)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "3PDT_2_1"
-				(rectangle
-					(start -3.175 3.81)
-					(end 3.175 -3.81)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 2.54)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "3PDT_3_1"
-				(rectangle
-					(start -3.175 3.81)
-					(end 3.175 -3.81)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 2.54)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Simulation_SPICE:NJFET"
 			(pin_numbers
 				(hide yes)
@@ -1929,6 +1610,196 @@
 					(at 0 -3.81 90)
 					(length 1.27)
 					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Switch:SW_SPDT"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SW_SPDT"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Switch, single pole double throw"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "switch single-pole double-throw spdt ON-ON"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SW_SPDT_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.4572)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.651 0.254) (xy 1.651 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 2.54)
+					(radius 0.4572)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 -2.54)
+					(radius 0.4572)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_SPDT_1_1"
+				(rectangle
+					(start -3.175 3.81)
+					(end 3.175 -3.81)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "C"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5529,118 +5400,6 @@
 		)
 	)
 	(symbol
-		(lib_id "FS57003PLT2B2M2QE:3PDT")
-		(at 62.23 209.55 0)
-		(unit 3)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "01f05934-a263-4af5-aa91-418c35c035e3")
-		(property "Reference" "SW1"
-			(at 62.23 203.2 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 62.23 209.55 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "FS57003PLT2B2M2QE:SW_FS57003PLT2B2M2QE"
-			(at 62.23 209.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "FS57003PLT2B2M2QE"
-			(at 62.23 209.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 62.23 209.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MFG #" "FS57003PLT2B2M2QE"
-			(at 62.23 209.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "6"
-			(uuid "26569ca3-de87-4950-ac95-6770e02a8c79")
-		)
-		(pin "5"
-			(uuid "9e309f1d-e46b-448a-80c6-b79904cba9ae")
-		)
-		(pin "2"
-			(uuid "2470b4e2-cd46-4dc3-abab-28cac62bd9a8")
-		)
-		(pin "7"
-			(uuid "85ccc4db-a927-4f01-99c9-7e34f27f26fd")
-		)
-		(pin "1"
-			(uuid "ef857bd6-85b4-4d96-8ea4-54c6c211bc61")
-		)
-		(pin "3"
-			(uuid "9afef4f5-f0e6-4c99-8bd7-c963ce2c0e69")
-		)
-		(pin "4"
-			(uuid "b11bdeb0-0b62-4dae-9b25-ba5ac76265dc")
-		)
-		(pin "9"
-			(uuid "a90e81bc-e644-4170-b070-019add9c2c6e")
-		)
-		(pin "8"
-			(uuid "39b19acc-91b9-44a9-baaf-d9a46cfef266")
-		)
-		(instances
-			(project "Phaser"
-				(path "/03822e18-c11b-407a-9491-8359a48ffcaa"
-					(reference "SW1")
-					(unit 3)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VDC")
 		(at 161.29 113.03 0)
 		(unit 1)
@@ -8209,7 +7968,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PMPot:TRIM_PTN24B-B1120DB"
+		(property "Footprint" "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical"
 			(at 276.86 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -8285,7 +8044,7 @@
 				)
 			)
 		)
-		(property "MFG #" "PDB181-GTR01-105A2"
+		(property "MFG #" "PDB181-E420K-105B"
 			(at 276.86 76.2 90)
 			(hide yes)
 			(show_name no)
@@ -8310,118 +8069,6 @@
 				(path "/03822e18-c11b-407a-9491-8359a48ffcaa"
 					(reference "R10")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "FS57003PLT2B2M2QE:3PDT")
-		(at 386.08 139.7 0)
-		(mirror y)
-		(unit 2)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "525cda5d-cd6a-488c-895f-032d5db7ef38")
-		(property "Reference" "SW1"
-			(at 386.08 133.35 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 386.08 139.7 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "FS57003PLT2B2M2QE:SW_FS57003PLT2B2M2QE"
-			(at 386.08 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "FS57003PLT2B2M2QE"
-			(at 386.08 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 386.08 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MFG #" "FS57003PLT2B2M2QE"
-			(at 386.08 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "6"
-			(uuid "26569ca3-de87-4950-ac95-6770e02a8c7a")
-		)
-		(pin "5"
-			(uuid "9e309f1d-e46b-448a-80c6-b79904cba9af")
-		)
-		(pin "2"
-			(uuid "2470b4e2-cd46-4dc3-abab-28cac62bd9a9")
-		)
-		(pin "7"
-			(uuid "85ccc4db-a927-4f01-99c9-7e34f27f26fe")
-		)
-		(pin "1"
-			(uuid "ef857bd6-85b4-4d96-8ea4-54c6c211bc62")
-		)
-		(pin "3"
-			(uuid "9afef4f5-f0e6-4c99-8bd7-c963ce2c0e6a")
-		)
-		(pin "4"
-			(uuid "b11bdeb0-0b62-4dae-9b25-ba5ac76265dd")
-		)
-		(pin "9"
-			(uuid "a90e81bc-e644-4170-b070-019add9c2c6f")
-		)
-		(pin "8"
-			(uuid "39b19acc-91b9-44a9-baaf-d9a46cfef267")
-		)
-		(instances
-			(project "Phaser"
-				(path "/03822e18-c11b-407a-9491-8359a48ffcaa"
-					(reference "SW1")
-					(unit 2)
 				)
 			)
 		)
@@ -8459,7 +8106,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PMPot:TRIM_PTN24B-B1120DB"
+		(property "Footprint" "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical"
 			(at 201.93 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -8535,7 +8182,7 @@
 				)
 			)
 		)
-		(property "MFG #" "PDB181-GTR01-105A2"
+		(property "MFG #" "PDB181-E420K-105B"
 			(at 201.93 62.23 90)
 			(hide yes)
 			(show_name no)
@@ -9136,118 +8783,6 @@
 			(project "Phaser"
 				(path "/03822e18-c11b-407a-9491-8359a48ffcaa"
 					(reference "R25")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "FS57003PLT2B2M2QE:3PDT")
-		(at 33.02 129.54 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "58fd4354-1bc5-4bca-a0b6-edbe2f9841ac")
-		(property "Reference" "SW1"
-			(at 33.02 123.19 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 33.02 129.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "FS57003PLT2B2M2QE:SW_FS57003PLT2B2M2QE"
-			(at 33.02 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "FS57003PLT2B2M2QE"
-			(at 33.02 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 33.02 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MFG #" "FS57003PLT2B2M2QE"
-			(at 33.02 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "6"
-			(uuid "26569ca3-de87-4950-ac95-6770e02a8c7b")
-		)
-		(pin "5"
-			(uuid "9e309f1d-e46b-448a-80c6-b79904cba9b0")
-		)
-		(pin "2"
-			(uuid "2470b4e2-cd46-4dc3-abab-28cac62bd9aa")
-		)
-		(pin "7"
-			(uuid "85ccc4db-a927-4f01-99c9-7e34f27f26ff")
-		)
-		(pin "1"
-			(uuid "ef857bd6-85b4-4d96-8ea4-54c6c211bc63")
-		)
-		(pin "3"
-			(uuid "9afef4f5-f0e6-4c99-8bd7-c963ce2c0e6b")
-		)
-		(pin "4"
-			(uuid "b11bdeb0-0b62-4dae-9b25-ba5ac76265de")
-		)
-		(pin "9"
-			(uuid "a90e81bc-e644-4170-b070-019add9c2c70")
-		)
-		(pin "8"
-			(uuid "39b19acc-91b9-44a9-baaf-d9a46cfef268")
-		)
-		(instances
-			(project "Phaser"
-				(path "/03822e18-c11b-407a-9491-8359a48ffcaa"
-					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -11225,6 +10760,89 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_SPDT")
+		(at 386.08 139.7 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "90b68bf0-16c1-4a91-a17d-717ab5d158cf")
+		(property "Reference" "SW3"
+			(at 386.08 130.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPDT"
+			(at 386.08 133.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical"
+			(at 386.08 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 386.08 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Switch, single pole double throw"
+			(at 386.08 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "93de15f3-e662-466d-93a9-360685ad171e")
+		)
+		(pin "1"
+			(uuid "349a7e31-adfc-4de2-b520-54c5e42108ef")
+		)
+		(pin "3"
+			(uuid "906b0873-fcc3-44e8-a4a3-f8af5e9827a5")
+		)
+		(instances
+			(project "Phaser"
+				(path "/03822e18-c11b-407a-9491-8359a48ffcaa"
+					(reference "SW3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 267.97 69.85 0)
 		(unit 1)
@@ -12129,6 +11747,89 @@
 			(project "Phaser"
 				(path "/03822e18-c11b-407a-9491-8359a48ffcaa"
 					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPDT")
+		(at 33.02 129.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aba9a9ba-734f-4d0a-9540-2753815057a2")
+		(property "Reference" "SW1"
+			(at 33.02 120.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPDT"
+			(at 33.02 123.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical"
+			(at 33.02 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 33.02 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Switch, single pole double throw"
+			(at 33.02 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "fa414880-1cb0-4fc8-bc0a-35edb9628f56")
+		)
+		(pin "1"
+			(uuid "62a34c40-3210-478d-b7f8-d29a89e2ae33")
+		)
+		(pin "3"
+			(uuid "c0454061-211a-4947-8cda-24a73f6741c6")
+		)
+		(instances
+			(project "Phaser"
+				(path "/03822e18-c11b-407a-9491-8359a48ffcaa"
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -14957,6 +14658,89 @@
 			(project "Phaser"
 				(path "/03822e18-c11b-407a-9491-8359a48ffcaa"
 					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPDT")
+		(at 62.23 209.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fd861ed0-76f4-4952-84f0-d6d8bc02e68c")
+		(property "Reference" "SW2"
+			(at 62.23 200.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPDT"
+			(at 62.23 203.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical"
+			(at 62.23 209.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 62.23 217.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Switch, single pole double throw"
+			(at 62.23 209.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "20917d1a-b927-409e-82fa-58378e38891e")
+		)
+		(pin "1"
+			(uuid "c63c81ea-4b40-4860-9e0d-add318deb471")
+		)
+		(pin "3"
+			(uuid "85564cb7-6b43-43f1-b11d-df4799aadcde")
+		)
+		(instances
+			(project "Phaser"
+				(path "/03822e18-c11b-407a-9491-8359a48ffcaa"
+					(reference "SW2")
 					(unit 1)
 				)
 			)
