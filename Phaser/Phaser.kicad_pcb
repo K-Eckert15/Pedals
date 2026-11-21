@@ -17859,7 +17859,7 @@
 		)
 	)
 	(gr_text "Kyle J. Eckert"
-		(at 125.73 20.32 0)
+		(at 134.62 48.62 0)
 		(layer "B.SilkS")
 		(uuid "d8c8f032-4818-47c7-94c9-c8dbd4a62808")
 		(effects
@@ -17867,11 +17867,11 @@
 				(size 1 1)
 				(thickness 0.1)
 			)
-			(justify left bottom mirror)
+			(justify mirror)
 		)
 	)
 	(gr_text "There comes a time \nin every man's life \nwhen he must stop \nthinking and start doing."
-		(at 142.875 89.535 0)
+		(at 134.62 73.12 0)
 		(layer "B.SilkS")
 		(uuid "c66ae869-43a5-4eb3-9759-a1d2701e45a5")
 		(effects
@@ -17879,7 +17879,20 @@
 				(size 1 1)
 				(thickness 0.1)
 			)
-			(justify left bottom mirror)
+			(justify mirror)
+		)
+	)
+	(gr_text "THE\nSTUNNER"
+		(at 134.72 44.52 0)
+		(layer "B.SilkS")
+		(uuid "241510c2-4a69-4093-ae92-7a746249240e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.25)
+				(bold yes)
+			)
+			(justify mirror)
 		)
 	)
 	(gr_text "2.5inx4.5in outside box measurements"
@@ -17921,7 +17934,7 @@
 			(extension_offset 0.5)
 			(keep_text_aligned yes)
 		)
-		(gr_text "2000"
+		(gr_text "2"
 			(at 134.62 101.72 0)
 			(layer "User.1")
 			(uuid "c61b7006-aabf-4fab-a8dd-c1351fc36eec")
@@ -17959,7 +17972,7 @@
 			(extension_offset 0.5)
 			(keep_text_aligned yes)
 		)
-		(gr_text "3225"
+		(gr_text "3.225"
 			(at 172.84 55.5625 90)
 			(layer "User.1")
 			(uuid "def219d5-2e4a-4c6d-8c5c-2c82004c8944")
@@ -17970,6 +17983,12 @@
 				)
 			)
 		)
+	)
+	(point
+		(at 134.62 14.605)
+		(size 1)
+		(layer "B.SilkS")
+		(uuid "26051b98-ad6f-4a21-a018-83eefd8c06b3")
 	)
 	(point
 		(at 202.63 129.485)
