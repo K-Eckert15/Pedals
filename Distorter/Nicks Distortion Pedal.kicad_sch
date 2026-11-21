@@ -512,7 +512,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:Conn_01x02_Socket"
+		(symbol "Connector:Conn_01x03_Pin"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -523,7 +523,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "J"
-				(at 0 2.54 0)
+				(at 0 5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -532,7 +532,7 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x02_Socket"
+			(property "Value" "Conn_01x03_Pin"
 				(at 0 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -564,7 +564,7 @@
 					)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x02, script generated"
+			(property "Description" "Generic connector, single row, 01x03, script generated"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -607,22 +607,43 @@
 					)
 				)
 			)
-			(symbol "Conn_01x02_Socket_1_1"
-				(polyline
-					(pts
-						(xy -1.27 0) (xy -0.508 0)
-					)
+			(symbol "Conn_01x03_Pin_1_1"
+				(rectangle
+					(start 0.8636 2.667)
+					(end 0 2.413)
 					(stroke
 						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
 					)
 				)
 				(polyline
 					(pts
-						(xy -1.27 -2.54) (xy -0.508 -2.54)
+						(xy 1.27 2.54) (xy 0.8636 2.54)
 					)
 					(stroke
 						(width 0.1524)
@@ -632,10 +653,10 @@
 						(type none)
 					)
 				)
-				(arc
-					(start 0 -0.508)
-					(mid -0.5058 0)
-					(end 0 0.508)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -644,10 +665,10 @@
 						(type none)
 					)
 				)
-				(arc
-					(start 0 -3.048)
-					(mid -0.5058 -2.54)
-					(end 0 -2.032)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -657,7 +678,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at 5.08 2.54 180)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -675,7 +696,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -2.54 0)
+					(at 5.08 0 180)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -685,6 +706,24 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3048,10 +3087,10 @@
 		(uuid "25ed4115-77ad-4984-8d7d-79a59d2934b6")
 	)
 	(junction
-		(at 194.31 93.98)
+		(at 199.39 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "2e315aeb-870c-423e-a36f-68cecb4adbbd")
+		(uuid "265a9715-a6ef-43a7-aaff-cffdac11eb31")
 	)
 	(junction
 		(at 166.37 85.09)
@@ -3096,6 +3135,12 @@
 		(uuid "511233f7-e82e-4aeb-be03-927d4baa2791")
 	)
 	(junction
+		(at 199.39 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5d1c0751-dfc2-486f-a4b9-4c898c987cb5")
+	)
+	(junction
 		(at 166.37 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3106,6 +3151,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "669e0ac8-78c7-47d9-98e6-f6f5b14d31be")
+	)
+	(junction
+		(at 184.15 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "75a087eb-7bde-4614-b721-965cfd049206")
 	)
 	(junction
 		(at 92.71 68.58)
@@ -3136,6 +3187,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8e34c310-294c-4e0b-a710-553aecc6a118")
+	)
+	(junction
+		(at 184.15 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8fd1218f-1caa-4a91-b331-b5d733fae855")
+	)
+	(junction
+		(at 199.39 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "911c9446-057a-4a32-baf3-d264245718e7")
 	)
 	(junction
 		(at 33.02 45.72)
@@ -3557,6 +3620,16 @@
 	)
 	(wire
 		(pts
+			(xy 199.39 105.41) (xy 199.39 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b101651-6f1e-451d-a28b-908d28061448")
+	)
+	(wire
+		(pts
 			(xy 48.26 85.09) (xy 52.07 85.09)
 		)
 		(stroke
@@ -3747,6 +3820,16 @@
 	)
 	(wire
 		(pts
+			(xy 194.31 102.87) (xy 184.15 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f92c714-b96b-430c-8eef-9022936d9f18")
+	)
+	(wire
+		(pts
 			(xy 90.17 26.67) (xy 90.17 27.94)
 		)
 		(stroke
@@ -3857,6 +3940,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 111.76) (xy 184.15 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "887c2e1a-96bd-4e06-b596-dd466cd1956c")
+	)
+	(wire
+		(pts
 			(xy 252.73 104.14) (xy 254 104.14)
 		)
 		(stroke
@@ -3947,6 +4040,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 109.22) (xy 184.15 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8fd7000d-9233-4503-83ed-e9904c0fd8c6")
+	)
+	(wire
+		(pts
 			(xy 209.55 92.71) (xy 209.55 106.68)
 		)
 		(stroke
@@ -3994,16 +4097,6 @@
 			(type default)
 		)
 		(uuid "a5db2127-9a10-413e-933e-2bfccccd6596")
-	)
-	(wire
-		(pts
-			(xy 194.31 93.98) (xy 194.31 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a6c72334-15d4-4a65-b16c-ce7e772126b1")
 	)
 	(wire
 		(pts
@@ -4067,6 +4160,16 @@
 	)
 	(wire
 		(pts
+			(xy 199.39 97.79) (xy 199.39 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5d206de-7e41-4064-bebe-fba3cd5531cc")
+	)
+	(wire
+		(pts
 			(xy 245.11 116.84) (xy 252.73 116.84)
 		)
 		(stroke
@@ -4084,6 +4187,16 @@
 			(type default)
 		)
 		(uuid "ba97ad6c-b4ff-4f73-8cae-6cd4c0c95d95")
+	)
+	(wire
+		(pts
+			(xy 184.15 102.87) (xy 184.15 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be6037a1-de34-484f-8a0a-d85106857f92")
 	)
 	(wire
 		(pts
@@ -4277,7 +4390,17 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 100.33) (xy 199.39 93.98)
+			(xy 199.39 95.25) (xy 199.39 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb40499b-9207-4f4e-938f-506d83b2f717")
+	)
+	(wire
+		(pts
+			(xy 199.39 100.33) (xy 199.39 97.79)
 		)
 		(stroke
 			(width 0)
@@ -9212,86 +9335,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x02_Socket")
-		(at 189.23 102.87 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1ce58b9f-e83b-41b7-80d4-43a4187e32ad")
-		(property "Reference" "J1"
-			(at 189.865 95.25 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x02_Socket"
-			(at 189.865 97.79 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 189.23 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 189.23 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 189.23 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "dbbd24f4-d580-45ec-888d-eb844075b94e")
-		)
-		(pin "1"
-			(uuid "3caad3df-c20b-4acb-a38d-34eb3b2b1bfb")
-		)
-		(instances
-			(project "Nicks Distortion Pedal"
-				(path "/ce7e1c38-8089-49ec-81b0-302e6cc6fa48"
-					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:LED")
 		(at 33.02 146.05 180)
 		(unit 1)
@@ -10454,88 +10497,6 @@
 			(project "Nicks Distortion Pedal"
 				(path "/ce7e1c38-8089-49ec-81b0-302e6cc6fa48"
 					(reference "R8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x02_Socket")
-		(at 204.47 100.33 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "61dcbc38-d145-4941-aa9f-c3924cc663cf")
-		(property "Reference" "J2"
-			(at 205.74 100.3299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x02_Socket"
-			(at 205.74 102.8699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 204.47 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 204.47 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 204.47 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "2b4c2363-168e-4baf-aa8e-3da9779a4be4")
-		)
-		(pin "1"
-			(uuid "5865e2d7-c35d-431d-a18f-0783049ee2f7")
-		)
-		(instances
-			(project "Nicks Distortion Pedal"
-				(path "/ce7e1c38-8089-49ec-81b0-302e6cc6fa48"
-					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -13516,6 +13477,172 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x03_Pin")
+		(at 179.07 111.76 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f752658c-09c2-4118-a474-b3f14a6e4f90")
+		(property "Reference" "J8"
+			(at 179.705 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x03_Pin"
+			(at 179.705 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+			(at 179.07 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 179.07 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 179.07 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a58a61dd-7651-4234-99cb-fb4e8eb7201b")
+		)
+		(pin "3"
+			(uuid "4b2e768f-7b9d-495f-995d-d79e06dbc8c0")
+		)
+		(pin "2"
+			(uuid "35aedab8-af6a-4e5c-8e48-84ed85bcec5c")
+		)
+		(instances
+			(project "Nicks Distortion Pedal"
+				(path "/ce7e1c38-8089-49ec-81b0-302e6cc6fa48"
+					(reference "J8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x03_Pin")
+		(at 204.47 97.79 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fa11b364-5f33-4a34-b65b-6baf48b6fe78")
+		(property "Reference" "J9"
+			(at 203.835 90.17 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x03_Pin"
+			(at 203.835 92.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+			(at 204.47 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 204.47 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 204.47 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "355a4b7e-8ecd-4f92-b6f4-0558ae1df709")
+		)
+		(pin "3"
+			(uuid "8410a9d8-4f3b-410c-9768-c739378d72a3")
+		)
+		(pin "1"
+			(uuid "b95864e8-bb6c-41b3-afe0-33bbfd5ad901")
+		)
+		(instances
+			(project "Nicks Distortion Pedal"
+				(path "/ce7e1c38-8089-49ec-81b0-302e6cc6fa48"
+					(reference "J9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 135.89 82.55 90)
 		(unit 1)
@@ -13750,6 +13877,89 @@
 			(project "Nicks Distortion Pedal"
 				(path "/ce7e1c38-8089-49ec-81b0-302e6cc6fa48"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x03_Pin")
+		(at 204.47 105.41 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fe2e1372-fe7a-4ca6-8d44-5fd90af7d040")
+		(property "Reference" "J10"
+			(at 203.835 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x03_Pin"
+			(at 203.835 100.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+			(at 204.47 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 204.47 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 204.47 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e54736f6-ed9c-48f8-b0f0-9ba7a28f0c5d")
+		)
+		(pin "3"
+			(uuid "4f10d552-914c-4770-807a-34c9d76482de")
+		)
+		(pin "2"
+			(uuid "ef958f70-9826-48bd-9bba-15d128f180e4")
+		)
+		(instances
+			(project "Nicks Distortion Pedal"
+				(path "/ce7e1c38-8089-49ec-81b0-302e6cc6fa48"
+					(reference "J10")
 					(unit 1)
 				)
 			)
