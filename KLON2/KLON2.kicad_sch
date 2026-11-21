@@ -8512,28 +8512,28 @@
 			)
 		)
 		(pin "3"
-			(uuid "70a53f96-2e13-4551-966f-bf1336181457")
+			(uuid "70a53f96-2e13-4551-966f-bf1336181458")
 		)
 		(pin "2"
-			(uuid "0adf0417-46a4-458e-a6aa-dae2942dc31e")
+			(uuid "0adf0417-46a4-458e-a6aa-dae2942dc31f")
 		)
 		(pin "1"
-			(uuid "700aef00-41db-446e-a852-7959732a63e1")
+			(uuid "700aef00-41db-446e-a852-7959732a63e2")
 		)
 		(pin "8"
-			(uuid "45be52f2-eba3-4697-a988-9885a3b20247")
+			(uuid "45be52f2-eba3-4697-a988-9885a3b20248")
 		)
 		(pin "5"
-			(uuid "46a8d279-19fa-46ca-9857-84a1bf91ab2c")
+			(uuid "46a8d279-19fa-46ca-9857-84a1bf91ab2d")
 		)
 		(pin "4"
-			(uuid "9026511a-03d4-4fc6-990f-c38918fd256a")
+			(uuid "9026511a-03d4-4fc6-990f-c38918fd256b")
 		)
 		(pin "6"
-			(uuid "712c08fa-461f-4bfb-9300-1c6aa2138d72")
+			(uuid "712c08fa-461f-4bfb-9300-1c6aa2138d73")
 		)
 		(pin "7"
-			(uuid "a4cc2c86-4cf9-4813-9e29-f752abce3062")
+			(uuid "a4cc2c86-4cf9-4813-9e29-f752abce3063")
 		)
 		(instances
 			(project "KLON2"
@@ -10241,28 +10241,28 @@
 			)
 		)
 		(pin "3"
-			(uuid "70a53f96-2e13-4551-966f-bf1336181457")
+			(uuid "70a53f96-2e13-4551-966f-bf1336181459")
 		)
 		(pin "2"
-			(uuid "0adf0417-46a4-458e-a6aa-dae2942dc31e")
+			(uuid "0adf0417-46a4-458e-a6aa-dae2942dc320")
 		)
 		(pin "1"
-			(uuid "700aef00-41db-446e-a852-7959732a63e1")
+			(uuid "700aef00-41db-446e-a852-7959732a63e3")
 		)
 		(pin "8"
-			(uuid "45be52f2-eba3-4697-a988-9885a3b20247")
+			(uuid "45be52f2-eba3-4697-a988-9885a3b20249")
 		)
 		(pin "5"
-			(uuid "46a8d279-19fa-46ca-9857-84a1bf91ab2c")
+			(uuid "46a8d279-19fa-46ca-9857-84a1bf91ab2e")
 		)
 		(pin "4"
-			(uuid "9026511a-03d4-4fc6-990f-c38918fd256a")
+			(uuid "9026511a-03d4-4fc6-990f-c38918fd256c")
 		)
 		(pin "6"
-			(uuid "712c08fa-461f-4bfb-9300-1c6aa2138d72")
+			(uuid "712c08fa-461f-4bfb-9300-1c6aa2138d74")
 		)
 		(pin "7"
-			(uuid "a4cc2c86-4cf9-4813-9e29-f752abce3062")
+			(uuid "a4cc2c86-4cf9-4813-9e29-f752abce3064")
 		)
 		(instances
 			(project "KLON2"
@@ -10541,13 +10541,13 @@
 			)
 		)
 		(pin "3"
-			(uuid "16fe3883-22c2-4ee3-8331-9701efe4c146")
+			(uuid "16fe3883-22c2-4ee3-8331-9701efe4c147")
 		)
 		(pin "1"
-			(uuid "3a5076cb-b924-43a9-bc3a-d7f295cd4ef0")
+			(uuid "3a5076cb-b924-43a9-bc3a-d7f295cd4ef1")
 		)
 		(pin "2"
-			(uuid "dcc11a86-7803-4fed-966e-f143715b1194")
+			(uuid "dcc11a86-7803-4fed-966e-f143715b1195")
 		)
 		(instances
 			(project "KLON2"
@@ -12670,13 +12670,13 @@
 			)
 		)
 		(pin "3"
-			(uuid "16fe3883-22c2-4ee3-8331-9701efe4c146")
+			(uuid "16fe3883-22c2-4ee3-8331-9701efe4c148")
 		)
 		(pin "1"
-			(uuid "3a5076cb-b924-43a9-bc3a-d7f295cd4ef0")
+			(uuid "3a5076cb-b924-43a9-bc3a-d7f295cd4ef2")
 		)
 		(pin "2"
-			(uuid "dcc11a86-7803-4fed-966e-f143715b1194")
+			(uuid "dcc11a86-7803-4fed-966e-f143715b1196")
 		)
 		(instances
 			(project "KLON2"
@@ -13193,28 +13193,28 @@
 			)
 		)
 		(pin "4"
-			(uuid "1a93471b-904b-459c-a76e-6ce7f758d15b")
+			(uuid "1a93471b-904b-459c-a76e-6ce7f758d15c")
 		)
 		(pin "2"
-			(uuid "f5ccca41-14f6-41a6-a634-4842703e68e0")
+			(uuid "f5ccca41-14f6-41a6-a634-4842703e68e1")
 		)
 		(pin "7"
-			(uuid "7461f5f8-c234-4b43-b425-8c7abb34402c")
+			(uuid "7461f5f8-c234-4b43-b425-8c7abb34402d")
 		)
 		(pin "6"
-			(uuid "746568e4-e85a-4de0-b8f4-184f7e75066a")
+			(uuid "746568e4-e85a-4de0-b8f4-184f7e75066b")
 		)
 		(pin "8"
-			(uuid "40dd221a-39d1-4f98-a0c9-bbb9999d5d9b")
+			(uuid "40dd221a-39d1-4f98-a0c9-bbb9999d5d9c")
 		)
 		(pin "3"
-			(uuid "b1f7e491-8d72-45d1-a6c0-37578319ab51")
+			(uuid "b1f7e491-8d72-45d1-a6c0-37578319ab52")
 		)
 		(pin "5"
-			(uuid "be5459a4-502b-4f5a-9611-76e296dc7595")
+			(uuid "be5459a4-502b-4f5a-9611-76e296dc7596")
 		)
 		(pin "1"
-			(uuid "bbd257cb-612c-49dc-91f4-87e8bef03bc7")
+			(uuid "bbd257cb-612c-49dc-91f4-87e8bef03bc8")
 		)
 		(instances
 			(project "KLON2"
@@ -13471,28 +13471,28 @@
 			)
 		)
 		(pin "4"
-			(uuid "1a93471b-904b-459c-a76e-6ce7f758d15b")
+			(uuid "1a93471b-904b-459c-a76e-6ce7f758d15d")
 		)
 		(pin "2"
-			(uuid "f5ccca41-14f6-41a6-a634-4842703e68e0")
+			(uuid "f5ccca41-14f6-41a6-a634-4842703e68e2")
 		)
 		(pin "7"
-			(uuid "7461f5f8-c234-4b43-b425-8c7abb34402c")
+			(uuid "7461f5f8-c234-4b43-b425-8c7abb34402e")
 		)
 		(pin "6"
-			(uuid "746568e4-e85a-4de0-b8f4-184f7e75066a")
+			(uuid "746568e4-e85a-4de0-b8f4-184f7e75066c")
 		)
 		(pin "8"
-			(uuid "40dd221a-39d1-4f98-a0c9-bbb9999d5d9b")
+			(uuid "40dd221a-39d1-4f98-a0c9-bbb9999d5d9d")
 		)
 		(pin "3"
-			(uuid "b1f7e491-8d72-45d1-a6c0-37578319ab51")
+			(uuid "b1f7e491-8d72-45d1-a6c0-37578319ab53")
 		)
 		(pin "5"
-			(uuid "be5459a4-502b-4f5a-9611-76e296dc7595")
+			(uuid "be5459a4-502b-4f5a-9611-76e296dc7597")
 		)
 		(pin "1"
-			(uuid "bbd257cb-612c-49dc-91f4-87e8bef03bc7")
+			(uuid "bbd257cb-612c-49dc-91f4-87e8bef03bc9")
 		)
 		(instances
 			(project "KLON2"
